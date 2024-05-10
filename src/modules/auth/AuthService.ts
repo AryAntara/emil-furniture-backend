@@ -1,0 +1,67 @@
+import { UserService } from "../user/UserServices";
+import { AuthServiceInterface } from "./interfaces/AuthServiceInterface";
+import { Email } from "../../utils/email";
+import verificationEmailHTML from "./assets/verificationEmailHTML";
+import { logger } from "../../log";
+import { JWT } from "../../utils/jwt";
+import { User } from "../../models/User";
+
+export class AuthService implements AuthServiceInterface {
+    constructor(private userService: UserService) { }
+
+    // insert new user using userService
+    async insertUser(data: any) {
+        return await this.userService.insert(data);
+    }
+
+    async findUserByEmail(email: string): Promise<boolean> {
+        return await this.userService.searchByEmail(email);
+    }
+
+    // is user verified
+    async isUserVerified(email: string): Promise<boolean> {
+        return await this.userService.isVerified(email);
+    }
+
+    // send verification to email
+    async sendVerifcationEmail(email: string, verificationUrl: string): Promise<void> {
+        const client = new Email(email);
+        client.sendHTML(
+            'Test oleh ary',
+            verificationEmailHTML.render(verificationUrl)
+        )
+    }
+
+    // generate token verification
+    async generateEmailVerificationToken(email: string, userId: number) {
+        return JWT.generate({
+            email, userId
+        }, '1d');
+    }
+
+    // verify a user
+    async verifyUserEmail(token: string): Promise<boolean> {
+        const { email, userId } = await JWT.verify(token)
+        return await this.userService.verifyEmail(email as string, userId as number);
+    }
+
+    // check password was sent
+    async checkUserPassword(email: string, password: string) {
+        return await this.userService.checkPassword(email, password);
+    }
+
+    // get user data by given id 
+    async getUserDataByEmail(email: string): Promise<User | null> {
+        return await this.userService.getUserByEmail(email);
+    }
+
+    // generate auth token
+    async generateAuthToken(userId: number): Promise<string> {
+        return JWT.generate({ userId }, '2h');
+    };
+
+    // generate auth token
+    async generateRefreshToken(userId: number): Promise<string> {
+        return JWT.generate({ userId }, '1d');
+    };
+}

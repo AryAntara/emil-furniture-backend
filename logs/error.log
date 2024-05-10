@@ -1,0 +1,863 @@
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/modules/auth/AuthService.ts:55:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T09:53:39.315Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:06:14.419Z',
+  originalLine: 33,
+  originalColumn: 38
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:16:57.992Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:17:45.606Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:20:56.328Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:11.375Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:14.040Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:15.245Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:16.401Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:17.274Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:26:18.140Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:27:15.752Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:28:39.965Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:28:44.762Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:29:44.698Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:32:39.918Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/modules/auth/AuthService.ts:55:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:32:45.959Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/modules/auth/AuthService.ts:55:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:33:17.371Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/modules/auth/AuthService.ts:55:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:33:38.806Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:33:57.485Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:35:38.680Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:38:28.016Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:38:29.382Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:38:56.108Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:39:22.043Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:39:53.076Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:39:53.076Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:40:14.434Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:41:27.138Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:41:56.200Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:42:38.925Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:43:00.498Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:43:25.240Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:44:12.958Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:44:22.946Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:44:36.976Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:44:46.112Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:45:03.951Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:45:27.933Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:46:13.137Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:47:08.973Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:47:29.970Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:47:45.034Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:49:43.662Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:49:57.286Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:50:18.907Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:50:29.553Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:50:47.336Z',
+  originalLine: 1881,
+  originalColumn: 17
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Incorrect datetime value: 'Invalid date' for column `eccomerce`.`users`.`verifiedAt` at row 1
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_TRUNCATED_WRONG_VALUE',
+    errno: 1292,
+    sqlState: '22007',
+    sqlMessage: "Incorrect datetime value: 'Invalid date' for column `eccomerce`.`users`.`verifiedAt` at row 1",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `id` = ?',
+    parameters: [ 'Invalid date', '2024-05-09 10:52:30', 17 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Incorrect datetime value: 'Invalid date' for column `eccomerce`.`users`.`verifiedAt` at row 1
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_TRUNCATED_WRONG_VALUE',
+    errno: 1292,
+    sqlState: '22007',
+    sqlMessage: "Incorrect datetime value: 'Invalid date' for column `eccomerce`.`users`.`verifiedAt` at row 1",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `id` = ?',
+    parameters: [ 'Invalid date', '2024-05-09 10:52:30', 17 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `id` = ?',
+  parameters: [ 'Invalid date', '2024-05-09 10:52:30', 17 ],
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T10:52:30.403Z'
+}
+{
+  code: 'PASSWORD_UNSUPPORTED_ALGORITHM',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T11:12:07.144Z'
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          fullname: 'ary',
+          email: 'ikomangaryantara382@gmail.com',
+          password: Promise { <pending> },
+          refreshToken: null,
+          roleUser: 'normal',
+          verifiedAt: null,
+          createdAt: '2024-05-09',
+          updatedAt: 2024-05-09T11:13:41.768Z,
+          deletedAt: null
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(9) {
+          'fullname',
+          'email',
+          'password',
+          'refreshToken',
+          'roleUser',
+          'verifiedAt',
+          'createdAt',
+          'updatedAt',
+          'deletedAt'
+        },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T11:13:41.770Z',
+  originalLine: 15,
+  originalColumn: 12
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          fullname: 'ary',
+          email: 'ikomangaryantara382@gmail.com',
+          password: Promise { <pending> },
+          refreshToken: null,
+          roleUser: 'normal',
+          verifiedAt: null,
+          createdAt: '2024-05-09',
+          updatedAt: 2024-05-09T11:14:01.811Z,
+          deletedAt: null
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(9) {
+          'fullname',
+          'email',
+          'password',
+          'refreshToken',
+          'roleUser',
+          'verifiedAt',
+          'createdAt',
+          'updatedAt',
+          'deletedAt'
+        },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T11:14:01.813Z',
+  originalLine: 15,
+  originalColumn: 12
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          fullname: 'ary',
+          email: 'ikomangaryantara382@gmail.com',
+          password: Promise { <pending> },
+          refreshToken: null,
+          roleUser: 'normal',
+          verifiedAt: null,
+          createdAt: '2024-05-09',
+          updatedAt: 2024-05-09T11:14:18.369Z,
+          deletedAt: null
+        },
+        _previousDataValues: {},
+        uniqno: 1,
+        _changed: Set(9) {
+          'fullname',
+          'email',
+          'password',
+          'refreshToken',
+          'roleUser',
+          'verifiedAt',
+          'createdAt',
+          'updatedAt',
+          'deletedAt'
+        },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-09T11:14:18.370Z',
+  originalLine: 15,
+  originalColumn: 12
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:13:11.426Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  message: 'User id not found.',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:13:11.431Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:13:25.679Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  message: 'User id not found.',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:13:25.680Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:14:04.448Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  message: 'User id not found.',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:14:04.449Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:51:45.617Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:51:56.394Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:52:19.685Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:52:52.786Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:53:19.798Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:24:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:53:34.857Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: JWS Protected Header is invalid\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:38:9)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at flattenedVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:11:29)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:17:28)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:24:10)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:53:56.052Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:54:30.636Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:54:30.642Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:54:30.644Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:10.742Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:10.748Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:10.751Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:11.887Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:11.888Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T12:55:11.890Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:35:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-10T13:15:57.487Z'
+}
