@@ -31,12 +31,12 @@ export class UserService implements UserServiceInterface {
 
     // search by email
     async searchByEmail(email: string): Promise<boolean> {
-        return await this.userRepository.searchByEmail(email);
+        return await this.userRepository.isExistsByEmail(email);
     }
 
     // check user has been verified or not
     async isVerified(email: string): Promise<boolean> {
-        const userEntry = await this.userRepository.findUserByEmail(email, ['verifiedAt']);
+        const userEntry = await this.userRepository.findOneByEmail(email, ['verifiedAt']);
 
         if (!userEntry) return false;
 
@@ -49,17 +49,17 @@ export class UserService implements UserServiceInterface {
         // return true instead if the email was verified
         if (await this.isVerified(email)) return true;
 
-        const userEntry = await this.userRepository.findUserById(userId);
+        const userEntry = await this.userRepository.findOneById(userId);
 
         if (!userEntry || userEntry.getDataValue('email') != email) return false;
 
-        return await this.userRepository.verifyEmail(userEntry);
+        return await this.userRepository.verifyEmail(userEntry.getDataValue('id') as number);
     }
 
     // is a valid password for the given email 
     async checkPassword(email: string, password: string): Promise<boolean> {
         try {
-            const userEntry = await this.userRepository.findUserByEmail(email, ['password']);
+            const userEntry = await this.userRepository.findOneByEmail(email, ['password']);
             const hash = userEntry?.getDataValue('password') ?? '';
             return await Bun.password.verify(password, hash)
         } catch (e) {
@@ -69,8 +69,19 @@ export class UserService implements UserServiceInterface {
     }
 
     // get user by email
-    async getUserByEmail(email: string): Promise<User|null> {
-        return await this.userRepository.findUserByEmail(email);
+    async getUserByEmail(email: string): Promise<User | null> {
+        return await this.userRepository.findOneByEmail(email);
+    }
+
+    // update password of an user by email 
+    async updatePasswordByEmail(email: string, newPassword: string): Promise<boolean> {
+        try {
+            const password = await Bun.password.hash(newPassword);
+            return await this.userRepository.update({ email }, { password })
+        } catch (e) {
+            logger.error(e);
+            return false;
+        }
     }
 
 }

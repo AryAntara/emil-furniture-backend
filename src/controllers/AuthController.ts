@@ -5,7 +5,9 @@ import { loginSchemaValidator } from "../modules/auth/schemas/LoginSchema";
 import { BaseController } from "./BaseController";
 import { logger } from "../log";
 import { getBaseUrl } from "../utils/url";
-import { setCookie } from "hono/cookie"
+import { deleteCookie, setCookie } from "hono/cookie"
+import { ForgotPasswordSchemaValidator } from "../modules/auth/schemas/ForgotPasswordSchema";
+import { resetPasswordSchemaValidator } from "../modules/auth/schemas/ResetPasswordSchema";
 
 const DAYS_IN_SECOND = 24 * 60 * 60;
 
@@ -47,7 +49,8 @@ export class AuthController extends BaseController {
         const token = c.req.param().token;
         if (!await this.authService.verifyUserEmail(token))
             return c.json(this.respond(null, false, 'Token tidak valid.'), 402);
-        return c.json(this.respond(null, true, 'Berhasil melakukan verifikasi'));
+        return c.redirect("https://youtube.com"); // Change into react website
+
     }
 
     // login into our account
@@ -90,6 +93,7 @@ export class AuthController extends BaseController {
 
     // logout from system 
     async logout(c: Context) {
+        deleteCookie(c, 'refresh_token');
         return c.json(this.respond({}, true, "Berhasil logout."))
     }
 
@@ -99,5 +103,50 @@ export class AuthController extends BaseController {
         return c.json(this.respond({
             accessToken
         }, true, "Mendapatkan token baru."));
+    }
+
+    // send forgot password email 
+    async sendforgotPasswordEmail(c: Context){
+        const content = await c.req.parseBody();
+        const validation = await ForgotPasswordSchemaValidator.with(content).run()
+
+        if(!validation.success) return c.json(this.respond( 
+            validation.errors, false, "Validasi error."
+        ));
+
+        const email = validation.data.email;
+        const url = getBaseUrl(c.req.url);
+        const resetPasswordLink = url + "/auth/reset-password/" + await this.authService.generateResetPasswordToken(email as string);
+        
+        await this.authService.sendResetPasswordEmail(email, resetPasswordLink);
+        return c.json(this.respond({}, true, "Berhasil mengirimkan link untuk forgot password"));
+
+    }
+
+    // show page for reset the password 
+    async showResetPasswordPage(c: Context){
+        const token = c.req.param()['token'];
+        return c.redirect("http://{link-frontend}/reset-password?token="+token);        
+    }
+
+    // reset the password 
+    async resetPassword(c: Context){
+        const content = await c.req.parseBody();
+        const validation = await resetPasswordSchemaValidator.with(content).run()
+
+        if(!validation.success) return c.json(this.respond( 
+            validation.errors, false, 'Validasi error.'
+        ))
+
+        const token = c.req.param()['token'];
+        const newPassword = validation.data.password
+
+        if (!await this.authService.updateUserPassword(token, newPassword)) return c.json(this.respond(
+            null, false, "Tidak bisa memperbarui kata sandi, Token tidak valid."
+        ), 400);
+
+        return c.json(this.respond(
+            null, true, "Berhasil memperbarui kata sandi."
+        ))
     }
 }

@@ -861,3 +861,307 @@
   label: 'product',
   timestamp: '2024-05-10T13:15:57.487Z'
 }
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T11:33:29.304Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T11:33:34.104Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T11:33:34.105Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T11:33:34.130Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T11:34:04.919Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T12:48:42.374Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T12:48:42.383Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T12:48:42.386Z',
+  originalLine: 1279,
+  originalColumn: 24
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'userId' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'userId' in 'where clause'",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+    parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:13', 22 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'userId' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'userId' in 'where clause'",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+    parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:13', 22 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+  parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:13', 22 ],
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:18:13.731Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'userId' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'userId' in 'where clause'",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+    parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:59', 22 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'userId' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'userId' in 'where clause'",
+    sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+    parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:59', 22 ],
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'UPDATE `users` SET `verifiedAt`=?,`updatedAt`=? WHERE `userId` = ?',
+  parameters: [ '2024-05-11 00:00:00', '2024-05-11 13:18:59', 22 ],
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:18:59.118Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Invalid Compact JWS\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:16:4)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/modules/auth/AuthService.ts:85:88)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:57:04.314Z'
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          password: Promise { <pending> },
+          updatedAt: 2024-05-11T13:57:04.318Z
+        },
+        _previousDataValues: { password: undefined, updatedAt: undefined },
+        uniqno: 1,
+        _changed: Set(2) { 'password', 'updatedAt' },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:57:04.321Z',
+  originalLine: 15,
+  originalColumn: 12
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          password: Promise { <pending> },
+          updatedAt: 2024-05-11T13:57:40.531Z
+        },
+        _previousDataValues: { password: undefined, updatedAt: undefined },
+        uniqno: 1,
+        _changed: Set(2) { 'password', 'updatedAt' },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:57:40.532Z',
+  originalLine: 15,
+  originalColumn: 12
+}
+{
+  name: 'SequelizeValidationError',
+  errors: [
+    ValidationErrorItem {
+      message: 'password cannot be an array or an object',
+      type: 'string violation',
+      path: 'password',
+      value: Promise { <pending> },
+      origin: 'CORE',
+      instance: user {
+        dataValues: {
+          id: null,
+          password: Promise { <pending> },
+          updatedAt: 2024-05-11T13:57:45.487Z
+        },
+        _previousDataValues: { password: undefined, updatedAt: undefined },
+        uniqno: 1,
+        _changed: Set(2) { 'password', 'updatedAt' },
+        _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+        isNewRecord: true
+      },
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ],
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-11T13:57:45.487Z',
+  originalLine: 15,
+  originalColumn: 12
+}

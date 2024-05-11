@@ -1,10 +1,11 @@
 import { UserService } from "../user/UserServices";
 import { AuthServiceInterface } from "./interfaces/AuthServiceInterface";
 import { Email } from "../../utils/email";
-import verificationEmailHTML from "./assets/verificationEmailHTML";
+import verificationEmailHTML from "./views/verificationEmail";
 import { logger } from "../../log";
 import { JWT } from "../../utils/jwt";
 import { User } from "../../models/User";
+import resetPasswordEmailHTML from "./views/resetPasswordEmail";
 
 export class AuthService implements AuthServiceInterface {
     constructor(private userService: UserService) { }
@@ -27,7 +28,7 @@ export class AuthService implements AuthServiceInterface {
     async sendVerifcationEmail(email: string, verificationUrl: string): Promise<void> {
         const client = new Email(email);
         client.sendHTML(
-            'Test oleh ary',
+            'Verifikasi email oleh emil furniture',
             verificationEmailHTML.render(verificationUrl)
         )
     }
@@ -64,4 +65,24 @@ export class AuthService implements AuthServiceInterface {
     async generateRefreshToken(userId: number): Promise<string> {
         return JWT.generate({ userId }, '1d');
     };
+
+    // generate reset password token 
+    async generateResetPasswordToken(email: string): Promise<string> {
+        return JWT.generate({ email }, '1d')
+    }
+
+    // send reset password to email
+    async sendResetPasswordEmail(email: string, resetPasswordUrl: string): Promise<void> {
+        const client = new Email(email);
+        client.sendHTML(
+            'Reset Password',
+            resetPasswordEmailHTML.render(resetPasswordUrl)
+        )
+    }
+
+    // update user password
+    async updateUserPassword(token: string, newPassword: string): Promise<boolean> {
+        const {email} = await JWT.verify(token);
+        return await this.userService.updatePasswordByEmail(email as string, newPassword);
+    }
 }

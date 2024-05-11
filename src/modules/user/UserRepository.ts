@@ -2,9 +2,11 @@ import moment = require("moment");
 import { logger } from "../../log";
 import { User } from "../../models/User";
 import { UserRepositoryInterface } from "./interfaces/UserRepositoryInterface";
+import { WhereOptions } from "sequelize";
 
 export class UserRepository implements UserRepositoryInterface {
     constructor(private user: User) { }
+   
     async getAll(): Promise<User[]> {
         try {
             return await User.findAll()
@@ -18,7 +20,7 @@ export class UserRepository implements UserRepositoryInterface {
     async insertOne(data: any) {
         this.user.setDataValue('email', data.email);
         this.user.setDataValue('fullname', data.fullname);
-        this.user.setDataValue('password', data.password);    
+        this.user.setDataValue('password', data.password);
         this.user.setDataValue('roleUser', data.roleUser);
         this.user.setDataValue('verifiedAt', data.verifiedAt);
         this.user.setDataValue('createdAt', data.createdAt);
@@ -33,15 +35,38 @@ export class UserRepository implements UserRepositoryInterface {
         }
     }
 
-    // search one by email
-    async searchByEmail(email: string): Promise<boolean> {
+    // update users
+    async update(whereOptions: WhereOptions, data: any) {
+        try {
+            await User.update(data, { where: whereOptions })
+            return true;
+        } catch (e) {
+            logger.error(e);
+            return false;
+        }
+    }
+
+    // find one user 
+    async findOne(whereOptions: WhereOptions, selectAttributes?: Array<string>) {
+        try {
+            return await User.findOne(
+                {
+                    where: whereOptions,
+                    attributes: selectAttributes
+                }
+            )
+        } catch (e) {
+            logger.error(e);
+            return null
+        }
+    }
+
+    // is exist 
+    async isExists(whereOptions: WhereOptions) {
         try {
             const userCount = await User.count({
-                where: {
-                    email
-                }
+                where: whereOptions
             });
-
             return userCount > 0;
         } catch (e) {
             logger.error(e);
@@ -49,52 +74,23 @@ export class UserRepository implements UserRepositoryInterface {
         }
     }
 
+    // search one by email
+    async isExistsByEmail(email: string): Promise<boolean> {
+        return await this.isExists({ email });
+    }
+
     // get one by email 
-    async findUserByEmail(email: string, selectAttributes?: Array<string>): Promise<User | null> {
-        try {
-            const user = await User.findOne(
-                {
-                    where: {
-                        email
-                    },
-                    attributes: selectAttributes
-                }
-            )
-            return user;
-        } catch (e) {
-            logger.error(e);
-            return null
-        }
+    async findOneByEmail(email: string, selectAttributes?: Array<string>): Promise<User | null> {
+        return await this.findOne({ email }, selectAttributes);
     }
 
     // get one by id 
-    async findUserById(id: number): Promise<User | null> {
-        try {
-            const user = await User.findOne(
-                {
-                    where: {
-                        id,
-                    }
-                }
-            )
-
-            return user;
-        } catch (e) {
-            logger.error(e)
-            return null;
-        }
-
+    async findOneById(id: number, selectAttributes?: Array<string>): Promise<User | null> {
+        return await this.findOne({ id }, selectAttributes);
     }
 
     // verify the user email
-    async verifyEmail(userEntry: User): Promise<boolean> {
-        try {
-            userEntry.setDataValue('verifiedAt', moment().format('YYYY-MM-DD'))
-            await userEntry.save();
-            return true;
-        } catch (e) {
-            logger.error(e);
-            return false;
-        }
+    async verifyEmail(userId: number): Promise<boolean> {
+        return await this.update({ id: userId }, { verifiedAt: moment().format('YYYY-MM-DD') });
     }
 }
