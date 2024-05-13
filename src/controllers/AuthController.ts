@@ -71,8 +71,9 @@ export class AuthController extends BaseController {
 
         const userId = userEntry.getDataValue('id'),
             fullname = userEntry.getDataValue('fullname'),
-            authToken = await this.authService.generateAuthToken(userId),
-            refreshToken = await this.authService.generateRefreshToken(userId)
+            roleAccess = userEntry.getDataValue("roleUser"),
+            authToken = await this.authService.generateAuthToken(userId, roleAccess, email),
+            refreshToken = await this.authService.generateRefreshToken(userId, roleAccess, email)
 
 
         setCookie(c, 'refresh_token', refreshToken, {
@@ -99,47 +100,52 @@ export class AuthController extends BaseController {
 
     // generate new token 
     async renew(c: Context) {
-        const accessToken = await this.authService.generateAuthToken(c.get('userId'));
+        const
+            userId = c.get('userId'),
+            email = c.get('email'),
+            roleUser = c.get('roleUser'),
+            accessToken = await this.authService.generateAuthToken(userId, roleUser, email);
+            
         return c.json(this.respond({
             accessToken
         }, true, "Mendapatkan token baru."));
     }
 
     // send forgot password email 
-    async sendforgotPasswordEmail(c: Context){
+    async sendforgotPasswordEmail(c: Context) {
         const content = await c.req.parseBody();
         const validation = await ForgotPasswordSchemaValidator.with(content).run()
 
-        if(!validation.success) return c.json(this.respond( 
+        if (!validation.success) return c.json(this.respond(
             validation.errors, false, "Validasi error."
-        ));
+        ), 400);
 
-        const email = validation.data.email;
+        const {email} = validation.data;
         const url = getBaseUrl(c.req.url);
         const resetPasswordLink = url + "/auth/reset-password/" + await this.authService.generateResetPasswordToken(email as string);
-        
+
         await this.authService.sendResetPasswordEmail(email, resetPasswordLink);
         return c.json(this.respond({}, true, "Berhasil mengirimkan link untuk forgot password"));
 
     }
 
     // show page for reset the password 
-    async showResetPasswordPage(c: Context){
-        const token = c.req.param()['token'];
-        return c.redirect("http://{link-frontend}/reset-password?token="+token);        
+    async showResetPasswordPage(c: Context) {
+        const {token} = c.req.param();
+        return c.redirect("http://{link-frontend}/reset-password?token=" + token);
     }
 
     // reset the password 
-    async resetPassword(c: Context){
+    async resetPassword(c: Context) {
         const content = await c.req.parseBody();
         const validation = await resetPasswordSchemaValidator.with(content).run()
 
-        if(!validation.success) return c.json(this.respond( 
+        if (!validation.success) return c.json(this.respond(
             validation.errors, false, 'Validasi error.'
         ))
 
-        const token = c.req.param()['token'];
-        const newPassword = validation.data.password
+        const {token} = c.req.param()
+        const {newPassword}= validation.data
 
         if (!await this.authService.updateUserPassword(token, newPassword)) return c.json(this.respond(
             null, false, "Tidak bisa memperbarui kata sandi, Token tidak valid."

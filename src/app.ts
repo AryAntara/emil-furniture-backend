@@ -4,17 +4,49 @@ import { serveStatic } from 'hono/bun'
 
 export const app = new Hono();
 
+const auth = new Hono();
+const user = new Hono();
+
 // Middleware 
 app.use('/static/*', serveStatic({ root: './' }))
-app.use('/auth/logout', async (c, next) => await authMiddleware.accessTokenValidation(c, next));
-app.use('/auth/renew', async (c, next) => await authMiddleware.refreshTokenValidation(c, next));
+
+auth.use('/logout', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+auth.use('/logout', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+auth.use('/renew', async (c, next) => await authMiddleware.validateRefreshToken(c, next));
+
+user.use('/list', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/list', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+
+user.use('/promote', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/promote', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+
+user.use('/demote', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/demote', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
 
 // auth routing
-app.post('/auth/register', async (c) => await authController.register(c));
-app.post('/auth/login', async (c) => await authController.login(c));
-app.get('/auth/verify/:token', async (c) => await authController.verify(c));
-app.get('/auth/logout', async (c) => await authController.logout(c));
-app.get('/auth/renew', async (c) => await authController.renew(c));
-app.post('/auth/forgot-password', async(c) => await authController.sendforgotPasswordEmail(c))
-app.get('/auth/reset-password/:token', async(c) => await authController.showResetPasswordPage(c))
-app.post('/auth/reset-password/:token', async(c) => await authController.resetPassword(c))
+auth.post('/register', async (c) => await authController.register(c));
+auth.post('/login', async (c) => await authController.login(c));
+auth.get('/verify/:token', async (c) => await authController.verify(c));
+auth.get('/logout', async (c) => await authController.logout(c));
+auth.get('/renew', async (c) => await authController.renew(c));
+auth.post('/forgot-password', async (c) => await authController.sendforgotPasswordEmail(c));
+auth.get('/reset-password/:token', async (c) => await authController.showResetPasswordPage(c));
+auth.post('/reset-password/:token', async (c) => await authController.resetPassword(c));
+
+// user routing
+user.get('/list', async (c) => await userController.list(c));
+user.post('/promote', async(c) => await userController.promote(c));
+user.post('/demote', async(c) => await userController.demote(c));
+
+// product routing
+
+// cart routing
+
+// transaction routing
+
+// address routing
+ 
+// stock routing
+
+app.route('/auth', auth)
+app.route('/user', user)

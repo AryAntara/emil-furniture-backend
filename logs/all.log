@@ -24194,3 +24194,2251 @@
   label: 'product',
   timestamp: '2024-05-11T13:59:56.150Z'
 }
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:07:30.115Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:09:59.820Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:12:39.802Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:13:54.499Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:14:04.212Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:14:05.975Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:15:13.973Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T02:15:20.172Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:15:54.738Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:36:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T02:15:57.615Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:16:04.186Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:16:04.220Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:16:04.225Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:16:04.440Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:16:34.888Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:17:49.753Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:18:10.514Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:18:12.694Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:21:35.076Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:21:36.788Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:21:52.813Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:21:57.229Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:22:05.337Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:22:06.136Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:22:13.964Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:23:40.321Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:24:12.004Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:24:33.481Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:25:10.135Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:26:23.052Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:27:00.359Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:27:52.100Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:27:56.683Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:28:13.136Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:28:34.935Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:28:47.187Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:28:57.531Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:30:58.859Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:31:03.782Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:31:30.625Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:31:49.378Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:01.631Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:22.324Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:26.779Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:45.649Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:45.649Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:45.650Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:32:45.878Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:33:28.235Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:35:20.617Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:35:23.796Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:35:43.227Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:36:15.035Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:36:16.422Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:36:26.943Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:36:48.542Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:37:02.579Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:37:43.819Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:38:25.691Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:38:54.353Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:38:55.112Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:39:43.107Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:39:44.475Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:39:45.155Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:40:12.642Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:41:00.871Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:42:34.104Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:42:44.287Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:43:39.750Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:43:43.238Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:46:25.569Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:48:05.002Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:48:33.146Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:48:38.289Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:16.569Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:18.205Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:25.751Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:32.990Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:36.172Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:53.033Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:49:55.175Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:50:15.994Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:50:42.739Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:50:43.540Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:50:53.003Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:51:07.964Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:51:09.423Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:51:18.526Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:51:23.732Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:52:02.291Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:52:24.632Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:52:44.591Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:53:05.542Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:53:12.827Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:53:13.915Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:53:15.111Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:53:15.964Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.077Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.078Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.080Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.685Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.077Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.078Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:36.080Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:57:50.892Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:37:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T02:58:13.382Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:58:57.523Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:59:37.672Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T02:59:38.440Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T02:59:46.962Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:25.735Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:30.869Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:32.821Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:36.671Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:37.527Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:38.360Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:00:44.203Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Invalid Compact JWS\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:16:4)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:21:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:01:42.276Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:03:43.461Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:03:49.803Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:27.947Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:40.631Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:50.308Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:50.310Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:50.311Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:04:50.553Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:05:10.467Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:05:44.109Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:05:58.120Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:05:59.214Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:06:55.746Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:08.420Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:12.990Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:38.006Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:38.007Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:38.012Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:38.251Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:07:57.103Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:08:04.613Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:08:19.293Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:08:20.103Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:09:04.137Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:09:55.165Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:10:30.795Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:05.256Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:08.086Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:22.339Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:34.077Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:54.118Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:11:58.341Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:12:08.159Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:12:24.468Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:13:18.691Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:14:13.182Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:14:17.807Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:14:22.267Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:14:33.111Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:15:34.418Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:15:44.058Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:15:54.938Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:15:59.739Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:16:24.753Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:16:26.016Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Undeclared variable: NaN
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_SP_UNDECLARED_VAR',
+    errno: 1327,
+    sqlState: '42000',
+    sqlMessage: 'Undeclared variable: NaN',
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT NaN, NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:16:42.727Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:17:32.475Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:17:34.369Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-10, 10' at line 1
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-10, 10' at line 1",
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT -10, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-10, 10' at line 1
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-10, 10' at line 1",
+    sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT -10, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `id`, `email`, `fullname`, `password`, `roleUser`, `verifiedAt`, `createdAt`, `updatedAt`, `deletedAt` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT -10, 10;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:17:37.512Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:18:06.349Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:18:33.092Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'phone_number' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'phone_number' in 'field list'",
+    sql: 'SELECT `fullname`, `email`, `phone_number` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'phone_number' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'phone_number' in 'field list'",
+    sql: 'SELECT `fullname`, `email`, `phone_number` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `fullname`, `email`, `phone_number` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:18:36.856Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:18:59.093Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'phoneNumber' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'phoneNumber' in 'field list'",
+    sql: 'SELECT `fullname`, `email`, `phoneNumber` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'phoneNumber' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'phoneNumber' in 'field list'",
+    sql: 'SELECT `fullname`, `email`, `phoneNumber` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `fullname`, `email`, `phoneNumber` FROM `users` AS `user` ORDER BY `user`.`id` ASC LIMIT 0, 10;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:19:02.205Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:20:02.603Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:20:07.917Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:24:45.638Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:25:07.382Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:27:38.791Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:27:38.792Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:27:38.793Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:27:38.982Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:27:57.185Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:29:54.646Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:30:16.505Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:33:36.223Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:34:04.793Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:34:13.458Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:34:21.856Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:00.437Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:00.849Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:36.232Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:39.641Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:50.252Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:35:51.436Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'user.p' in 'order clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'user.p' in 'order clause'",
+    sql: 'SELECT `fullname`, `email`, `phoneNumber`, `roleUser`, `verifiedAt` FROM `users` AS `user` ORDER BY `user`.`p` DESC LIMIT 10, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'user.p' in 'order clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'user.p' in 'order clause'",
+    sql: 'SELECT `fullname`, `email`, `phoneNumber`, `roleUser`, `verifiedAt` FROM `users` AS `user` ORDER BY `user`.`p` DESC LIMIT 10, 10;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `fullname`, `email`, `phoneNumber`, `roleUser`, `verifiedAt` FROM `users` AS `user` ORDER BY `user`.`p` DESC LIMIT 10, 10;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:36:36.501Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:36:57.544Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:37:53.408Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:37:55.700Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:39:22.710Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:40:32.517Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:40:36.718Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:41:11.104Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:41:33.091Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:42:02.304Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:42:05.263Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:42:34.815Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:43:53.200Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:44:03.594Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:44:10.011Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:44:27.514Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:44:29.076Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:45:46.557Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:48:18.627Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:50:31.778Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:51:07.802Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:51:15.017Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:51:18.694Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:51:19.922Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:52:43.663Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:52:51.442Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:53:24.022Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:53:43.423Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:53:47.358Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:53:51.138Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:54:04.877Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:54:42.608Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:54:51.629Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:56:16.090Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:57:44.750Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:57:47.115Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:58:35.872Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:58:36.754Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:59:43.087Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:59:49.382Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T03:59:49.382Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'NaN' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'NaN' in 'where clause'",
+    sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'NaN' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'NaN' in 'where clause'",
+    sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T03:59:59.518Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:16.832Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:18.353Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:20.672Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:27.144Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:28.551Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:39.918Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:45.950Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:49.663Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'NaN' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'NaN' in 'where clause'",
+    sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'NaN' in 'where clause'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:729:16)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:45:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'NaN' in 'where clause'",
+    sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT count(*) AS `count` FROM `users` AS `user` WHERE `user`.`id` = NaN;',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:49.685Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:00:49.663Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:01:44.954Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:03:02.556Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:04:01.588Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:04:19.501Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:04:20.557Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:11:05.505Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:11:24.348Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:12:09.792Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:12:10.778Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:12:22.820Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:12:53.777Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:12:58.163Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:13:13.175Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:13:32.409Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:13:42.551Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:13:55.601Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:13:57.557Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:19.452Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:24.476Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:34.033Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:34.725Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:37.171Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:52.610Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:52.610Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'User dengan id tersebut tidak dapat ditemukan.:userId',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:14:52.610Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:16:55.415Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-12T04:17:12.419Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:05:29.796Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:05:51.653Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:06:06.948Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:06:44.535Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:06:59.547Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:07:12.965Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-13T12:13:21.859Z'
+}

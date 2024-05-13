@@ -3,9 +3,26 @@ import { UserRepository } from "./UserRepository";
 import { UserServiceInterface } from "./interfaces/UserServicesInterface";
 import moment = require("moment");
 import { logger } from "../../log";
+import { Order } from "sequelize";
 
 export class UserService implements UserServiceInterface {
     constructor(private userRepository: UserRepository) { }
+
+
+    // find user with pagging
+    async findWithPage(page: number, limit: number, orderColumn = "id", orderType = "asc") {
+        const offset = (page - 1) * limit,
+            order = [[orderColumn, orderType]] as Order,
+            userEntries = await this.userRepository.findWithOffsetAndLimit(offset, limit, order, [
+                'id', 'fullname', 'email', 'phoneNumber', 'roleUser', 'verifiedAt'
+            ]),
+            userCount = await this.userRepository.countAll();
+
+        return {
+            userEntries,
+            userCount
+        }
+    }
 
     // insert new user to database
     async insert(data: any) {
@@ -27,6 +44,11 @@ export class UserService implements UserServiceInterface {
             logger.error(e);
             return null;
         }
+    }
+
+    // search user by id
+    async searchById(userId: number): Promise<boolean> {
+        return await this.userRepository.isExistsById(userId);
     }
 
     // search by email
@@ -82,6 +104,21 @@ export class UserService implements UserServiceInterface {
             logger.error(e);
             return false;
         }
+    }
+
+    // Promote the user into an admin
+    async promoteToAdmin(userId: number): Promise<boolean> {
+        return await this.userRepository.update({
+            id: userId
+        }, { roleUser: "admin" });
+    }
+
+
+    // Demote the user into an admin
+    async demoteToNormalUser(userId: number): Promise<boolean> {
+        return await this.userRepository.update({
+            id: userId
+        }, { roleUser: "normal" });
     }
 
 }
