@@ -57,13 +57,13 @@ export class AuthService implements AuthServiceInterface {
     }
 
     // generate auth token
-    async generateAuthToken(userId: number): Promise<string> {
-        return JWT.generate({ userId }, '2h');
+    async generateAuthToken(userId: number, roleUser: string, email: string ): Promise<string> {
+        return JWT.generate({ userId, isAdmin: roleUser === 'admin', email}, '2h');
     };
 
     // generate auth token
-    async generateRefreshToken(userId: number): Promise<string> {
-        return JWT.generate({ userId }, '1d');
+    async generateRefreshToken(userId: number, roleUser: string, email: string ): Promise<string> {
+        return JWT.generate({ userId, roleUser, email }, '1d');
     };
 
     // generate reset password token 
@@ -82,7 +82,7 @@ export class AuthService implements AuthServiceInterface {
 
     // update user password
     async updateUserPassword(token: string, newPassword: string): Promise<boolean> {
-        const {email} = await JWT.verify(token);
+        const { email } = await JWT.verify(token);
         return await this.userService.updatePasswordByEmail(email as string, newPassword);
     }
 }

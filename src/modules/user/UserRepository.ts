@@ -2,11 +2,35 @@ import moment = require("moment");
 import { logger } from "../../log";
 import { User } from "../../models/User";
 import { UserRepositoryInterface } from "./interfaces/UserRepositoryInterface";
-import { WhereOptions } from "sequelize";
+import { Order, WhereOptions } from "sequelize";
 
 export class UserRepository implements UserRepositoryInterface {
     constructor(private user: User) { }
-   
+
+    async countAll() {
+        try {
+            return await User.count();
+        } catch (e) {
+            logger.error(e)
+            return 0
+        }
+    }
+    // find user by given where clause
+    async findWithOffsetAndLimit(offset: number, limit: number, order: Order, selectAttributes?: Array<string>) {
+
+        try {
+            return await User.findAll({
+                limit,
+                offset,
+                attributes: selectAttributes,
+                order
+            })
+        } catch (e) {
+            logger.error(e)
+            return []
+        }
+    }
+
     async getAll(): Promise<User[]> {
         try {
             return await User.findAll()
@@ -78,6 +102,12 @@ export class UserRepository implements UserRepositoryInterface {
     async isExistsByEmail(email: string): Promise<boolean> {
         return await this.isExists({ email });
     }
+
+    // search one by id
+    async isExistsById(id: number): Promise<boolean> {
+        return await this.isExists({ id });
+    }
+
 
     // get one by email 
     async findOneByEmail(email: string, selectAttributes?: Array<string>): Promise<User | null> {
