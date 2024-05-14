@@ -121,4 +121,18 @@ export class UserService implements UserServiceInterface {
         }, { roleUser: "normal" });
     }
 
+    // Delete user by id
+    async deleteById(userId: number): Promise<boolean> {
+        return await this.userRepository.deleteOneById(userId)
+    }
+
+    // Get an user by their id 
+    async getUserById(userId: number, selectAttributes?: Array<string>): Promise<User | null> {
+        return await this.userRepository.findOneById(userId, selectAttributes)
+    }
+
+    // update user data base on userId
+    async updateUserById(userId: number, data: any): Promise<boolean> {
+        return await this.userRepository.update({ id: userId }, data);
+    }
 }

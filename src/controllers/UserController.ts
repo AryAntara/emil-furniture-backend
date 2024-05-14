@@ -2,6 +2,10 @@ import { Context } from "hono";
 import { UserService } from "../modules/user/UserServices";
 import { BaseController } from "./BaseController";
 import { promoteSchemaValidator } from "../modules/user/schemas/PromoteSchema";
+import { deleteSchemaValidator } from "../modules/user/schemas/DeleteSchema";
+import { updateSchemaValidator } from "../modules/user/schemas/UpdateSchema";
+import { password } from "bun";
+import { logger } from "../log";
 
 
 export class UserController extends BaseController {
@@ -69,13 +73,112 @@ export class UserController extends BaseController {
         if (!await this.userService.demoteToNormalUser(parseInt(userId))) return c.json(this.respond(
             null, false, "Gagal merubah role dari admin menjadi pengguna."), 500);
 
-        return c.json(this.respond(null, true, "Berhasil merubah role admin menjadi admin"))
+        return c.json(this.respond(null, true, "Berhasil merubah role admin menjadi pengguna."))
 
     }
 
     // Delete an user (Admin access)
-    async delete(c: Context) { } // Admin access
+    async delete(c: Context) {
+        const content = c.req.param();
+        const validation = await deleteSchemaValidator.with(content).run();
 
-    async update(c: Context) { }
-    async getDetailProfile(c: Context) { }
+        if (!validation.success) return c.json(this.respond(
+            validation.errors, false, 'Validasi error.'
+        ), 400)
+
+        const { userId } = validation.data
+        if (!await this.userService.deleteById(userId as number)) return c.json(this.respond(
+            null, false, "Gagal menghapus data pengguna."
+        ), 500)
+
+        return c.json(this.respond(null, true, "Berhasil menghapus data pengguna."));
+    }
+
+    // update data user (Admin Access)
+    async updateByAdmin(c: Context) {
+        const { userId } = c.req.param();
+        const content = await c.req.parseBody()
+        content.userId = userId
+
+        const validation = await updateSchemaValidator.with(content).run();
+        if (!validation.success) return c.json(this.respond(
+            validation.errors, false, 'Validasi error.'
+        ), 400)
+
+        // hash password
+        const password = validation.data.password
+        if (password) {
+            try {
+                validation.data.password = await Bun.password.hash(password);
+            } catch (e) {
+                logger.error(e);
+                return c.json(this.respond(
+                    null, false, 'Error melakukan enkripsi password.'
+                ), 500)
+            }
+        } else {
+            delete validation.data.password;
+        }
+
+        if (!await this.userService.updateUserById(parseInt(userId), validation.data)) return c.json(this.respond(
+            null, false, "Gagal memperbarui data pengguna."
+        ), 500)
+
+        return c.json(this.respond(
+            null, false, "Berhasil memperbarui data pengguna."
+        ))
+
+    }
+    async updateByUser(c: Context) {
+        const userId = c.get('userId') as number
+        const content = await c.req.parseBody()
+        content.userId = userId.toString()
+
+        const validation = await updateSchemaValidator.with(content).run();
+        if (!validation.success) return c.json(this.respond(
+            validation.errors, false, 'Validasi error.'
+        ), 400)
+
+        // hash password
+        const password = validation.data.password
+        if (password) {
+            try {
+                validation.data.password = await Bun.password.hash(password);
+            } catch (e) {
+                logger.error(e);
+                return c.json(this.respond(
+                    null, false, 'Error melakukan enkripsi password.'
+                ), 500)
+            }
+        } else {
+            delete validation.data.password;
+        }
+
+        if (!await this.userService.updateUserById(userId, validation.data)) return c.json(this.respond(
+            null, false, "Gagal memperbarui data pengguna."
+        ), 500)
+
+        return c.json(this.respond(
+            null, false, "Berhasil memperbarui data pengguna."
+        ))
+    }
+
+    async getDetailProfileUserByUser(c: Context) {
+        const userId = c.get('userId');
+        const userEntry = await this.userService.getUserById(userId,
+            [
+                'fullname',
+                'email',
+                'phoneNumber',
+                'verifiedAt',
+                'roleUser'
+            ]
+        );
+
+        if (!userEntry) return c.json(this.respond(
+            false, false, 'Tidak dapat menemukan pengguna.'
+        ))
+
+        return c.json(this.respond(userEntry, true, 'Berhasil menemukan data pengguna.'))
+    }
 }

@@ -26446,11 +26446,9 @@
   message: 'Success connect into database',
   level: 'info',
   label: 'product',
-  timestamp: '2024-05-13T13:03:50.038Z'
 }
 {
   message: 'Success connect into database',
   level: 'info',
   label: 'product',
-  timestamp: '2024-05-13T13:05:32.903Z'
 }
