@@ -16,12 +16,16 @@ auth.use('/renew', async (c, next) => await authMiddleware.validateRefreshToken(
 
 user.use('/list', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 user.use('/list', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
-
 user.use('/promote', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 user.use('/promote', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
-
 user.use('/demote', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 user.use('/demote', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+user.use('/delete/:userId', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/delete/:userId', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+user.use('/profile', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/update', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/update/:userId', async (c, next) => await authMiddleware.validateAccessToken(c, next));
+user.use('/update/:userId', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
 
 // auth routing
 auth.post('/register', async (c) => await authController.register(c));
@@ -37,7 +41,10 @@ auth.post('/reset-password/:token', async (c) => await authController.resetPassw
 user.get('/list', async (c) => await userController.list(c));
 user.post('/promote', async(c) => await userController.promote(c));
 user.post('/demote', async(c) => await userController.demote(c));
-
+user.delete('/delete/:userId', async(c) => await userController.delete(c));
+user.get('/profile', async(c) => await userController.getDetailProfileUserByUser(c));
+user.post('/update', async(c) => await userController.updateByUser(c));
+user.post('/update/:userId', async(c) => await userController.updateByAdmin(c));
 // product routing
 
 // cart routing

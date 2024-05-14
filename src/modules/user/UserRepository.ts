@@ -98,6 +98,24 @@ export class UserRepository implements UserRepositoryInterface {
         }
     }
 
+    // delete one 
+    async deleteOne(whereOptions: WhereOptions): Promise<boolean> {
+        try {
+            await User.destroy({
+                where: whereOptions
+            })
+            return true;
+        } catch (e) {
+            logger.error(e)
+            return false;
+        }
+    }
+
+    // delete by Id 
+    async deleteOneById(userId: number): Promise<boolean> {
+        return await this.deleteOne({id: userId})
+    }
+
     // search one by email
     async isExistsByEmail(email: string): Promise<boolean> {
         return await this.isExists({ email });
