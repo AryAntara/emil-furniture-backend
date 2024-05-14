@@ -30,7 +30,7 @@ COPY --from=prerelease /usr/src/app/package.json .
 COPY --from=prerelease /usr/src/app/logs ./logs 
 COPY --from=prerelease /usr/src/app/config ./config 
 COPY --from=prerelease /usr/src/app/migrations ./migrations
-COPY --from=prerelease /usr/src/app/.env-prod .env
+
 
 USER root
 RUN chmod 777 -R ./logs
