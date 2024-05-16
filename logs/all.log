@@ -26451,4 +26451,132 @@
   message: 'Success connect into database',
   level: 'info',
   label: 'product',
+}{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:16.223Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.558Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.772Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.772Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.558Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:40.120Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:40.122Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.558Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:38.559Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:47.167Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:19:47.168Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:20:54.890Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:20:55.979Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:20:57.108Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-16T12:21:23.235Z'
 }

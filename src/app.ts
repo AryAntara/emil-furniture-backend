@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { userController, authController, authMiddleware } from "./providers";
 import { serveStatic } from 'hono/bun'
+import { cors } from "hono/cors";
 
 export const app = new Hono();
 
@@ -9,6 +10,7 @@ const user = new Hono();
 
 // Middleware 
 app.use('/static/*', serveStatic({ root: './' }))
+app.use(cors())
 
 auth.use('/logout', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 auth.use('/logout', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
@@ -26,6 +28,8 @@ user.use('/profile', async (c, next) => await authMiddleware.validateAccessToken
 user.use('/update', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 user.use('/update/:userId', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 user.use('/update/:userId', async (c, next) => await authMiddleware.validateAdminAccess(c, next));
+
+app.get('/',async(c) => c.text('APi is live in ' + new Date()));
 
 // auth routing
 auth.post('/register', async (c) => await authController.register(c));
