@@ -28629,3 +28629,2608 @@
   label: 'product',
   timestamp: '2024-05-17T16:03:18.387Z'
 }
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:29:19.647Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:29:48.813Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:30:24.451Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:30:35.586Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:30:40.798Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:32:20.383Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:32:50.107Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:08.108Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:09.462Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:10.291Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:17.441Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:22.744Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:25.961Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:26.824Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:38.360Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:33:39.168Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:36:07.009Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:36:09.918Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:36:35.954Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:37:13.247Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:37:14.344Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:40:18.251Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:40:23.545Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:40:59.535Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:41:02.045Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:41:03.134Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:41:23.971Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:41:42.969Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:42:31.900Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:42:41.658Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:43:07.899Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:43:11.058Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:43:12.821Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:43:20.421Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:43:23.251Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:46:39.332Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:46:54.133Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:46:58.083Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:46:58.906Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:48:24.452Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:48:25.160Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:48:43.443Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:48:44.997Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T03:48:48.107Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:00:37.183Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:00:58.902Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:01:08.141Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:01:11.755Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:01:24.162Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:01:46.893Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:02:24.576Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:02:28.197Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:03:04.268Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:03:04.269Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:03:04.270Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:03:05.317Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:04:07.914Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:04:25.323Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:04:32.393Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:04:51.203Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:05:06.259Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:05:14.814Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:05:35.949Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:06:00.159Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:06:16.577Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:06:24.167Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:06:25.803Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:06:32.076Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:10:09.242Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:10:09.872Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:10:35.016Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:10:42.763Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:10:43.871Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:11:01.239Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:11:39.040Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:11:42.678Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:11:54.906Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:12:35.412Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:12:54.579Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:12:55.269Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:06.202Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:08.139Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:09.251Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:10.142Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:26.072Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:26.074Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:26.076Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:27.059Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:39:48.177Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:41:19.040Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:29.611Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:30.564Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:33.290Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:38.271Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:49.219Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:51.386Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:52.937Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:54.032Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:54.855Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:55.632Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:56.288Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:03.234Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:05.269Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:06.339Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:42.295Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:42.963Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:45.186Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:45.764Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:46:21.351Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:46:29.101Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:46:41.626Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:46:49.842Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:46:53.089Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:47:25.785Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:48:23.742Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:48:48.674Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:48:51.637Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:48:52.876Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:49:05.284Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:49:05.793Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:51:09.858Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:51:10.864Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:06.870Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:25.861Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:38.864Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:40.764Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:44.207Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:52:58.746Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:03.156Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:15.051Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:15.826Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:16.788Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:20.724Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:29.361Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:44.243Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:53:46.301Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:04.147Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:08.062Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:28.111Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:29.328Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:33.354Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:36.000Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:50.545Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:55:52.259Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:56:04.146Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:56:09.499Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:57:32.288Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T04:57:43.452Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:01:18.179Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:01:21.290Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:01:55.943Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:02:08.526Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:02:45.368Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:02:53.484Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:03:07.413Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:03:08.032Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:03:11.219Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:03:12.188Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:04:29.619Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:04:30.970Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:04:38.250Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:04:39.280Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:05:11.724Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:05:15.857Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:05:17.574Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:05:58.500Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:07.576Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:21.967Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:27.679Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:39.789Z'
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'isactivated' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:200:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'isactivated' in 'field list'",
+    sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'isactivated' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:200:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'isactivated' in 'field list'",
+    sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:41.804Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:07:05.887Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T05:07:37.308Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:04:59.164Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:05:28.431Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:06:25.919Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:06:29.788Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:09:23.263Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:09:53.601Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:09:59.001Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:17:06.897Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:17:09.028Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:17:39.755Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:17:50.842Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:18:36.434Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:19:05.802Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:19:44.502Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:19:47.183Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:19:58.607Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:10.746Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:11.446Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:12.411Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:22.542Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:26.353Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:40.877Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:20:55.734Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:21:23.370Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:24:14.364Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:24:22.861Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:24:28.023Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:24:49.316Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:27:10.668Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:27:45.792Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:27:51.429Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:27:56.504Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:28:11.722Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:28:20.716Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:29:50.803Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:29:57.432Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:29:58.419Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:30:11.920Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:30:59.484Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:11.901Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:12.490Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:12.817Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:43.232Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:50.809Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:31:56.110Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:32:02.177Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:32:08.779Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:32:31.657Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:32:39.874Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:33:22.678Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:14.491Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:16.075Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:18.320Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:45.580Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:46.883Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:47.756Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:51.046Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:34:52.582Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:35:09.952Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:35:22.041Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:35:26.267Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:35:34.031Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:37:44.836Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:37:54.332Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:37:55.421Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:37:56.130Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:38:27.202Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:38:42.158Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:38:53.543Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:38:54.647Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:39:02.964Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:39:25.370Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:39:38.014Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:39:53.315Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:39:55.000Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:01.585Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:02.522Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:05.706Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:09.280Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:10.912Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:15.402Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:47.779Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:41:00.321Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:41:32.466Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:24.238Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:25.684Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:38.240Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:39.985Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:44.524Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:43:35.364Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:43:35.364Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:43:35.364Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:44:19.100Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:44:20.969Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:44:20.969Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:44:57.582Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:45:32.841Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:46:11.807Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:46:18.694Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:46:18.694Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:48:14.835Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:48:24.453Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:48:32.948Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:48:40.456Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:48:49.855Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:49:31.034Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:50:38.335Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:51:00.436Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:51:32.879Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:52:12.619Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:52:23.067Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:52:50.921Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:52:57.115Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:53:04.734Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:53:09.580Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:53:09.580Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:53:33.802Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:55:40.024Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:55:46.743Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:56:12.042Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:56:15.720Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:57:34.287Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:57:45.846Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:57:49.751Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T07:57:59.004Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:08:37.698Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:08:39.897Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:09:09.462Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:09:10.214Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:10:47.124Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:10:59.635Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:11:00.202Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:11:03.825Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:11:03.825Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:11:03.825Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:08.200Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:08.934Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:09.908Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:16.145Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:17.436Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:12:20.899Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:19:26.896Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:19:39.257Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:19:50.337Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:23:33.922Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:24:12.047Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:31:39.193Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:31:53.176Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:32:04.336Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:32:05.615Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:32:20.488Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:32:38.022Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:32:39.840Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:09.546Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:10.564Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:14.693Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:51.285Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:51.954Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:33:53.072Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:35:05.375Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:35:11.573Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:35:24.985Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:37:29.880Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:37:46.727Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:38:03.417Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:38:08.107Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:38:22.551Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:38:23.706Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:38:41.695Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:39:01.381Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:39:28.922Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:39:49.980Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:39:51.008Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:40:19.220Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:40:30.380Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:40:36.373Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:40:38.963Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:00.571Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:02.949Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:02.949Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:02.949Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:38.805Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:40.567Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:41:46.283Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:15.142Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:17.264Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:25.213Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:27.056Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:45.487Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:47.144Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:57.257Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:58.707Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:58.707Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:42:58.707Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:43:43.373Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:43:49.700Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:44:23.456Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:44:35.193Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:44:56.214Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:44:57.424Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:16.102Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:24.037Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:31.098Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:45.756Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:48.457Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:45:58.392Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:46:04.447Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:46:05.150Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:46:16.480Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:46:53.457Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:09.388Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:11.206Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:11.206Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:11.206Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:38.028Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:38.028Z'
+}
+{
+  handle: [AsyncFunction: validateAddressWasInDB],
+  message: 'Alamat tidak ditemukan.:param_address_id',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:47:54.349Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:48:11.516Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T08:48:19.334Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:50:15.089Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:52:17.170Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:52:29.187Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:13.602Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:26.423Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:30.796Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:36.883Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:46.660Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:48.450Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:53:55.173Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:54:41.263Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:54:57.181Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-18T10:56:33.861Z'
+}

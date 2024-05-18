@@ -2101,3 +2101,259 @@
   label: 'product',
   timestamp: '2024-05-17T16:01:50.827Z'
 }
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:06.202Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:08.139Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:09.251Z'
+}
+{
+  code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  name: 'JWSSignatureVerificationFailed',
+  stack: 'Error: \n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/flattened/verify.js:88:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  message: 'signature verification failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:13:10.142Z'
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:33.290Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:38.271Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:51.386Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:52.937Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:54.032Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:54.855Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:55.632Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:44:56.288Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:05.269Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T04:45:06.339Z',
+  originalLine: 70,
+  originalColumn: 16
+}
+{
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'isactivated' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:200:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'isactivated' in 'field list'",
+    sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  original: Error: Unknown column 'isactivated' in 'field list'
+      at asError (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packets/packet.js:385:73)
+      at execute (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/commands/command.js:21:35)
+      at handlePacket (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:243:34)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:41:26)
+      at executeStart (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/packet_parser.js:36:26)
+      at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/mysql2/lib/connection.js:200:34)
+      at emit (native)
+      at addChunk (node:stream:1940:22)
+      at readableAddChunk (node:stream:1894:30)
+      at data (node:net:52:9) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'isactivated' in 'field list'",
+    sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+    parameters: undefined,
+    originalLine: 385,
+    originalColumn: 73
+  },
+  sql: 'SELECT `title`, `description`, `isActivated` FROM `addresses` AS `address` WHERE (`address`.`deletedAt` IS NULL AND `address`.`userId` = 1);',
+  parameters: {},
+  originalLine: 15,
+  originalColumn: 12,
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T05:06:41.804Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:40:15.402Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:24.238Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:25.684Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:39.985Z'
+}
+{
+  code: 'ERR_JWT_EXPIRED',
+  name: 'JWTExpired',
+  stack: 'Error: "exp" claim timestamp check failed\n' +
+    '    at starDefault (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/lib/jwt_claims_set.js:91:8)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:11:33)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at promiseReactionJobWithoutPromiseUnwrapAsyncContext (native)\n' +
+    '    at promiseReactionJob (native)\n' +
+    '    at processTicksAndRejections (native)',
+  claim: 'exp',
+  reason: 'check_failed',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-18T07:42:44.524Z'
+}

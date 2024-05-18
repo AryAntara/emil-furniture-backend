@@ -2,7 +2,7 @@ import { config } from 'dotenv'
 import { sequelize } from './database';
 import { logger } from './log';
 import { app } from './app';
-
+import "./models/relations";
 config();
 
 // Connect to database

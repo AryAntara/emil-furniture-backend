@@ -51,7 +51,7 @@ export class AuthMiddleware {
 
     // validate that token have access to admin 
     async validateAdminAccess(c: Context, next: Next) {
-        const isSuperUser = process.env.SUPER_USER == c.get('email');
+        const isSuperUser = process.env.SUPER_USER == c.get('email');        
         const isAdmin = c.get('isAdmin') as boolean;
         
         if (!isAdmin && !isSuperUser) {

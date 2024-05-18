@@ -129,6 +129,8 @@ export class UserController extends BaseController {
         ))
 
     }
+
+    // update user data
     async updateByUser(c: Context) {
         const userId = c.get('userId') as number
         const content = await c.req.parseBody()
@@ -163,6 +165,7 @@ export class UserController extends BaseController {
         ))
     }
 
+    // get detail of user
     async getDetailProfileUserByUser(c: Context) {
         const userId = c.get('userId');
         const userEntry = await this.userService.getUserById(userId,
