@@ -81,7 +81,6 @@ export class CategoryController extends BaseController {
         const validaton = await deleteSchemaValidator.with({category_id: categoryId}).run(); 
 
         if(!validaton.success && validaton.sendError) return validaton.sendError(c);
-
         if(!await this.categoryService.deleteById(categoryId)) return c.json(this.respond(
             null, false, "Gagal menghapus data."
         ), 400)
