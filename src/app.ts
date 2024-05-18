@@ -1,5 +1,5 @@
 import { Context, Hono, MiddlewareHandler, Next } from "hono";
-import { userController, authController, authMiddleware, addressController } from "./providers";
+import { userController, authController, authMiddleware, addressController, categoryController } from "./providers";
 import { serveStatic } from 'hono/bun'
 import { cors } from "hono/cors";
 import { mapMiddleware } from "./utils/middlewareMapper";
@@ -10,6 +10,7 @@ export const app = new Hono();
 const auth = new Hono();
 const user = new Hono();
 const address = new Hono();
+const category = new Hono();
 
 // Middleware 
 app.use('/static/*', serveStatic({ root: './' }))
@@ -48,8 +49,30 @@ mapMiddleware(
         '/set-active/:addressId'
     ]
 )
+mapMiddleware( 
+    category, 
+    [
+        authMiddleware.validateAccessToken,
+    ],
+    [
+      '/list',
+    ]
+);
 
 // Login token and admin access
+mapMiddleware( 
+    category, 
+    [
+        authMiddleware.validateAccessToken,
+        authMiddleware.validateAdminAccess
+    ],
+    [
+      '/insert',
+      '/delete/:categoryId',
+      '/update/:categoryId'      
+    ]
+)
+
 mapMiddleware(
     user,
     [
@@ -87,6 +110,11 @@ user.get('/profile', async (c) => await userController.getDetailProfileUserByUse
 user.post('/update', async (c) => await userController.updateByUser(c));
 user.post('/update/:userId', async (c) => await userController.updateByAdmin(c));
 
+//category routing 
+category.post('/insert', async (c) => await categoryController.insert(c));
+category.get('/list', async (c) => await categoryController.list(c));
+category.post('/update/:categoryId', async (c) => await categoryController.update(c));
+category.delete('/delete/:categoryId',  async (c) => await categoryController.delete(c))
 // product routing
 
 // cart routing
@@ -99,8 +127,10 @@ address.get('/list', async (c) => await addressController.list(c))
 address.post('/update/:addressId', async (c) => await addressController.update(c))
 address.delete('/delete/:addressId', async (c) => await addressController.delete(c))
 address.post('/set-active/:addressId', async (c) => await addressController.setActive(c))
+
 // stock routing
 
 app.route('/auth', auth)
 app.route('/user', user)
 app.route('/address', address)
+app.route('/category', category)
