@@ -23,4 +23,3 @@ User.init(
     },
     { sequelize, modelName: 'user', paranoid: true },
 );
-User.hasMany(Address);

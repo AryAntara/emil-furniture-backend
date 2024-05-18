@@ -32,8 +32,8 @@ export class Validator {
                     schema = schema.refine(refineHandler.handle, refineHandler.message);
                 }
 
-            await schema.parseAsync(data)
-            return { success: true, data };
+            const safeData = await schema.parseAsync(data)
+            return { success: true, data: safeData };
 
         } catch (e) {
             const zodErrors = (e as ZodError).errors;
@@ -41,8 +41,8 @@ export class Validator {
             
             for (const zodError of zodErrors) {
                 
-                let path = zodError.path[0];
-                if (path)
+                let path = zodError.path[0] as string;
+                if (path && path[0] !== "_")
                     validationError[path] = zodError.message
                 else {
                     let messages = zodError.message.split(':');

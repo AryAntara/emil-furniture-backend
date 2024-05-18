@@ -20,7 +20,7 @@ export const deleteSchemaValidator = new Validator(deleteSchema);
 /**
  * Is user in db 
  */
-async function validateEmailWasInDB(item: {
+async function validateUserIdWasInDB(item: {
     userId: string
 }): Promise<boolean> {
     const userId = parseInt(item.userId);
@@ -28,7 +28,7 @@ async function validateEmailWasInDB(item: {
 }
 
 deleteSchemaValidator.setARefineHandler({
-    handle: validateEmailWasInDB,
+    handle: validateUserIdWasInDB,
     message: USER_ID_ERROR_NOT_IN_DB+":userId"
 })
 

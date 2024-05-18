@@ -2,7 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import { sequelize } from "../database"
 import { User } from './User';
 
-export class Address extends Model {}
+export class Address extends Model { }
 
 Address.init(
     {
@@ -10,17 +10,16 @@ Address.init(
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
-          },
-          userId: DataTypes.INTEGER,
-          title: DataTypes.STRING,
-          description: DataTypes.STRING,
-          isActivated: DataTypes.ENUM('yes', 'no'),
-          createdAt: DataTypes.DATE,
-          updatedAt: DataTypes.DATE,
-          deletedAt: DataTypes.DATE
+        },
+        userId: DataTypes.INTEGER,
+        title: DataTypes.STRING,
+        description: DataTypes.STRING,
+        isActived: DataTypes.ENUM('yes', 'no'),
+        createdAt: DataTypes.DATE,
+        updatedAt: DataTypes.DATE,
+        deletedAt: DataTypes.DATE
     },
     { sequelize, modelName: 'address', paranoid: true },
 );
 
-Address.hasOne(User)
 
