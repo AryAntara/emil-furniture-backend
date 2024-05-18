@@ -27,11 +27,11 @@ FROM base AS release
 COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /usr/src/app/src/ ./src
 COPY --from=prerelease /usr/src/app/package.json .
-COPY --from=prerelease /usr/src/app/logs ./logs 
 COPY --from=prerelease /usr/src/app/migrations ./migrations
 
 
 USER root
+RUN mkdir ./logs
 RUN chmod 777 -R ./logs
 
 # run the app
