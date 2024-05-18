@@ -20,7 +20,7 @@ const authService = new AuthService(userService),
     authMiddleware = new AuthMiddleware
 
 const address = new Address,
-    addressRepository = new AddressRepository(Address),
+    addressRepository = new AddressRepository(address),
     addressService = new AddressService(addressRepository),
     addressController = new AddressController(addressService)
 
