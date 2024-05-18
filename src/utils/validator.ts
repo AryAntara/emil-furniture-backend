@@ -1,9 +1,12 @@
 import { ZodSchema, RefinementCtx, ZodObject, ZodError } from "zod";
 import { logger } from "../log";
+import { Context } from "hono";
+import { respond } from "./response";
 
 type RefineHandler = { handle: (item?: any) => Promise<boolean>, message?: string };
 export class Validator {
     data: any;
+
     private refineHandlers: Array<RefineHandler> = [];
     constructor(private schema: ZodSchema<any>) { };
 
@@ -36,13 +39,14 @@ export class Validator {
             return { success: true, data: safeData };
 
         } catch (e) {
+            logger.error(e)
             const zodErrors = (e as ZodError).errors;
             const validationError: any = {};
-            
+
             for (const zodError of zodErrors) {
-                
-                let path = zodError.path[0] as string;
-                if (path && path[0] !== "_")
+
+                let path = zodError.path[0];
+                if (path && (path as string)[0] !== "_")
                     validationError[path] = zodError.message
                 else {
                     let messages = zodError.message.split(':');
@@ -52,9 +56,13 @@ export class Validator {
                 }
             }
 
+
             return {
-                success: false, errors: validationError
+                success: false,
+                errors: validationError,
+                sendError: (c: Context) => c.json(respond(validationError, false, "Validasi error."), 400)
             }
+
         }
     }
 
