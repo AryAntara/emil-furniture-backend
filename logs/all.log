@@ -26580,3 +26580,2052 @@
   label: 'product',
   timestamp: '2024-05-16T12:21:23.235Z'
 }
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:21:51.557Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:26:58.894Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:26:58.896Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:26:58.896Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:26:58.899Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:26:58.899Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:12.743Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:55.338Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:55.339Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:55.339Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:55.341Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:27:55.341Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:30.963Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:35.939Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:35.940Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:35.941Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:35.946Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:35.946Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:55.253Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:59.545Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:59.546Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:59.546Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:59.547Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:28:59.548Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:10.390Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.427Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.428Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.429Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.430Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.430Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.427Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.428Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:16.429Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:22.290Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:22.291Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:45.465Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:55.263Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:59.266Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:59.267Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:59.267Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:59.268Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:30:59.269Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:31:24.077Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:32:25.503Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:22.696Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:31.865Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:41.470Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:48.835Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:48.836Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:48.837Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:48.838Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:33:48.839Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:26.899Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:33.988Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:40.179Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:40.180Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:40.181Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:40.399Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:34:40.400Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:06.647Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.827Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.839Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.840Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.827Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:42.279Z'
+}
+{
+  message: Message {
+    attachments: [],
+    header: {
+      'message-id': '<1715956542488.0.58700@Lappy>',
+      date: 'Fri, 17 May 2024 22:35:42 +0800',
+      from: '=?UTF-8?Q?EMIL?= <ikomangaryantara382@gmail.com>',
+      to: 'wahyu@mail.com',
+      subject: '=?UTF-8?Q?Verifikasi_email_oleh_emil_furniture?='
+    },
+    content: 'text/plain; charset=utf-8',
+    alternative: {
+      data: '<!DOCTYPE html>\n' +
+        '<html>\n' +
+        '\n' +
+        '<head>\n' +
+        '\n' +
+        '    <meta charset="utf-8">\n' +
+        '    <meta http-equiv="x-ua-compatible" content="ie=edge">\n' +
+        '    <title>Verifikasi email</title>\n' +
+        '    <meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+        '    <style type="text/css">\n' +
+        '        /**\n' +
+        '   * Google webfonts. Recommended to include the .woff version for cross-client compatibility.\n' +
+        '   */\n' +
+        '        @media screen {\n' +
+        '            @font-face {\n' +
+        "                font-family: 'Source Sans Pro';\n" +
+        '                font-style: normal;\n' +
+        '                font-weight: 400;\n' +
+        "                src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');\n" +
+        '            }\n' +
+        '\n' +
+        '            @font-face {\n' +
+        "                font-family: 'Source Sans Pro';\n" +
+        '                font-style: normal;\n' +
+        '                font-weight: 700;\n' +
+        "                src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');\n" +
+        '            }\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Avoid browser level font resizing.\n' +
+        '   * 1. Windows Mobile\n' +
+        '   * 2. iOS / OSX\n' +
+        '   */\n' +
+        '        body,\n' +
+        '        table,\n' +
+        '        td,\n' +
+        '        a {\n' +
+        '            -ms-text-size-adjust: 100%;\n' +
+        '            /* 1 */\n' +
+        '            -webkit-text-size-adjust: 100%;\n' +
+        '            /* 2 */\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Remove extra space added to tables and cells in Outlook.\n' +
+        '   */\n' +
+        '        table,\n' +
+        '        td {\n' +
+        '            mso-table-rspace: 0pt;\n' +
+        '            mso-table-lspace: 0pt;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Better fluid images in Internet Explorer.\n' +
+        '   */\n' +
+        '        img {\n' +
+        '            -ms-interpolation-mode: bicubic;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Remove blue links for iOS devices.\n' +
+        '   */\n' +
+        '        a[x-apple-data-detectors] {\n' +
+        '            font-family: inherit !important;\n' +
+        '            font-size: inherit !important;\n' +
+        '            font-weight: inherit !important;\n' +
+        '            line-height: inherit !important;\n' +
+        '            color: inherit !important;\n' +
+        '            text-decoration: none !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Fix centering issues in Android 4.4.\n' +
+        '   */\n' +
+        '        div[style*="margin: 16px 0;"] {\n' +
+        '            margin: 0 !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        body {\n' +
+        '            width: 100% !important;\n' +
+        '            height: 100% !important;\n' +
+        '            padding: 0 !important;\n' +
+        '            margin: 0 !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Collapse table borders to avoid space between cells.\n' +
+        '   */\n' +
+        '        table {\n' +
+        '            border-collapse: collapse !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        a {\n' +
+        '            color: #1a82e2;\n' +
+        '        }\n' +
+        '\n' +
+        '        img {\n' +
+        '            height: auto;\n' +
+        '            line-height: 100%;\n' +
+        '            text-decoration: none;\n' +
+        '            border: 0;\n' +
+        '            outline: none;\n' +
+        '        }\n' +
+        '    </style>\n' +
+        '\n' +
+        '</head>\n' +
+        '\n' +
+        '<body style="background-color: #e9ecef;">\n' +
+        '\n' +
+        '    <!-- start preheader -->\n' +
+        '    <div class="preheader"\n' +
+        '        style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">\n' +
+        '        A preheader is the short summary text that follows the subject line when an email is viewed in the inbox.\n' +
+        '    </div>\n' +
+        '    <!-- end preheader -->\n' +
+        '\n' +
+        '    <!-- start body -->\n' +
+        '    <table border="0" cellpadding="0" cellspacing="0" width="100%">\n' +
+        '\n' +
+        '        <!-- start logo -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" valign="top" style="padding: 36px 24px;">\n' +
+        '                            <!-- <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">\n' +
+        '                                <img src="./img/paste-logo-light@2x.png" alt="Logo" border="0" width="48"\n' +
+        '                                    style="display: block; width: 48px; max-width: 48px; min-width: 48px;">\n' +
+        '                            </a> -->\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end logo -->\n' +
+        '\n' +
+        '        <!-- start hero -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" bgcolor="#ffffff"\n' +
+        `                            style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">\n` +
+        '                            <h1\n' +
+        '                                style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">\n' +
+        '                                Verikasi email</h1>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end hero -->\n' +
+        '\n' +
+        '        <!-- start copy block -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">\n` +
+        '                            <p style="margin: 0;">Tekan tombol\n' +
+        '                                dibawah ini untuk melakukan verifikasi email.</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                    <!-- start button -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff">\n' +
+        '                            <table border="0" cellpadding="0" cellspacing="0" width="100%">\n' +
+        '                                <tr>\n' +
+        '                                    <td align="center" bgcolor="#ffffff" style="padding: 12px;">\n' +
+        '                                        <table border="0" cellpadding="0" cellspacing="0">\n' +
+        '                                            <tr>\n' +
+        '                                                <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">\n' +
+        '                                                    <a href="http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndhaHl1QG1haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTQyfQ.kp2e9FwnEQyPHGGsc1DWkpUw9FHYzSQjGUjudX8l5bQ" target="_blank"\n' +
+        `                                                        style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Verikasi Email</a>\n` +
+        '                                                </td>\n' +
+        '                                            </tr>\n' +
+        '                                        </table>\n' +
+        '                                    </td>\n' +
+        '                                </tr>\n' +
+        '                            </table>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end button -->\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">\n` +
+        '                            <p style="margin: 0;">Jika itu tidak bekerja, coba salin dan tempel link dibawah ke peramban\n' +
+        '                                yang kamu gunakan:</p>\n' +
+        '                            <p style="margin: 0;"><a href="http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndhaHl1QG1haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTQyfQ.kp2e9FwnEQyPHGGsc1DWkpUw9FHYzSQjGUjudX8l5bQ" target="_blank">http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndhaHl1QG1haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTQyfQ.kp2e9FwnEQyPHGGsc1DWkpUw9FHYzSQjGUjudX8l5bQ</a></p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">\n` +
+        '                            <p style="margin: 0;">Hormat kami,<br> Emil Furniture</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end copy block -->\n' +
+        '\n' +
+        '        <!-- start footer -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef" style="padding: 24px;">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '\n' +
+        '                    <!-- start permission -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" bgcolor="#e9ecef"\n' +
+        `                            style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">\n` +
+        '                            <p style="margin: 0;">Ini adalah email untuk kamu dapat melakukan verifikasi email pada emil furniture.</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end permission -->\n' +
+        '\n' +
+        '                </table>\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end footer -->\n' +
+        '\n' +
+        '    </table>\n' +
+        '    <!-- end body -->\n' +
+        '\n' +
+        '</body>\n' +
+        '\n' +
+        '</html>',
+      alternative: true,
+      charset: 'utf-8',
+      type: 'text/html',
+      inline: true
+    },
+    text: 'i hope this works'
+  },
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:45.833Z'
+}
+{
+  handle: [AsyncFunction: ValidatePasswordMustBeSameAsConfirmPassowrd],
+  message: 'Password tidak sama dengan Confirm Password:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.827Z'
+}
+{
+  handle: [AsyncFunction: validatePhoneNumber],
+  message: 'No HP harus berupa angka.:phone_number',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  handle: [AsyncFunction: validateUniqueEmail],
+  message: 'Email Sudah digunakan:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:35:09.828Z'
+}
+{
+  message: 'New request for register user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:36:33.990Z'
+}
+{
+  message: Message {
+    attachments: [],
+    header: {
+      'message-id': '<1715956594180.1.58700@Lappy>',
+      date: 'Fri, 17 May 2024 22:36:34 +0800',
+      from: '=?UTF-8?Q?EMIL?= <ikomangaryantara382@gmail.com>',
+      to: 'wrusdiarsa608@gmail.com',
+      subject: '=?UTF-8?Q?Verifikasi_email_oleh_emil_furniture?='
+    },
+    content: 'text/plain; charset=utf-8',
+    alternative: {
+      data: '<!DOCTYPE html>\n' +
+        '<html>\n' +
+        '\n' +
+        '<head>\n' +
+        '\n' +
+        '    <meta charset="utf-8">\n' +
+        '    <meta http-equiv="x-ua-compatible" content="ie=edge">\n' +
+        '    <title>Verifikasi email</title>\n' +
+        '    <meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+        '    <style type="text/css">\n' +
+        '        /**\n' +
+        '   * Google webfonts. Recommended to include the .woff version for cross-client compatibility.\n' +
+        '   */\n' +
+        '        @media screen {\n' +
+        '            @font-face {\n' +
+        "                font-family: 'Source Sans Pro';\n" +
+        '                font-style: normal;\n' +
+        '                font-weight: 400;\n' +
+        "                src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');\n" +
+        '            }\n' +
+        '\n' +
+        '            @font-face {\n' +
+        "                font-family: 'Source Sans Pro';\n" +
+        '                font-style: normal;\n' +
+        '                font-weight: 700;\n' +
+        "                src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');\n" +
+        '            }\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Avoid browser level font resizing.\n' +
+        '   * 1. Windows Mobile\n' +
+        '   * 2. iOS / OSX\n' +
+        '   */\n' +
+        '        body,\n' +
+        '        table,\n' +
+        '        td,\n' +
+        '        a {\n' +
+        '            -ms-text-size-adjust: 100%;\n' +
+        '            /* 1 */\n' +
+        '            -webkit-text-size-adjust: 100%;\n' +
+        '            /* 2 */\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Remove extra space added to tables and cells in Outlook.\n' +
+        '   */\n' +
+        '        table,\n' +
+        '        td {\n' +
+        '            mso-table-rspace: 0pt;\n' +
+        '            mso-table-lspace: 0pt;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Better fluid images in Internet Explorer.\n' +
+        '   */\n' +
+        '        img {\n' +
+        '            -ms-interpolation-mode: bicubic;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Remove blue links for iOS devices.\n' +
+        '   */\n' +
+        '        a[x-apple-data-detectors] {\n' +
+        '            font-family: inherit !important;\n' +
+        '            font-size: inherit !important;\n' +
+        '            font-weight: inherit !important;\n' +
+        '            line-height: inherit !important;\n' +
+        '            color: inherit !important;\n' +
+        '            text-decoration: none !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Fix centering issues in Android 4.4.\n' +
+        '   */\n' +
+        '        div[style*="margin: 16px 0;"] {\n' +
+        '            margin: 0 !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        body {\n' +
+        '            width: 100% !important;\n' +
+        '            height: 100% !important;\n' +
+        '            padding: 0 !important;\n' +
+        '            margin: 0 !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        /**\n' +
+        '   * Collapse table borders to avoid space between cells.\n' +
+        '   */\n' +
+        '        table {\n' +
+        '            border-collapse: collapse !important;\n' +
+        '        }\n' +
+        '\n' +
+        '        a {\n' +
+        '            color: #1a82e2;\n' +
+        '        }\n' +
+        '\n' +
+        '        img {\n' +
+        '            height: auto;\n' +
+        '            line-height: 100%;\n' +
+        '            text-decoration: none;\n' +
+        '            border: 0;\n' +
+        '            outline: none;\n' +
+        '        }\n' +
+        '    </style>\n' +
+        '\n' +
+        '</head>\n' +
+        '\n' +
+        '<body style="background-color: #e9ecef;">\n' +
+        '\n' +
+        '    <!-- start preheader -->\n' +
+        '    <div class="preheader"\n' +
+        '        style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">\n' +
+        '        A preheader is the short summary text that follows the subject line when an email is viewed in the inbox.\n' +
+        '    </div>\n' +
+        '    <!-- end preheader -->\n' +
+        '\n' +
+        '    <!-- start body -->\n' +
+        '    <table border="0" cellpadding="0" cellspacing="0" width="100%">\n' +
+        '\n' +
+        '        <!-- start logo -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" valign="top" style="padding: 36px 24px;">\n' +
+        '                            <!-- <a href="https://sendgrid.com" target="_blank" style="display: inline-block;">\n' +
+        '                                <img src="./img/paste-logo-light@2x.png" alt="Logo" border="0" width="48"\n' +
+        '                                    style="display: block; width: 48px; max-width: 48px; min-width: 48px;">\n' +
+        '                            </a> -->\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end logo -->\n' +
+        '\n' +
+        '        <!-- start hero -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" bgcolor="#ffffff"\n' +
+        `                            style="padding: 36px 24px 0; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; border-top: 3px solid #d4dadf;">\n` +
+        '                            <h1\n' +
+        '                                style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -1px; line-height: 48px;">\n' +
+        '                                Verikasi email</h1>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end hero -->\n' +
+        '\n' +
+        '        <!-- start copy block -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">\n` +
+        '                            <p style="margin: 0;">Tekan tombol\n' +
+        '                                dibawah ini untuk melakukan verifikasi email.</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                    <!-- start button -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff">\n' +
+        '                            <table border="0" cellpadding="0" cellspacing="0" width="100%">\n' +
+        '                                <tr>\n' +
+        '                                    <td align="center" bgcolor="#ffffff" style="padding: 12px;">\n' +
+        '                                        <table border="0" cellpadding="0" cellspacing="0">\n' +
+        '                                            <tr>\n' +
+        '                                                <td align="center" bgcolor="#1a82e2" style="border-radius: 6px;">\n' +
+        '                                                    <a href="http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndydXNkaWFyc2E2MDhAZ21haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTk0fQ.Vk3j056tuQaJiWY2pGIiA_8o7XIWeE7ltdOtazJFTKY" target="_blank"\n' +
+        `                                                        style="display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;">Verikasi Email</a>\n` +
+        '                                                </td>\n' +
+        '                                            </tr>\n' +
+        '                                        </table>\n' +
+        '                                    </td>\n' +
+        '                                </tr>\n' +
+        '                            </table>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end button -->\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">\n` +
+        '                            <p style="margin: 0;">Jika itu tidak bekerja, coba salin dan tempel link dibawah ke peramban\n' +
+        '                                yang kamu gunakan:</p>\n' +
+        '                            <p style="margin: 0;"><a href="http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndydXNkaWFyc2E2MDhAZ21haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTk0fQ.Vk3j056tuQaJiWY2pGIiA_8o7XIWeE7ltdOtazJFTKY" target="_blank">http://75f3-182-1-121-198.ngrok-free.app/auth/verify/eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IndydXNkaWFyc2E2MDhAZ21haWwuY29tIiwidXNlcklkIjoyNCwiZXhwIjoxNzE2MDQyOTk0fQ.Vk3j056tuQaJiWY2pGIiA_8o7XIWeE7ltdOtazJFTKY</a></p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                    <!-- start copy -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="left" bgcolor="#ffffff"\n' +
+        `                            style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">\n` +
+        '                            <p style="margin: 0;">Hormat kami,<br> Emil Furniture</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end copy -->\n' +
+        '\n' +
+        '                </table>\n' +
+        '\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end copy block -->\n' +
+        '\n' +
+        '        <!-- start footer -->\n' +
+        '        <tr>\n' +
+        '            <td align="center" bgcolor="#e9ecef" style="padding: 24px;">\n' +
+        '\n' +
+        '                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">\n' +
+        '\n' +
+        '                    <!-- start permission -->\n' +
+        '                    <tr>\n' +
+        '                        <td align="center" bgcolor="#e9ecef"\n' +
+        `                            style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">\n` +
+        '                            <p style="margin: 0;">Ini adalah email untuk kamu dapat melakukan verifikasi email pada emil furniture.</p>\n' +
+        '                        </td>\n' +
+        '                    </tr>\n' +
+        '                    <!-- end permission -->\n' +
+        '\n' +
+        '                </table>\n' +
+        '            </td>\n' +
+        '        </tr>\n' +
+        '        <!-- end footer -->\n' +
+        '\n' +
+        '    </table>\n' +
+        '    <!-- end body -->\n' +
+        '\n' +
+        '</body>\n' +
+        '\n' +
+        '</html>',
+      alternative: true,
+      charset: 'utf-8',
+      type: 'text/html',
+      inline: true
+    },
+    text: 'i hope this works'
+  },
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:36:38.238Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:37:52.235Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:38:38.410Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:38:40.804Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:38:52.638Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:39:05.464Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:39:14.709Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:39:48.385Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:39:58.800Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:40:22.929Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:41:14.216Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:41:52.085Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:41:59.706Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T14:42:07.324Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.185Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.185Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:41.166Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:41.166Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:44.376Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:15:07.692Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:30:05.358Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:32:48.125Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:36:37.063Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:36:37.064Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:00.251Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:00.252Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:47.750Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:47.751Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:55.163Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:37:55.163Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.001Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.002Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:14:23.003Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:39:09.409Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:39:48.403Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:40:09.768Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:40:28.669Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:40:28.670Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:40:28.670Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:40:29.751Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:41:31.328Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.224Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:01.388Z'
+}
+{
+  message: 'Invalid Argument from the request',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:01.388Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.224Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:06.719Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.224Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:00.225Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:43:46.875Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:53.339Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.087Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.088Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.088Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.510Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:47:34.281Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:48:58.874Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.087Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.088Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:46:58.088Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:51:27.053Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:51:27.348Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:25.176Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:41.175Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:41.176Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:41.177Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:42.057Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:42.358Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:53:09.837Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:55:08.462Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:55:24.678Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:35.259Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:35.261Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:35.263Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:36.412Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:36.688Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:55.379Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:59:04.356Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T15:59:25.294Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:24.800Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:27.775Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:27.776Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:27.776Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:28.172Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:28.441Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:38.948Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:40.447Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:40.448Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:40.448Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:40.830Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:41.084Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:04.909Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.890Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.890Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.891Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:19.697Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:19.985Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.890Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.890Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:18.891Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:50.571Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:50.827Z'
+}
+{
+  message: 'Success connect into database',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:03:15.693Z'
+}
+{
+  handle: [AsyncFunction: validateEmailWasInDB],
+  message: 'Email tidak valid.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:03:17.881Z'
+}
+{
+  handle: [AsyncFunction: validateVerifiedEmail],
+  message: 'Email belum terverikasi.:email',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:03:17.882Z'
+}
+{
+  handle: [AsyncFunction: validatePassword],
+  message: 'Password salah.:password',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:03:17.883Z'
+}
+{
+  message: 'New request for login user.',
+  level: 'info',
+  label: 'product',
+  timestamp: '2024-05-17T16:03:18.387Z'
+}

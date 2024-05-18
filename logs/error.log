@@ -1885,3 +1885,219 @@
   originalLine: 1279,
   originalColumn: 24
 }
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:32:48.125Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:47:34.281Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:48:58.874Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:18)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:51:27.348Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:52:42.358Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:53:09.837Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:36.688Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T15:58:55.379Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:28.441Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:00:41.084Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:19.985Z'
+}
+{
+  code: 'ERR_JWS_INVALID',
+  name: 'JWSInvalid',
+  stack: 'Error: Compact JWS must be a string or Uint8Array\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:11:8)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at compactVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jws/compact/verify.js:5:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:6:29)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at jwtVerify (/home/ary/Projects/eccommerce-backend/node_modules/jose/dist/browser/jwt/verify.js:5:33)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:23:10)\n' +
+    '    at asyncFunctionResume (native)\n' +
+    '    at verify (/home/ary/Projects/eccommerce-backend/src/utils/jwt.ts:21:32)\n' +
+    '    at <anonymous> (/home/ary/Projects/eccommerce-backend/src/middlewares/AuthMiddleware.ts:39:29)',
+  level: 'error',
+  label: 'product',
+  timestamp: '2024-05-17T16:01:50.827Z'
+}

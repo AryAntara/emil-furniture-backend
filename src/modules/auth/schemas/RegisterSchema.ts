@@ -13,7 +13,7 @@ const STRING_ERROR = "Harus diisi.",
 type RegisterPayload = ZodObject<{
     email: ZodString,
     fullname: ZodString,
-    phone_number: ZodString,
+    phone_number: ZodNumber,
     password: ZodString,
     confirm_password: ZodString
 }>
@@ -21,7 +21,7 @@ type RegisterPayload = ZodObject<{
 const registerSchema: RegisterPayload = z.object({
     email: z.string({ message: STRING_ERROR }).email({ message: EMAIL_ERROR_NOT_VALID }),
     fullname: z.string({ message: STRING_ERROR }).min(3, { message: FULLNAME_ERROR_NOT_VALID }),
-    phone_number: z.string().max(14, { message: PHONE_NUMBER_ERROR_MAX_12_DIGIT }),
+    phone_number: z.number().max(999999999999, { message: PHONE_NUMBER_ERROR_MAX_12_DIGIT }),
     password: z.string(),
     confirm_password: z.string()
 })

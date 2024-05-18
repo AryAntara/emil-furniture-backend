@@ -18,8 +18,8 @@ export class AuthController extends BaseController {
 
     // register new user into system
     async register(c: Context) {
-        const content = await c.req.parseBody()
-        const validation = await registerSchemaValidator.with(content as unknown).run();
+        const content = await c.req.json()        
+        const validation = await registerSchemaValidator.with(content).run();
 
         logger.info('New request for register user.')
         if (!validation.success) {
@@ -46,7 +46,7 @@ export class AuthController extends BaseController {
 
     // verify the email
     async verify(c: Context) {
-        const token = c.req.param().token;
+        const { token } = c.req.param();
         if (!await this.authService.verifyUserEmail(token))
             return c.json(this.respond(null, false, 'Token tidak valid.'), 402);
         return c.redirect("https://youtube.com"); // Change into react website
@@ -55,7 +55,7 @@ export class AuthController extends BaseController {
 
     // login into our account
     async login(c: Context) {
-        const content = await c.req.parseBody();
+        const content = await c.req.json();
         const validation = await loginSchemaValidator.with(content).run();
 
         logger.info('New request for login user.')
@@ -64,7 +64,7 @@ export class AuthController extends BaseController {
             return c.json(this.respond(validation.errors, false, "Validasi error"), 400)
         }
 
-        const email = validation.data.email;
+        const { email } = validation.data;
         const userEntry = await this.authService.getUserDataByEmail(email);
 
         if (!userEntry) return c.json(this.respond({}, false, "User tidak ditemukan"), 404)
@@ -78,8 +78,9 @@ export class AuthController extends BaseController {
 
         setCookie(c, 'refresh_token', refreshToken, {
             httpOnly: true,
-            maxAge: DAYS_IN_SECOND
-
+            maxAge: DAYS_IN_SECOND,
+            sameSite: 'None', 
+            secure: true
         });
 
         const response = {
@@ -105,7 +106,7 @@ export class AuthController extends BaseController {
             email = c.get('email'),
             roleUser = c.get('roleUser'),
             accessToken = await this.authService.generateAuthToken(userId, roleUser, email);
-            
+
         return c.json(this.respond({
             accessToken
         }, true, "Mendapatkan token baru."));
@@ -113,14 +114,14 @@ export class AuthController extends BaseController {
 
     // send forgot password email 
     async sendforgotPasswordEmail(c: Context) {
-        const content = await c.req.parseBody();
+        const content = await c.req.json();
         const validation = await ForgotPasswordSchemaValidator.with(content).run()
 
         if (!validation.success) return c.json(this.respond(
             validation.errors, false, "Validasi error."
         ), 400);
 
-        const {email} = validation.data;
+        const { email } = validation.data;
         const url = getBaseUrl(c.req.url);
         const resetPasswordLink = url + "/auth/reset-password/" + await this.authService.generateResetPasswordToken(email as string);
 
@@ -131,21 +132,21 @@ export class AuthController extends BaseController {
 
     // show page for reset the password 
     async showResetPasswordPage(c: Context) {
-        const {token} = c.req.param();
+        const { token } = c.req.param();
         return c.redirect("http://{link-frontend}/reset-password?token=" + token);
     }
 
     // reset the password 
     async resetPassword(c: Context) {
-        const content = await c.req.parseBody();
+        const content = await c.req.json();
         const validation = await resetPasswordSchemaValidator.with(content).run()
 
         if (!validation.success) return c.json(this.respond(
             validation.errors, false, 'Validasi error.'
         ))
 
-        const {token} = c.req.param()
-        const {newPassword}= validation.data
+        const { token } = c.req.param()
+        const { newPassword } = validation.data
 
         if (!await this.authService.updateUserPassword(token, newPassword)) return c.json(this.respond(
             null, false, "Tidak bisa memperbarui kata sandi, Token tidak valid."

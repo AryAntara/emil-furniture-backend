@@ -10,7 +10,13 @@ const user = new Hono();
 
 // Middleware 
 app.use('/static/*', serveStatic({ root: './' }))
-app.use(cors())
+app.use(cors({
+    allowHeaders: ['X-Custom-Header', 'Upgrade-Insecure-Requests', 'Content-Type', 'Set-Cookie','X-PINGOTHER'],
+    credentials: true,
+    origin: ["http://localhost:5174"], 
+    allowMethods: ["get", "post", "delete"]
+}))
+
 
 auth.use('/logout', async (c, next) => await authMiddleware.validateAccessToken(c, next));
 auth.use('/logout', async (c, next) => await authMiddleware.validateAdminAccess(c, next));

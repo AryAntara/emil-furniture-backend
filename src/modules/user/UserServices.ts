@@ -80,7 +80,7 @@ export class UserService implements UserServiceInterface {
 
     // is a valid password for the given email 
     async checkPassword(email: string, password: string): Promise<boolean> {
-        try {
+        try {            
             const userEntry = await this.userRepository.findOneByEmail(email, ['password']);
             const hash = userEntry?.getDataValue('password') ?? '';
             return await Bun.password.verify(password, hash)

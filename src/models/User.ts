@@ -1,5 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from "../database"
+import { Address } from './Address';
 
 export class User extends Model { }
 
@@ -22,3 +23,4 @@ User.init(
     },
     { sequelize, modelName: 'user', paranoid: true },
 );
+User.hasMany(Address);
