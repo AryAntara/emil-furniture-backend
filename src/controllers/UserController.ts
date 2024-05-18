@@ -45,7 +45,7 @@ export class UserController extends BaseController {
 
     // Promote user into an admin (Admin Access)
     async promote(c: Context) {
-        const content = await c.req.parseBody();
+        const content = await c.req.json();
         const validation = await promoteSchemaValidator.with(content).run()
 
         if (!validation.success) return c.json(this.respond(
@@ -62,7 +62,7 @@ export class UserController extends BaseController {
 
     // Demote back an admin into normal user (Admin Access)
     async demote(c: Context) {
-        const content = await c.req.parseBody();
+        const content = await c.req.json();
         const validation = await promoteSchemaValidator.with(content).run();
 
         if (!validation.success) return c.json(this.respond(
@@ -97,7 +97,7 @@ export class UserController extends BaseController {
     // update data user (Admin Access)
     async updateByAdmin(c: Context) {
         const { userId } = c.req.param();
-        const content = await c.req.parseBody()
+        const content = await c.req.json()
         content.userId = userId
 
         const validation = await updateSchemaValidator.with(content).run();
