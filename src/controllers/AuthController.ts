@@ -5,155 +5,176 @@ import { loginSchemaValidator } from "../modules/auth/schemas/LoginSchema";
 import { BaseController } from "./BaseController";
 import { logger } from "../log";
 import { getBaseUrl } from "../utils/url";
-import { deleteCookie, setCookie } from "hono/cookie"
+import { deleteCookie, setCookie } from "hono/cookie";
 import { ForgotPasswordSchemaValidator } from "../modules/auth/schemas/ForgotPasswordSchema";
 import { resetPasswordSchemaValidator } from "../modules/auth/schemas/ResetPasswordSchema";
 
 const DAYS_IN_SECOND = 24 * 60 * 60;
 
 export class AuthController extends BaseController {
-    constructor(public authService: AuthService) {
-        super()
+  constructor(public authService: AuthService) {
+    super();
+  }
+
+  // register new user into system
+  async register(c: Context) {
+    const content = await c.req.json();
+    const validation = await registerSchemaValidator.with(content).run();
+
+    logger.info("New request for register user.");
+    if (!validation.success && validation.sendError)
+      return validation.sendError(c);
+
+    const userData = validation.data;
+    const userEntry = await this.authService.insertUser(userData);
+    if (!userEntry) {
+      return c.json(this.respond(null, false, "Gagal menambahkan user"), 500);
     }
 
-    // register new user into system
-    async register(c: Context) {
-        const content = await c.req.json()        
-        const validation = await registerSchemaValidator.with(content).run();
+    const email = userEntry.getDataValue("email");
+    const url = getBaseUrl(c.req.url);
+    const verifycationLink =
+      url +
+      "/auth/verify/" +
+      (await this.authService.generateEmailVerificationToken(
+        email,
+        userEntry.getDataValue("id")
+      ));
 
-        logger.info('New request for register user.')
-        if (!validation.success) {
-            logger.info("Invalid Argument from the request")
-            return c.json(this.respond(validation.errors, false, "Validasi error"), 400)
-        }
+    await this.authService.sendVerifcationEmail(email, verifycationLink);
+    return c.json(this.respond(null, true, "Berhasil menambahkan user"));
+  }
 
-        const userData = validation.data;
-        const userEntry = await this.authService.insertUser(userData)
-        if (!userEntry) {
-            return c.json(this.respond(null, false, 'Gagal menambahkan user'), 500)
-        }
+  // verify the email
+  async verify(c: Context) {
+    const { token } = c.req.param();
+    if (!(await this.authService.verifyUserEmail(token)))
+      return c.json(this.respond(null, false, "Token tidak valid."), 402);
+    return c.redirect("https://youtube.com"); // Change into react website
+  }
 
-        const email = userEntry.getDataValue('email');
-        const url = getBaseUrl(c.req.url);
-        const verifycationLink = url + '/auth/verify/' + await this.authService.generateEmailVerificationToken(
-            email,
-            userEntry.getDataValue('id'),
-        );
+  // login into our account
+  async login(c: Context) {
+    const content = await c.req.json();
+    const validation = await loginSchemaValidator.with(content).run();
 
-        await this.authService.sendVerifcationEmail(email, verifycationLink);
-        return c.json(this.respond({}, true, "Berhasil menambahkan user"));
-    }
+    logger.info("New request for login user.");
+    if (!validation.success && validation.sendError)
+      return validation.sendError(c);
 
-    // verify the email
-    async verify(c: Context) {
-        const { token } = c.req.param();
-        if (!await this.authService.verifyUserEmail(token))
-            return c.json(this.respond(null, false, 'Token tidak valid.'), 402);
-        return c.redirect("https://youtube.com"); // Change into react website
+    const { email } = validation.data;
+    const userEntry = await this.authService.getUserDataByEmail(email);
 
-    }
+    if (!userEntry)
+      return c.json(this.respond({}, false, "User tidak ditemukan"), 404);
 
-    // login into our account
-    async login(c: Context) {
-        const content = await c.req.json();
-        const validation = await loginSchemaValidator.with(content).run();
+    const userId = userEntry.getDataValue("id"),
+      fullname = userEntry.getDataValue("fullname"),
+      roleAccess = userEntry.getDataValue("roleUser"),
+      authToken = await this.authService.generateAuthToken(
+        userId,
+        roleAccess,
+        email
+      ),
+      refreshToken = await this.authService.generateRefreshToken(
+        userId,
+        roleAccess,
+        email
+      );
 
-        logger.info('New request for login user.')
-        if (!validation.success) {
-            logger.info("Invalid Argument from the request")
-            return c.json(this.respond(validation.errors, false, "Validasi error"), 400)
-        }
+    setCookie(c, "refresh_token", refreshToken, {
+      httpOnly: true,
+      maxAge: DAYS_IN_SECOND,
+      sameSite: "None",
+      secure: true,
+    });
 
-        const { email } = validation.data;
-        const userEntry = await this.authService.getUserDataByEmail(email);
+    const response = {
+      accessToken: authToken,
+      email,
+      userId,
+      fullname,
+    };
 
-        if (!userEntry) return c.json(this.respond({}, false, "User tidak ditemukan"), 404)
+    return c.json(this.respond(response, true, "Berhasil login."));
+  }
 
-        const userId = userEntry.getDataValue('id'),
-            fullname = userEntry.getDataValue('fullname'),
-            roleAccess = userEntry.getDataValue("roleUser"),
-            authToken = await this.authService.generateAuthToken(userId, roleAccess, email),
-            refreshToken = await this.authService.generateRefreshToken(userId, roleAccess, email)
+  // logout from system
+  async logout(c: Context) {
+    deleteCookie(c, "refresh_token");
+    return c.json(this.respond({}, true, "Berhasil logout."));
+  }
 
+  // generate new token
+  async renew(c: Context) {
+    const userId = c.get("userId"),
+      email = c.get("email"),
+      roleUser = c.get("roleUser"),
+      accessToken = await this.authService.generateAuthToken(
+        userId,
+        roleUser,
+        email
+      );
 
-        setCookie(c, 'refresh_token', refreshToken, {
-            httpOnly: true,
-            maxAge: DAYS_IN_SECOND,
-            sameSite: 'None', 
-            secure: true
-        });
+    return c.json(
+      this.respond(
+        {
+          accessToken,
+        },
+        true,
+        "Mendapatkan token baru."
+      )
+    );
+  }
 
-        const response = {
-            accessToken: authToken,
-            email,
-            userId,
-            fullname
-        }
+  // send forgot password email
+  async sendforgotPasswordEmail(c: Context) {
+    const content = await c.req.json();
+    const validation = await ForgotPasswordSchemaValidator.with(content).run();
 
-        return c.json(this.respond(response, true, 'Berhasil login.'))
-    }
+    if (!validation.success && validation.sendError)
+      return validation.sendError(c);
 
-    // logout from system 
-    async logout(c: Context) {
-        deleteCookie(c, 'refresh_token');
-        return c.json(this.respond({}, true, "Berhasil logout."))
-    }
+    const { email } = validation.data;
+    const url = getBaseUrl(c.req.url);
+    const resetPasswordLink =
+      url +
+      "/auth/reset-password/" +
+      (await this.authService.generateResetPasswordToken(email as string));
 
-    // generate new token 
-    async renew(c: Context) {
-        const
-            userId = c.get('userId'),
-            email = c.get('email'),
-            roleUser = c.get('roleUser'),
-            accessToken = await this.authService.generateAuthToken(userId, roleUser, email);
+    await this.authService.sendResetPasswordEmail(email, resetPasswordLink);
+    return c.json(
+      this.respond(false, true, "Berhasil mengirimkan link untuk forgot password")
+    );
+  }
 
-        return c.json(this.respond({
-            accessToken
-        }, true, "Mendapatkan token baru."));
-    }
+  // show page for reset the password
+  async showResetPasswordPage(c: Context) {
+    const { token } = c.req.param();
+    return c.redirect("http://{link-frontend}/reset-password?token=" + token);
+  }
 
-    // send forgot password email 
-    async sendforgotPasswordEmail(c: Context) {
-        const content = await c.req.json();
-        const validation = await ForgotPasswordSchemaValidator.with(content).run()
+  // reset the password
+  async resetPassword(c: Context) {
+    const content = await c.req.json();
+    const validation = await resetPasswordSchemaValidator.with(content).run();
 
-        if (!validation.success) return c.json(this.respond(
-            validation.errors, false, "Validasi error."
-        ), 400);
+    if (!validation.success && validation.sendError)
+      return validation.sendError(c);
 
-        const { email } = validation.data;
-        const url = getBaseUrl(c.req.url);
-        const resetPasswordLink = url + "/auth/reset-password/" + await this.authService.generateResetPasswordToken(email as string);
+    const { token } = c.req.param();
+    const { newPassword } = validation.data;
 
-        await this.authService.sendResetPasswordEmail(email, resetPasswordLink);
-        return c.json(this.respond({}, true, "Berhasil mengirimkan link untuk forgot password"));
+    if (!(await this.authService.updateUserPassword(token, newPassword)))
+      return c.json(
+        this.respond(
+          null,
+          false,
+          "Tidak bisa memperbarui kata sandi, Token tidak valid."
+        ),
+        400
+      );
 
-    }
-
-    // show page for reset the password 
-    async showResetPasswordPage(c: Context) {
-        const { token } = c.req.param();
-        return c.redirect("http://{link-frontend}/reset-password?token=" + token);
-    }
-
-    // reset the password 
-    async resetPassword(c: Context) {
-        const content = await c.req.json();
-        const validation = await resetPasswordSchemaValidator.with(content).run()
-
-        if (!validation.success) return c.json(this.respond(
-            validation.errors, false, 'Validasi error.'
-        ))
-
-        const { token } = c.req.param()
-        const { newPassword } = validation.data
-
-        if (!await this.authService.updateUserPassword(token, newPassword)) return c.json(this.respond(
-            null, false, "Tidak bisa memperbarui kata sandi, Token tidak valid."
-        ), 400);
-
-        return c.json(this.respond(
-            null, true, "Berhasil memperbarui kata sandi."
-        ))
-    }
+    return c.json(this.respond(null, true, "Berhasil memperbarui kata sandi."));
+  }
 }

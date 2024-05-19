@@ -1,0 +1,10 @@
+export const REQUIRE_ERROR = "Harus diisi.",
+  EMAIL_ERROR_NOT_VALID = "Email tidak valid.",
+  EMAIL_ERROR_NOT_VERIFIED = "Email belum terverikasi.",
+  PASSWORD_ERROR_NOT_VALID = "Password salah.",
+  PHONE_NUMBER_ERROR_MUST_BE_NUMERIC = "No HP harus berupa angka.",
+  PHONE_NUMBER_ERROR_MAX_12_DIGIT = "No HP tidak boleh lebih dari 14 digit.",
+  EMAIL_ERROR_USED = "Email Sudah digunakan.",
+  FULLNAME_ERROR_NOT_VALID = "Nama lengkap harus lebih dari 3 huruf.",
+  PASSWORD_ERROR_NOT_SAME = "Password tidak sama dengan Confirm Password.",
+  NUMBER_NEEDED_ERROR = "Harus berupa nomor.";

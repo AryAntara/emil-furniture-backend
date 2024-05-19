@@ -1,34 +1,24 @@
-import { RefinementCtx, ZodNumber, ZodObject, ZodString, boolean, z } from "zod";
+import { z } from "zod";
 import { Validator } from "../../../utils/validator";
-import { authService } from "../../../providers";
+import { REQUIRE_ERROR, PASSWORD_ERROR_NOT_SAME } from "./constants";
 
-const STRING_ERROR = "Harus diisi.",
-    PASSWORD_ERROR_NOT_SAME = "Password tidak sama dengan Confirm Password"
-
-type ResetPasswordPayload = ZodObject<{
-    password: ZodString,
-    confirm_password: ZodString
-}>
-
-const resetPasswordSchema: ResetPasswordPayload = z.object({
-    password: z.string({message: STRING_ERROR}),
-    confirm_password: z.string({message: STRING_ERROR})
-})
+const resetPasswordSchema = z.object({
+  password: z.string({ message: REQUIRE_ERROR }),
+  confirm_password: z.string({ message: REQUIRE_ERROR }),
+});
 
 export const resetPasswordSchemaValidator = new Validator(resetPasswordSchema);
 
 /**
- * The confirm password must be same as password 
+ * The confirm password must be same as password
  */
 async function ValidatePasswordMustBeSameAsConfirmPassowrd(item: {
-    confirm_password: string,
-    password: string
+  confirm_password: string;
+  password: string;
 }): Promise<boolean> {
-    return item.password === item.confirm_password;
+  return item.password === item.confirm_password;
 }
 resetPasswordSchemaValidator.setARefineHandler({
-    handle: ValidatePasswordMustBeSameAsConfirmPassowrd,
-    message: PASSWORD_ERROR_NOT_SAME+":password"
+  handle: ValidatePasswordMustBeSameAsConfirmPassowrd,
+  message: PASSWORD_ERROR_NOT_SAME + ":password",
 });
-
-

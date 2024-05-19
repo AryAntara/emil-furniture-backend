@@ -1,24 +1,22 @@
-import { Model, DataTypes } from 'sequelize';
-import { sequelize } from "../database"
+import { Model, DataTypes } from "sequelize";
+import { sequelize } from "../database";
 
-export class Address extends Model { }
+export class Address extends Model {}
 
 Address.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey: true
-        },
-        userId: DataTypes.INTEGER,
-        title: DataTypes.STRING,
-        description: DataTypes.STRING,
-        isActived: DataTypes.ENUM('yes', 'no'),
-        createdAt: DataTypes.DATE,
-        updatedAt: DataTypes.DATE,
-        deletedAt: DataTypes.DATE
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
     },
-    { sequelize, modelName: 'address', paranoid: true },
+    userId: DataTypes.INTEGER,
+    title: DataTypes.STRING,
+    description: DataTypes.STRING,
+    isActived: DataTypes.ENUM("yes", "no"),
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE,
+    deletedAt: DataTypes.DATE,
+  },
+  { sequelize, modelName: "address", paranoid: true }
 );
-
-
