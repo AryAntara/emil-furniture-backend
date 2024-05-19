@@ -1,66 +1,54 @@
-import { RefinementCtx, ZodNumber, ZodObject, ZodString, boolean, z } from "zod";
+import { z } from "zod";
 import { Validator } from "../../../utils/validator";
 import { authService } from "../../../providers";
-import { logger } from "../../../log";
+import { REQUIRE_ERROR, EMAIL_ERROR_NOT_VALID, EMAIL_ERROR_NOT_VERIFIED, PASSWORD_ERROR_NOT_VALID } from "./constants";
 
-const STRING_ERROR = "Harus diisi.",
-    EMAIL_ERROR_NOT_VALID = "Email tidak valid.",
-    EMAIL_ERROR_NOT_VERIFIED = "Email belum terverikasi.",
-    PASSWORD_ERROR_NOT_VALID = "Password salah."
-
-type LoginPayload = ZodObject<{
-    email: ZodString,
-    password: ZodString,
-}>
-
-const loginSchema: LoginPayload = z.object({
-    email: z.string({ message: STRING_ERROR }).email({ message: EMAIL_ERROR_NOT_VALID }),
-    password: z.string(),
-})
+const loginSchema = z.object({
+  email: z
+    .string({ message: REQUIRE_ERROR })
+    .email({ message: EMAIL_ERROR_NOT_VALID }),
+  password: z.string({ message: REQUIRE_ERROR }),
+});
 
 export const loginSchemaValidator = new Validator(loginSchema);
 
-
 /**
- * Is email in db 
+ * Is email in db
  */
-async function validateEmailWasInDB(item: {
-    email: string
-}): Promise<boolean> {
-    return await authService.findUserByEmail(item.email);
+async function validateEmailWasInDB(item: { email: string }): Promise<boolean> {
+  return await authService.findUserByEmail(item.email);
 }
 
 loginSchemaValidator.setARefineHandler({
-    handle: validateEmailWasInDB,
-    message: EMAIL_ERROR_NOT_VALID+":email"
-})
+  handle: validateEmailWasInDB,
+  message: EMAIL_ERROR_NOT_VALID + ":email",
+});
 
-/**  
+/**
  * Email Was verified
  */
 async function validateVerifiedEmail(item: {
-    email: string
+  email: string;
 }): Promise<boolean> {
-    
-    return await authService.isUserVerified(item.email);
+  return await authService.isUserVerified(item.email);
 }
 
 loginSchemaValidator.setARefineHandler({
-    handle: validateVerifiedEmail,
-    message: EMAIL_ERROR_NOT_VERIFIED+":email"
-})
+  handle: validateVerifiedEmail,
+  message: EMAIL_ERROR_NOT_VERIFIED + ":email",
+});
 
 /**
- * Verified password 
+ * Verified password
  */
 async function validatePassword(item: {
-    email: string,
-    password: string
+  email: string;
+  password: string;
 }): Promise<boolean> {
-    return await authService.checkUserPassword(item.email, item.password)
+  return await authService.checkUserPassword(item.email, item.password);
 }
 
 loginSchemaValidator.setARefineHandler({
-    handle: validatePassword,
-    message: PASSWORD_ERROR_NOT_VALID+":password"
-})
+  handle: validatePassword,
+  message: PASSWORD_ERROR_NOT_VALID + ":password",
+});

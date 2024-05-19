@@ -1,47 +1,41 @@
-import { RefinementCtx, ZodNumber, ZodObject, ZodString, boolean, z } from "zod";
+import { z } from "zod";
 import { Validator } from "../../../utils/validator";
 import { authService } from "../../../providers";
-import { logger } from "../../../log";
+import { EMAIL_ERROR_NOT_VALID, EMAIL_ERROR_NOT_VERIFIED, REQUIRE_ERROR } from "./constants";
 
-const STRING_ERROR = "Harus diisi.",
-    EMAIL_ERROR_NOT_VALID = "Email tidak valid.",
-    EMAIL_ERROR_NOT_VERIFIED = "Email belum terverikasi.";
 
-type ForgotPasswordPayload = ZodObject<{
-    email: ZodString,
-}>
+const ForgotPasswordSchema = z.object({
+  email: z
+    .string({ message: REQUIRE_ERROR })
+    .email({ message: EMAIL_ERROR_NOT_VALID }),
+});
 
-const ForgotPasswordSchema: ForgotPasswordPayload = z.object({
-    email: z.string({ message: STRING_ERROR }).email({ message: EMAIL_ERROR_NOT_VALID }),
-})
-
-export const ForgotPasswordSchemaValidator = new Validator(ForgotPasswordSchema);
-
+export const ForgotPasswordSchemaValidator = new Validator(
+  ForgotPasswordSchema
+);
 
 /**
- * Is email in db 
+ * Is email in db
  */
-async function validateEmailWasInDB(item: {
-    email: string
-}): Promise<boolean> {
-    return await authService.findUserByEmail(item.email);
+async function validateEmailWasInDB(item: { email: string }): Promise<boolean> {
+  return await authService.findUserByEmail(item.email);
 }
 
 ForgotPasswordSchemaValidator.setARefineHandler({
-    handle: validateEmailWasInDB,
-    message: EMAIL_ERROR_NOT_VALID+":email"
-})
+  handle: validateEmailWasInDB,
+  message: EMAIL_ERROR_NOT_VALID + ":email",
+});
 
-/**  
+/**
  * Email Was verified
  */
 async function validateVerifiedEmail(item: {
-    email: string
+  email: string;
 }): Promise<boolean> {
-    return await authService.isUserVerified(item.email);
+  return await authService.isUserVerified(item.email);
 }
 
 ForgotPasswordSchemaValidator.setARefineHandler({
-    handle: validateVerifiedEmail,
-    message: EMAIL_ERROR_NOT_VERIFIED+":email"
-})
+  handle: validateVerifiedEmail,
+  message: EMAIL_ERROR_NOT_VERIFIED + ":email",
+});
