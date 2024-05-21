@@ -1,4 +1,4 @@
-import { ModelStatic, Order, WhereOptions } from "sequelize";
+import { IncludeOptions, ModelStatic, Order, WhereOptions } from "sequelize";
 import { BaseRepositoryInterface } from "./interfaces/BaseRepositoryInterface";
 import { Address } from "../../models/Address";
 import { User } from "../../models/User";
@@ -36,7 +36,9 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     offset: number,
     limit: number,
     order: Order,
-    selectAttributes?: Array<string>
+    selectAttributes?: Array<string>,
+    whereOptions?: WhereOptions,
+    relationsTable?: IncludeOptions
   ): Promise<Array<AllowedModels>> {
     try {
       return (
@@ -45,6 +47,8 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
           offset,
           attributes: selectAttributes,
           order,
+          where: whereOptions,
+          include: relationsTable,
         })) ?? []
       );
     } catch (e) {

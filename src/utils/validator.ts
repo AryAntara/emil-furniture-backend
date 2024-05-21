@@ -33,7 +33,7 @@ export class Validator {
     try {
       if (this.refineHandlers.length > 0)
         for (let refineHandler of this.refineHandlers) {
-          logger.info(refineHandler);
+          logger.info("Runing refine handle "+ refineHandler.handle.name);
           schema = schema.refine(refineHandler.handle, refineHandler.message);
         }
 

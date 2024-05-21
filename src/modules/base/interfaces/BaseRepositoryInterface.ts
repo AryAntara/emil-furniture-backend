@@ -1,4 +1,4 @@
-import { Order, WhereOptions } from "sequelize";
+import { IncludeOptions, Order, WhereOptions } from "sequelize";
 import { AllowedModels } from "../types/AllowedModels";
 
 export interface BaseRepositoryInterface {
@@ -7,7 +7,9 @@ export interface BaseRepositoryInterface {
     offset: number,
     limit: number,
     order: Order,
-    selectAttributes?: Array<string>
+    selectAttributes?: Array<string>,
+    whereOptions?: WhereOptions, 
+    relationsTable?: IncludeOptions
   ): Promise<Array<AllowedModels>>;
   isExists(whereOptions: WhereOptions): Promise<boolean>;
   countBy(whereOptions: WhereOptions): Promise<number>;
