@@ -1,0 +1,185 @@
+mod structx;
+mod enum_rust;
+fn main() {
+  
+    println!("Hello, world!");
+
+    // VARIABLE
+    let mut name: &str = "Ary";
+    let age = 10;
+    {
+        // my universe
+        let age = 17;
+        println!("My age is {}", age);
+    }
+    println!("My old name is {}", name);
+
+    let new_name = &(name.to_owned() + " Antara");
+    name = new_name;
+
+    println!("My age is {} and my name {}", age, name);
+
+    // DATA TYPE
+    // String
+    let name = "Nama saya adalah Ary Antara".to_owned();
+    println!("{}", name);
+
+    // &str
+    let name_string_ref: String = "Halo saya Dimas".to_string(); // str slice
+
+    // Q : what is different between String and str ?
+    // "String" is a dynamic and mutable string type that owns its data, while "str" (String Slice) is an immutable reference to a fixed portion of a string and does not own the data.
+
+    println!("{}", name_string_ref);
+
+    let mut book = " hurra ";
+    print!("{:?}", book);
+    book = "urra";
+    print!("{:?}", book);
+
+    let book = " musang king ".to_owned();
+    println!("{}", book.to_uppercase());
+    println!("{:?}", book.split("ng").count());
+
+    // INT
+    // int litteral
+    let my_height = 8_9;
+    let hexs = 0xff;
+    let octals = 0o77;
+    let bites = b'A';
+    println!("{}, {}, {}, and {}", my_height, hexs, octals, bites);
+
+    // usigned int;
+    // cannot be negative;
+    let my_age: u8 = 254;
+    println!("{}", my_age);
+
+    // normal int;
+    // cannot be negative;
+    let my_money: i8 = -126;
+    println!("{}", my_money);
+
+    // Floting point
+    let my_weight: f32 = 64.38;
+    println!("{}", my_weight);
+
+    // Number Operations
+    // addition
+    let sum = 5 + 10;
+
+    // subtraction
+    let difference = 95.5 - 4.3;
+
+    // multiplication
+    let product = 4 * 30;
+
+    // division
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3; // Results in -1
+
+    // remainder
+    let remainder = 43 % 5;
+
+    println!(
+        "Sum: {}, Diff: {}, Mutiple: {}, DIV: {}, and {}, and Modulo: {} ",
+        sum, difference, product, quotient, truncated, remainder
+    );
+
+    // Boolean
+    let mut is_married = false;
+    println!(
+        "My married status : {}",
+        if is_married { "Belum" } else { "Sudah" }
+    );
+
+    // Tuple
+    let mine: (i8, &str, f32) = (12, "Ary", 14.59);
+    println!(
+        "My Age is {}, My Nickname is {}, My Weight is {}",
+        mine.0, mine.1, mine.2
+    );
+
+    // Array
+    let my_animals: [&str; 2] = ["Cat", "Dog"];
+    println!("My animal is {:?}", my_animals);
+
+    // Function
+    is_married = marry("putri");
+    println!("Married status : {}", if is_married { "Yes" } else { "No" });
+
+    
+    structx::test_structx();
+
+    enum_rust::main();
+}
+
+/**
+ * Make me married
+ */
+fn marry(wife_name: &str) -> bool {
+    let my_wife = { wife_name };
+    let mut my_age = 0;
+    let mut my_birth = 2004;
+    let year_now = 2024;
+
+    // Loop
+    // loop can be labeled and stop by loop label
+    'my_age_looper: loop {
+        if my_birth == year_now {
+            break 'my_age_looper;
+        }
+
+        let mut i = 0;
+        'i: loop {
+            print!("Woa!!!");
+            if i > 12 {
+                break 'i;
+            };
+            i += 1;
+        }
+        println!("{}", i);
+
+        my_birth += 1;
+        my_age += 1;
+    }
+
+    // While
+    let mut j = 0;
+    while j < 12 {
+        j += 1;
+    }
+
+    // For
+    for i in 1..199 {
+        println!("{}", i);
+    }
+
+    // Control Flow
+    // IF statement
+    if my_wife == "alexandra" || my_age <= 20 {
+        return false;
+    }
+    scope();
+    true
+}
+
+fn scope() {
+    let x_str: String;
+    {
+        let str = String::from("bulk");
+        x_str = str;
+    }
+
+    let b = create("b");
+    take_ownership(b);
+    println!("{}", x_str);
+}
+
+fn create(var: &str) -> String {
+    var.to_owned()
+}
+
+fn take_ownership(var: String) -> String {
+    println!("{}", var);
+    return var;
+}

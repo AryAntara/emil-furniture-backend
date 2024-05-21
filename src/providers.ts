@@ -10,6 +10,9 @@ import { CategoryRepository } from "./modules/category/CategoryRepository";
 import { CategoryService } from "./modules/category/CategoryService";
 import { UserRepository } from "./modules/user/UserRepository";
 import { UserService } from "./modules/user/UserServices";
+import { ProductService } from "./modules/product/ProductService";
+import { ProductController } from "./controllers/ProductController";
+import { ProductRepository } from "./modules/product/ProductRepository";
 
 const userRepository = new UserRepository(),
   userService = new UserService(userRepository),
@@ -27,6 +30,10 @@ const categoryRepository = new CategoryRepository(),
   categoryService = new CategoryService(categoryRepository),
   categoryController = new CategoryController(categoryService);
 
+const productRepository = new ProductRepository(),
+  productService = new ProductService(productRepository, categoryService),
+  productController = new ProductController(productService);
+
 export {
   userController,
   userService,
@@ -37,4 +44,6 @@ export {
   addressService,
   categoryController,
   categoryService,
+  productController,
+  productService,
 };

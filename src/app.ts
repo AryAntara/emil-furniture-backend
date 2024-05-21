@@ -5,6 +5,7 @@ import {
   authMiddleware,
   addressController,
   categoryController,
+  productController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
@@ -18,6 +19,7 @@ const auth = new Hono();
 const user = new Hono();
 const address = new Hono();
 const category = new Hono();
+const product = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -96,6 +98,11 @@ mapMiddleware(
   ["/insert", "/delete/:categoryId", "/update/:categoryId"]
 );
 mapMiddleware(
+  product,
+  [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
+  ["/insert", "/list", "/update/:productId", "/delete/:addressId"]
+);
+mapMiddleware(
   user,
   [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
   ["/update/:userId", "/list", "/promote", "/demote", "/delete/:userId"]
@@ -118,22 +125,22 @@ auth.get(
   "/reset-password/:token",
   async (c) => await authController.showResetPasswordPage(c)
 );
-auth.post(
+auth.put(
   "/reset-password/:token",
   async (c) => await authController.resetPassword(c)
 );
 
 // user routing
 user.get("/list", async (c) => await userController.list(c));
-user.post("/promote", async (c) => await userController.promote(c));
-user.post("/demote", async (c) => await userController.demote(c));
+user.put("/promote", async (c) => await userController.promote(c));
+user.put("/demote", async (c) => await userController.demote(c));
 user.delete("/delete/:userId", async (c) => await userController.delete(c));
 user.get(
   "/profile",
   async (c) => await userController.getDetailProfileUserByUser(c)
 );
-user.post("/update", async (c) => await userController.updateByUser(c));
-user.post(
+user.put("/update", async (c) => await userController.updateByUser(c));
+user.put(
   "/update/:userId",
   async (c) => await userController.updateByAdmin(c)
 );
@@ -150,6 +157,13 @@ category.delete(
   async (c) => await categoryController.delete(c)
 );
 // product routing
+product.post("/insert", async (c) => await productController.insert(c));
+product.put(
+  "/update/:productId",
+  async (c) => await productController.update(c)
+);
+product.get("/list", async (c) => await productController.list(c));
+product.delete("/delete/:productId", async (c) => await productController.delete(c));
 
 // cart routing
 
@@ -158,7 +172,7 @@ category.delete(
 // address routing
 address.post("/insert", async (c) => await addressController.insert(c));
 address.get("/list", async (c) => await addressController.list(c));
-address.post(
+address.put(
   "/update/:addressId",
   async (c) => await addressController.update(c)
 );
@@ -166,14 +180,14 @@ address.delete(
   "/delete/:addressId",
   async (c) => await addressController.delete(c)
 );
-address.post(
+address.put(
   "/set-active/:addressId",
   async (c) => await addressController.setActive(c)
 );
 
 // stock routing
-
 app.route("/auth", auth);
 app.route("/user", user);
 app.route("/address", address);
 app.route("/category", category);
+app.route("/product", product);

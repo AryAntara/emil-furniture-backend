@@ -3,6 +3,7 @@ import { sequelize } from "./database";
 import { logger } from "./log";
 import { app } from "./app";
 import "./models/relations";
+import "./telegraf";
 config();
 
 // Connect to database
