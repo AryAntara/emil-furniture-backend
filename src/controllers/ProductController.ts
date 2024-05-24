@@ -4,6 +4,7 @@ import { insertSchemaValidator } from "../modules/product/schemas/InsertSchema";
 import { ProductService } from "../modules/product/ProductService";
 import { updateSchemaValidator } from "../modules/product/schemas/UpdateSchema";
 import { deleteSchemaValidator } from "../modules/product/schemas/DeleteSchema";
+import { detailSchemaValidator } from "../modules/product/schemas/DetailSchema";
 
 export class ProductController extends BaseController {
   constructor(private productService: ProductService) {
@@ -93,7 +94,7 @@ export class ProductController extends BaseController {
     const content: any = await c.req.parseBody();
     const file = content.image as Blob;
     content.file_size = file.size;
-    
+
     const validation = await insertSchemaValidator.with(content).run();
 
     if (!validation.success && validation.sendError)
@@ -107,7 +108,6 @@ export class ProductController extends BaseController {
         500
       );
 
-    
     data.image = fileId;
     delete data.file_size;
 
@@ -178,5 +178,29 @@ export class ProductController extends BaseController {
       );
 
     return c.json(this.respond(null, false, "Berhasil menghapus produk."), 200);
+  }
+
+  async getDetail(c: Context) {
+    const productId = parseInt(c.req.param().productId);
+    const validation = await detailSchemaValidator
+      .with({ param_product_id: productId })
+      .run();
+    if (!validation.success && validation.sendError)
+      return validation.sendError(c);
+
+    const productEntry = await this.productService.findOneById(productId);
+
+    if (!productEntry)
+      return c.json(
+        this.respond(null, false, "Tidak bisa mendapatkan detail produk.")
+      );
+
+    return c.json(
+      this.respond(
+        { productEntry },
+        true,
+        "Berhasil mendapatkan detail prodcut."
+      )
+    );
   }
 }

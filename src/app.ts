@@ -81,6 +81,12 @@ mapMiddleware(
 
 // Login token
 mapMiddleware(
+  product,
+  [authMiddleware.validateAccessToken],
+  ["/list", "/detail/:productId"]
+);
+
+mapMiddleware(
   user,
   [authMiddleware.validateAccessToken],
   ["/profile", "/update"]
@@ -120,7 +126,7 @@ mapMiddleware(
 mapMiddleware(
   product,
   [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
-  ["/insert", "/list", "/update/:productId", "/delete/:addressId"]
+  ["/insert", "/update/:productId", "/delete/:addressId"]
 );
 mapMiddleware(
   user,
@@ -181,6 +187,7 @@ product.put(
   async (c) => await productController.update(c)
 );
 product.get("/list", async (c) => await productController.list(c));
+product.get("/detail/:productId", async (c) => await productController.getDetail(c));
 product.delete(
   "/delete/:productId",
   async (c) => await productController.delete(c)

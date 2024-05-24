@@ -8,7 +8,10 @@ import { CategoryService } from "../category/CategoryService";
 import { Category } from "../../models/Category";
 
 export class ProductService implements ProductServiceInterface {
-  constructor(private productRepository: ProductRepository, private categoryService: CategoryService) {}
+  constructor(
+    private productRepository: ProductRepository,
+    private categoryService: CategoryService
+  ) {}
 
   // find user with pagging
   async findWithPage(
@@ -21,7 +24,6 @@ export class ProductService implements ProductServiceInterface {
       name?: string;
     }
   ) {
-  
     const whereOptions = {
       [Op.or]: [
         {
@@ -36,15 +38,23 @@ export class ProductService implements ProductServiceInterface {
         },
       ],
     };
+    const relations: IncludeOptions = {
+      model: Category,
+      attributes: ["name"],
+      required: true,
+      through: {
+        attributes: ["id"],
+      },
+    };
     const offset = (page - 1) * limit,
       order = [[orderColumn, orderType]] as Order,
       productEntries = await this.productRepository.findWithOffsetAndLimit(
         offset,
         limit,
         order,
-        ["id", "image", "name", "price", "weight", "description"],
-        whereOptions, 
-        Category as IncludeOptions
+        ["id", "image", "name", "price", "weight"],
+        whereOptions,
+        relations
       ),
       productCount = await this.productRepository.countAll();
 
@@ -71,7 +81,7 @@ export class ProductService implements ProductServiceInterface {
   }
 
   // update product by id
-  async updateById(productId: number, data: any): Promise<boolean> {    
+  async updateById(productId: number, data: any): Promise<boolean> {
     return await this.productRepository.update(
       {
         id: productId,
@@ -87,8 +97,25 @@ export class ProductService implements ProductServiceInterface {
     });
   }
 
-  // is category exists by id 
-  async isCategoryExistsById(categoryId: number){
-    return await this.categoryService.isExistsById(categoryId)
+  // is category exists by id
+  async isCategoryExistsById(categoryId: number) {
+    return await this.categoryService.isExistsById(categoryId);
+  }
+
+  async findOneById(productId: number): Promise<Product | null> {
+    return await this.productRepository.findOne(
+      {
+        id: productId,
+      },
+      null,
+      null,
+      {
+        model: Category,
+        attributes: ["name"],
+        through: {
+          attributes: ["id"],
+        },
+      }
+    );
   }
 }
