@@ -36,15 +36,23 @@ export class ProductService implements ProductServiceInterface {
         },
       ],
     };
+    const relations: IncludeOptions = {
+      model: Category, 
+      attributes: ["name"],
+      required: true,
+      through: {
+        attributes: ["id"]
+      }
+    }
     const offset = (page - 1) * limit,
       order = [[orderColumn, orderType]] as Order,
       productEntries = await this.productRepository.findWithOffsetAndLimit(
         offset,
         limit,
         order,
-        ["id", "image", "name", "price", "weight", "description"],
+        ["id", "image", "name", "price", "weight"],
         whereOptions, 
-        Category as IncludeOptions
+        relations
       ),
       productCount = await this.productRepository.countAll();
 
