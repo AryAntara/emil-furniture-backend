@@ -21,7 +21,7 @@ export class ProductService implements ProductServiceInterface {
       name?: string;
     }
   ) {
-    console.log(filter);
+  
     const whereOptions = {
       [Op.or]: [
         {
@@ -56,6 +56,7 @@ export class ProductService implements ProductServiceInterface {
 
   // insert new product
   async insert(data: any): Promise<Product | null> {
+    data.stock = 0;
     return this.productRepository.insert(data);
   }
 
@@ -70,7 +71,7 @@ export class ProductService implements ProductServiceInterface {
   }
 
   // update product by id
-  async updateById(productId: number, data: any): Promise<boolean> {
+  async updateById(productId: number, data: any): Promise<boolean> {    
     return await this.productRepository.update(
       {
         id: productId,

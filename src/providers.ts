@@ -13,6 +13,9 @@ import { UserService } from "./modules/user/UserServices";
 import { ProductService } from "./modules/product/ProductService";
 import { ProductController } from "./controllers/ProductController";
 import { ProductRepository } from "./modules/product/ProductRepository";
+import { StockController } from "./controllers/StockController";
+import { StockService } from "./modules/stock/StockService";
+import { StockRepository } from "./modules/stock/StockRepository";
 
 const userRepository = new UserRepository(),
   userService = new UserService(userRepository),
@@ -34,6 +37,10 @@ const productRepository = new ProductRepository(),
   productService = new ProductService(productRepository, categoryService),
   productController = new ProductController(productService);
 
+const stockRepository = new StockRepository(),
+  stockService = new StockService(stockRepository, productService),
+  stockController = new StockController(stockService);
+
 export {
   userController,
   userService,
@@ -46,4 +53,6 @@ export {
   categoryService,
   productController,
   productService,
+  stockController,
+  stockService,
 };

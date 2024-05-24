@@ -6,20 +6,21 @@ import {
   addressController,
   categoryController,
   productController,
+  stockController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
 import { mapMiddleware } from "./utils/middlewareMapper";
-import { respond } from "./utils/response";
 import { validateJsonContent } from "./middlewares/JsonValidator";
 
 export const app = new Hono();
 
-const auth = new Hono();
-const user = new Hono();
-const address = new Hono();
-const category = new Hono();
-const product = new Hono();
+const auth = new Hono(),
+  user = new Hono(),
+  address = new Hono(),
+  category = new Hono(),
+  product = new Hono(),
+  stock = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -48,6 +49,12 @@ auth.use(
 );
 
 // json validator
+mapMiddleware(
+  stock,
+  [validateJsonContent],
+  ["/in", "/out", "/update/:stockId"]
+);
+
 mapMiddleware(
   auth,
   [validateJsonContent],
@@ -92,6 +99,19 @@ mapMiddleware(
 mapMiddleware(category, [authMiddleware.validateAccessToken], ["/list"]);
 
 // Login token and admin access
+mapMiddleware(
+  stock,
+  [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
+  [
+    "/in",
+    "/out",
+    "/list",
+    "/commit/:stockId",
+    "/update/:stockId",
+    "/delete/:stockId",
+  ]
+);
+
 mapMiddleware(
   category,
   [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
@@ -140,10 +160,7 @@ user.get(
   async (c) => await userController.getDetailProfileUserByUser(c)
 );
 user.put("/update", async (c) => await userController.updateByUser(c));
-user.put(
-  "/update/:userId",
-  async (c) => await userController.updateByAdmin(c)
-);
+user.put("/update/:userId", async (c) => await userController.updateByAdmin(c));
 
 //category routing
 category.post("/insert", async (c) => await categoryController.insert(c));
@@ -156,6 +173,7 @@ category.delete(
   "/delete/:categoryId",
   async (c) => await categoryController.delete(c)
 );
+
 // product routing
 product.post("/insert", async (c) => await productController.insert(c));
 product.put(
@@ -163,7 +181,18 @@ product.put(
   async (c) => await productController.update(c)
 );
 product.get("/list", async (c) => await productController.list(c));
-product.delete("/delete/:productId", async (c) => await productController.delete(c));
+product.delete(
+  "/delete/:productId",
+  async (c) => await productController.delete(c)
+);
+
+// stock routing
+stock.post("/in", async (c) => await stockController.insertIn(c));
+stock.post("/out", async (c) => await stockController.insertOut(c));
+stock.get("/list", async (c) => await stockController.list(c));
+stock.put("/commit/:stockId", async (c) => await stockController.commit(c));
+stock.put("/update/:stockId", async (c) => await stockController.update(c));
+stock.delete("/delete/:stockId", async (c) => await stockController.delete(c));
 
 // cart routing
 
@@ -185,9 +214,9 @@ address.put(
   async (c) => await addressController.setActive(c)
 );
 
-// stock routing
 app.route("/auth", auth);
 app.route("/user", user);
 app.route("/address", address);
 app.route("/category", category);
 app.route("/product", product);
+app.route("/stock", stock);

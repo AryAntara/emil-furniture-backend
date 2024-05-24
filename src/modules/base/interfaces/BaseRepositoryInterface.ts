@@ -8,16 +8,21 @@ export interface BaseRepositoryInterface {
     limit: number,
     order: Order,
     selectAttributes?: Array<string>,
-    whereOptions?: WhereOptions, 
-    relationsTable?: IncludeOptions
+    whereOptions?: WhereOptions,
+    relations?: IncludeOptions
   ): Promise<Array<AllowedModels>>;
   isExists(whereOptions: WhereOptions): Promise<boolean>;
-  countBy(whereOptions: WhereOptions): Promise<number>;
+  countBy(
+    whereOptions?: WhereOptions | null,
+    relations?: IncludeOptions
+  ): Promise<number>;
   update(whereOptions: WhereOptions, data: any): Promise<boolean>;
   delete(whereOptions: WhereOptions): Promise<boolean>;
   find(
     whereOptions: WhereOptions,
-    selectAttributes?: Array<string>
+    selectAttributes?: Array<string>,
+    order?: Order,
+    limit?: number
   ): Promise<Array<AllowedModels>>;
   findOne(
     whereOptions: WhereOptions,
