@@ -3,7 +3,7 @@ import { telegramBot } from "../telegraf";
 import { logger } from "../log";
 import { unlinkSync } from "node:fs";
 import { PhotoSize } from "telegraf/typings/core/types/typegram";
-import { URL } from "url";
+
 export class Storage {
   // store file into telegram bot
   static async store(file: Blob) {

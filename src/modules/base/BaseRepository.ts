@@ -1,8 +1,5 @@
 import { IncludeOptions, ModelStatic, Order, WhereOptions } from "sequelize";
 import { BaseRepositoryInterface } from "./interfaces/BaseRepositoryInterface";
-import { Address } from "../../models/Address";
-import { User } from "../../models/User";
-import { Category } from "../../models/Category";
 import { logger } from "../../log";
 import { AllowedModels } from "./types/AllowedModels";
 
@@ -38,7 +35,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     order: Order,
     selectAttributes?: Array<string>,
     whereOptions?: WhereOptions,
-    relationsTable?: IncludeOptions
+    relations?: IncludeOptions
   ): Promise<Array<AllowedModels>> {
     try {
       return (
@@ -48,7 +45,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
           attributes: selectAttributes,
           order,
           where: whereOptions,
-          include: relationsTable,
+          include: relations,
         })) ?? []
       );
     } catch (e) {
@@ -58,11 +55,16 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   }
 
   // count data by given condition
-  async countBy(whereOptions: WhereOptions): Promise<number> {
+  async countBy(
+    whereOptions?: WhereOptions | null,
+    relations?: IncludeOptions
+  ): Promise<number> {
     try {
+      if (!whereOptions) whereOptions = undefined;
       return (
         (await this.model?.count({
           where: whereOptions,
+          include: relations,
         })) ?? 0
       );
     } catch (e) {
@@ -92,13 +94,16 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // find entries
   async find(
     whereOptions: WhereOptions,
-    selectAttributes?: string[] | undefined
-  ): Promise<Address[]> {
+    selectAttributes?: string[] | undefined,
+    order?: Order,
+    limit?: number
+  ): Promise<AllowedModels[]> {
     try {
       return (
         (await this.model?.findAll({
           where: whereOptions,
           attributes: selectAttributes,
+          order,
         })) ?? []
       );
     } catch (e) {
@@ -107,13 +112,18 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     }
   }
 
-  // find one user
-  async findOne(whereOptions: WhereOptions, selectAttributes?: Array<string>) {
+  // find one item
+  async findOne(
+    whereOptions: WhereOptions,
+    selectAttributes?: Array<string>,
+    order?: Order
+  ) {
     try {
       return (
         (await this.model?.findOne({
           where: whereOptions,
           attributes: selectAttributes,
+          order,
         })) ?? null
       );
     } catch (e) {

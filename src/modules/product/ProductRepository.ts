@@ -23,29 +23,30 @@ export class ProductRepository
         const categories = data["category_id[]"];
 
         // delete old product and category relationship
-        await ProductCategory.destroy({
-          where: { productId: product?.getDataValue("id") },
-          transaction
-        });
+        if (categories) {
+          await ProductCategory.destroy({
+            where: { productId: product?.getDataValue("id") },
+            transaction,
+          });
 
-        for (const categoryId of categories) {
-          const productCategory = new ProductCategory();
-          productCategory.setDataValue(
-            "productId",
-            product?.getDataValue("id") ?? 0
-          );
-          productCategory.setDataValue("categoryId", parseInt(categoryId));
+          for (const categoryId of categories) {
+            const productCategory = new ProductCategory();
+            productCategory.setDataValue(
+              "productId",
+              product?.getDataValue("id") ?? 0
+            );
+            productCategory.setDataValue("categoryId", parseInt(categoryId));
 
-          // save new relationship
-          productCategory.save({ transaction });
+            // save new relationship
+            productCategory.save({ transaction });
+          }
         }
-
         return true;
       });
     } catch (e) {
-      logger.error(e)
+      logger.error(e);
       return false;
-    }    
+    }
   }
 
   // insert new data of product
