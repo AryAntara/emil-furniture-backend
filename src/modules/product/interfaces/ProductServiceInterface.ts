@@ -16,6 +16,6 @@ export interface ProductServiceInterface {
   isExistsById(productId: number): Promise<boolean>;
   updateById(productId: number, data: any): Promise<boolean>;
   deleteById(productId: number): Promise<boolean>;
-
   isCategoryExistsById(categoryId: number): Promise<boolean>;
+  findOneById(productId: number): Promise<Product | null>;
 }

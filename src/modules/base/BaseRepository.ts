@@ -115,15 +115,20 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // find one item
   async findOne(
     whereOptions: WhereOptions,
-    selectAttributes?: Array<string>,
-    order?: Order
+    selectAttributes?: Array<string> | null,
+    order?: Order | null,
+    relations?: IncludeOptions
   ) {
     try {
+      if (!selectAttributes) selectAttributes = undefined;
+      if (!order) order = undefined;
+
       return (
         (await this.model?.findOne({
           where: whereOptions,
           attributes: selectAttributes,
           order,
+          include: relations,
         })) ?? null
       );
     } catch (e) {
