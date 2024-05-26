@@ -6,6 +6,7 @@ import { ProductServiceInterface } from "./interfaces/ProductServiceInterface";
 import { Op } from "sequelize";
 import { CategoryService } from "../category/CategoryService";
 import { Category } from "../../models/Category";
+import { ProductCategory } from "../../models/ProductCategory";
 
 export class ProductService implements ProductServiceInterface {
   constructor(
@@ -22,9 +23,10 @@ export class ProductService implements ProductServiceInterface {
     filter: {
       description?: string;
       name?: string;
+      categoryId?: string;
     }
   ) {
-    const whereOptions = {
+    const whereOptions: any = {
       [Op.or]: [
         {
           name: {
@@ -38,9 +40,11 @@ export class ProductService implements ProductServiceInterface {
         },
       ],
     };
+
     const relations: IncludeOptions = {
       model: Category,
-      attributes: ["name"],
+      where: filter.categoryId ? { id: filter.categoryId } : undefined,
+      attributes: ["name", "id"],
       required: true,
       through: {
         attributes: ["id"],
@@ -56,7 +60,10 @@ export class ProductService implements ProductServiceInterface {
         whereOptions,
         relations
       ),
-      productCount = await this.productRepository.countAll();
+      productCount = await this.productRepository.countBy(
+        whereOptions,
+        relations
+      );
 
     return {
       productEntries,

@@ -65,18 +65,19 @@ export class ProductRepository
         product.setDataValue("updatedAt", data.updatedAt);
         product.setDataValue("deletedAt", data.deletedAt);
 
-        await product.save({ transaction });
+        await product.save();
 
         for (const categoryId of categories) {
           const productCategory = new ProductCategory();
           productCategory.setDataValue("productId", product.getDataValue("id"));
           productCategory.setDataValue("categoryId", parseInt(categoryId));
-          productCategory.save({ transaction });
+          productCategory.save();
         }
-
+        
         return product;
       });
     } catch (e) {
+      console.log(e);
       logger.error(e);
       return null;
     }
