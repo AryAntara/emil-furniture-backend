@@ -17,10 +17,34 @@ export class UserController extends BaseController {
     const queries = c.req.query(),
       page = parseInt(queries.page ?? "1"),
       limit = parseInt(queries.limit ?? "10"),
+      filter: any = {},
+      filterFields: string[] = [],
+      filterableFields = ["fullname", "email"],
       orderColumn = queries.orderColumn,
       orderType = queries.orderType,
       orderableColumn = ["id", "fullname", "email", "verifiedAt", "creeatedAt"],
       orderableType = ["asc", "desc"];
+
+    for (let query of Object.keys(queries)) {
+      if (query.slice(0, 7) == "filter.") {
+        const field = query.slice(7);
+        filter[field] = queries[query];
+
+        // validate filters
+        if (!filterableFields.find((filterableField) => filterableField == field))
+          return c.json(
+            this.respond(
+              {
+                filterableFields,
+                filterFields,
+              },
+              false,
+              "Filter tidak valid."
+            ),
+            422
+          );
+      }
+    }
 
     if (!orderableColumn.find((column) => orderColumn == column))
       return c.json(
@@ -52,7 +76,8 @@ export class UserController extends BaseController {
       page,
       limit,
       orderColumn,
-      orderType
+      orderType,
+      filter
     )) as any;
     response.queries = queries;
     return c.json(

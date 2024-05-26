@@ -30,7 +30,7 @@ export class ProductController extends BaseController {
         filter[field] = queries[query];
 
         // validate filters
-        if (!filterableFields.find((field) => field == field))
+        if (!filterableFields.find((filterableField) => filterableField == field) )
           return c.json(
             this.respond(
               {
