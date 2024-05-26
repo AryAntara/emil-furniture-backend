@@ -1,4 +1,10 @@
-import { IncludeOptions, ModelStatic, Order, WhereOptions } from "sequelize";
+import {
+  IncludeOptions,
+  ModelStatic,
+  Order,
+  WhereOptions,
+  where,
+} from "sequelize";
 import { BaseRepositoryInterface } from "./interfaces/BaseRepositoryInterface";
 import { logger } from "../../log";
 import { AllowedModels } from "./types/AllowedModels";
@@ -49,6 +55,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
         })) ?? []
       );
     } catch (e) {
+      console.log(e);
       logger.error(e);
       return [];
     }
@@ -62,10 +69,11 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     try {
       if (!whereOptions) whereOptions = undefined;
       return (
-        (await this.model?.count({
+        (await this.model?.findAndCountAll({
           where: whereOptions,
           include: relations,
-        })) ?? 0
+          distinct: true
+        }))?.count ?? 0
       );
     } catch (e) {
       logger.error(e);

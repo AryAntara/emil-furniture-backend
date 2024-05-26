@@ -18,7 +18,9 @@ const insertSchema = z.object({
   file_size: z
     .number({ message: REQUIRE_ERROR })
     .max(maxFileSize, { message: FILE_SIZE_ERROR }),
-  "category_id[]": z.array(z.string(), { message: REQUIRE_ERROR }),
+  "category_id[]": z
+    .array(z.string(), { message: REQUIRE_ERROR })
+    .or(z.string({ message: REQUIRE_ERROR })),
 });
 
 export const insertSchemaValidator = new Validator(insertSchema);
@@ -49,12 +51,17 @@ insertSchemaValidator.setARefineHandler({
  * Category must be in db
  */
 async function validateCategoryInDB(item: { "category_id[]": string[] }) {
-  for (const category of item["category_id[]"]) {
-    if (!(await productService.isCategoryExistsById(parseInt(category))))
-      return false;
-  }
+  const categories = item["category_id[]"];
+  console.log(categories);
+  if (categories instanceof Array) {
+    for (const category of categories) {
+      if (!(await productService.isCategoryExistsById(parseInt(category))))
+        return false;
+    }
 
-  return true;
+    return true;
+  }
+  return await productService.isCategoryExistsById(parseInt(categories));
 }
 insertSchemaValidator.setARefineHandler({
   handle: validateCategoryInDB,

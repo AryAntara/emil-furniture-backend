@@ -20,7 +20,7 @@ export class ProductController extends BaseController {
       orderType = queries.orderType ?? "desc",
       filter: any = {},
       filterFields: string[] = [],
-      filterableFields = ["description", "name"],
+      filterableFields = ["description", "name", 'categoryId'],
       orderableColumn = ["id", "name", "price", "weight"],
       orderableType = ["asc", "desc"];
 
@@ -86,8 +86,6 @@ export class ProductController extends BaseController {
     );
   }
 
-  // list products base on category
-  async listBasedOnCategory(c: Context) {}
 
   // insert new product data (Admin Access)
   async insert(c: Context) {
