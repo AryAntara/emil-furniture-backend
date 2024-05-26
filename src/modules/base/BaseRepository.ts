@@ -13,6 +13,20 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   model?: ModelStatic<AllowedModels>;
   constructor() {}
 
+  async sum(field: string, whereOptions?: WhereOptions): Promise<number> {
+    try {
+      return (
+        this.model?.sum(field, {
+          where: whereOptions,
+        }) ?? 0
+      );
+    } catch (e) {
+      console.log(e);
+      logger.error(e);
+      return 0;
+    }
+  }
+
   // update data by a condition
   async update(whereOptions: WhereOptions, data: any): Promise<boolean> {
     try {
@@ -69,11 +83,13 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     try {
       if (!whereOptions) whereOptions = undefined;
       return (
-        (await this.model?.findAndCountAll({
-          where: whereOptions,
-          include: relations,
-          distinct: true
-        }))?.count ?? 0
+        (
+          await this.model?.findAndCountAll({
+            where: whereOptions,
+            include: relations,
+            distinct: true,
+          })
+        )?.count ?? 0
       );
     } catch (e) {
       logger.error(e);

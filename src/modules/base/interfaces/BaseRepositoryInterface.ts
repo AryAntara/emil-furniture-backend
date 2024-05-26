@@ -2,6 +2,7 @@ import { IncludeOptions, Order, WhereOptions } from "sequelize";
 import { AllowedModels } from "../types/AllowedModels";
 
 export interface BaseRepositoryInterface {
+  sum(field: string, whereOptions?: WhereOptions): Promise<number>;
   countAll(): Promise<number>;
   findWithOffsetAndLimit(
     offset: number,

@@ -56,7 +56,7 @@ export class ProductService implements ProductServiceInterface {
         offset,
         limit,
         order,
-        ["id", "image", "name", "price", "weight"],
+        ["id", "image", "name", "price", "weight", "stock"],
         whereOptions,
         relations
       ),

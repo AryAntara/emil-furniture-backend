@@ -16,6 +16,11 @@ import { ProductRepository } from "./modules/product/ProductRepository";
 import { StockController } from "./controllers/StockController";
 import { StockService } from "./modules/stock/StockService";
 import { StockRepository } from "./modules/stock/StockRepository";
+import { OrderRepository } from "./modules/order/OrderRepository";
+import { OrderDetailRepository } from "./modules/orderDetail/OrderDetailRepository";
+import { OrderDetailService } from "./modules/orderDetail/OrderDetailService";
+import { OrderService } from "./modules/order/OrderService";
+import { OrderController } from "./controllers/OrderController";
 
 const userRepository = new UserRepository(),
   userService = new UserService(userRepository),
@@ -41,6 +46,16 @@ const stockRepository = new StockRepository(),
   stockService = new StockService(stockRepository, productService),
   stockController = new StockController(stockService);
 
+const orderDetailRepository = new OrderDetailRepository(),
+  orderDetailService = new OrderDetailService(orderDetailRepository),
+  orderRepository = new OrderRepository(),
+  orderService = new OrderService(
+    orderRepository,
+    orderDetailService,
+    productService
+  ),
+  orderController = new OrderController(orderService);
+
 export {
   userController,
   userService,
@@ -55,4 +70,6 @@ export {
   productService,
   stockController,
   stockService,
+  orderController,
+  orderDetailService,
 };
