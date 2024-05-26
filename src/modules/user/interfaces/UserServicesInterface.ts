@@ -4,7 +4,11 @@ export interface UserServiceInterface {
     page: number,
     limit: number,
     orderColumn: string,
-    orderType: string
+    orderType: string,
+    filter: {
+      fullname?: string, 
+      email?: string
+    }
   ): Promise<{ userEntries: Array<User>; userCount: number }>;
   isExistsByEmail(email: string): Promise<boolean>;
   isExistsById(userId: number): Promise<boolean>;

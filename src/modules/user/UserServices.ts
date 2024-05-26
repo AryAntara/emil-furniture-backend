@@ -3,7 +3,7 @@ import { UserRepository } from "./UserRepository";
 import { UserServiceInterface } from "./interfaces/UserServicesInterface";
 import moment = require("moment");
 import { logger } from "../../log";
-import { Order } from "sequelize";
+import { Op, Order } from "sequelize";
 
 export class UserService implements UserServiceInterface {
   constructor(private userRepository: UserRepository) {}
@@ -13,17 +13,31 @@ export class UserService implements UserServiceInterface {
     page: number,
     limit: number,
     orderColumn = "id",
-    orderType = "asc"
+    orderType = "asc",
+    filter: {
+      fullname?: string;
+      email?: string;
+    }
   ) {
+    const whereOptions: any = {
+      fullname: {
+        [Op.like]: `%${filter.fullname ?? ""}%`,
+      },
+
+      email: {
+        [Op.like]: `%${filter.email ?? ""}%`,
+      },
+    };
     const offset = (page - 1) * limit,
       order = [[orderColumn, orderType]] as Order,
       userEntries = await this.userRepository.findWithOffsetAndLimit(
         offset,
         limit,
         order,
-        ["id", "fullname", "email", "phoneNumber", "roleUser", "verifiedAt"]
+        ["id", "fullname", "email", "phoneNumber", "roleUser", "verifiedAt"],
+        whereOptions
       ),
-      userCount = await this.userRepository.countAll();
+      userCount = await this.userRepository.countBy(whereOptions);
 
     return {
       userEntries,
