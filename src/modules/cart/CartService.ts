@@ -6,6 +6,7 @@ import { CartRepository } from "./CartRepository";
 import { CartServiceInterface } from "./interfaces/CartServiceInterface";
 import { ProductService } from "../product/ProductService";
 import { StockService } from "../stock/StockService";
+import { Sequelize } from "sequelize";
 
 export class CartService implements CartServiceInterface {
   constructor(
@@ -57,25 +58,23 @@ export class CartService implements CartServiceInterface {
     );
   }
 
-  async updateQtyAndPriceTotal(
-    cartId: number,
-    qty: number,
-    price: number,
-    operation: "subtract" | "add"
-  ): Promise<boolean> {
-    const cartEntry = await this.cartRepository.findOne({ id: cartId });
-    const data = {
-      qtyTotal: cartEntry?.getDataValue("qtyTotal") ?? 0,
-      priceTotal: cartEntry?.getDataValue("priceTotal") ?? 0,
-    };
+  async updateQtyAndPriceTotal(cartId: number): Promise<boolean> {
+    const cartDetailEntries = await this.cartDetailService.findByCartId(
+      cartId,
+      ["qty", "price"]
+    );
 
-    if (operation == "subtract") {
-      data.qtyTotal -= qty;
-      data.priceTotal -= qty * price;
-    } else {
-      data.qtyTotal += qty;
-      data.priceTotal += qty;
+    let priceTotal = 0,
+      qtyTotal = 0;
+    for (let cartDetailEntry of cartDetailEntries ?? []) {
+      qtyTotal += cartDetailEntry?.getDataValue("qty") ?? 0;
+      priceTotal += (cartDetailEntry?.getDataValue("price") ?? 0) * qtyTotal;
     }
+
+    const data = {
+      qtyTotal,
+      priceTotal,
+    };
 
     return await this.cartRepository.update({ id: cartId }, data);
   }
@@ -125,12 +124,7 @@ export class CartService implements CartServiceInterface {
       if (!(await this.cartDetailService.insert(data))) return false;
     }
 
-    return this.updateQtyAndPriceTotal(
-      cartId,
-      data.qty,
-      productPrice,
-      operation
-    );
+    return this.updateQtyAndPriceTotal(cartId);
   }
 
   async isProductExistsCartDetail(
@@ -186,13 +180,9 @@ export class CartService implements CartServiceInterface {
 
     if (!cartDetailEntry) return false;
 
-    const cartId = cartDetailEntry.getDataValue("cartId"),
-      qty = cartDetailEntry.getDataValue("qty"),
-      price = cartDetailEntry.getDataValue("price"),
-      operation = isUsed == "yes" ? "add" : "subtract";
+    const cartId = cartDetailEntry.getDataValue("cartId");
 
-    if (!(await this.updateQtyAndPriceTotal(cartId, qty, price, operation)))
-      return false;
+    if (!(await this.updateQtyAndPriceTotal(cartId))) return false;
 
     return await this.cartDetailService.updateIsUsed(cartDetailId, isUsed);
   }

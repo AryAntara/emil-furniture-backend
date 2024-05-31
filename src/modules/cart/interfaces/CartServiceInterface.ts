@@ -20,12 +20,7 @@ export interface CartServiceInterface {
     operation: "subtract" | "add",
     data: any
   ): Promise<CartDetail | null | boolean>;
-  updateQtyAndPriceTotal(
-    cartId: number,
-    qty: number,
-    price: number,
-    operation: "subtract" | "add"
-  ): Promise<boolean>;
+  updateQtyAndPriceTotal(cartId: number): Promise<boolean>;
   isProductExistsCartDetail(
     cartId: number,
     proudctId: number
@@ -41,5 +36,8 @@ export interface CartServiceInterface {
   ): Promise<boolean>;
   findOneCartDetailById(cartDetailId: number): Promise<CartDetail | null>;
   isProductStockAvailable(productId: number, qty: number): Promise<boolean>;
-  updateCartDetailIsUsed(cartDetailId: number, isUsed: "yes" | "no"): Promise<boolean>;
+  updateCartDetailIsUsed(
+    cartDetailId: number,
+    isUsed: "yes" | "no"
+  ): Promise<boolean>;
 }

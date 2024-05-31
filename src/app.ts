@@ -92,11 +92,12 @@ mapMiddleware(
   cart,
   [authMiddleware.validateAccessToken],
   [
+    "/",
     "/list",
     "/add",
     "/subtract",
     "/reaqcuire/:cartDetailId",
-    "/toggle-active/:cartDetailId",
+    "/toggle-active/:cartDetailId",    
   ]
 );
 
@@ -225,6 +226,7 @@ stock.put("/update/:stockId", async (c) => await stockController.update(c));
 stock.delete("/delete/:stockId", async (c) => await stockController.delete(c));
 
 // cart routing
+cart.get("/", async (c) => await cartController.getDetail(c));
 cart.get("/list", async (c) => await cartController.list(c));
 cart.post("/add", async (c) => await cartController.addItem(c));
 cart.post("/subtract", async (c) => await cartController.removeItem(c));

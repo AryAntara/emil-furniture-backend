@@ -1,6 +1,12 @@
+import { Hooks } from "sequelize/types/hooks";
 import { CartDetail } from "../../../models/CartDetail";
+import { Attributes } from "sequelize";
 
 export interface CartDetailServiceInterface {
+  findByCartId(
+    cartId: number,
+    selectAttributes?: Attributes<CartDetail | Hooks>
+  ): Promise<CartDetail[] | null>;
   findWithPage(
     page: number,
     limit: number,

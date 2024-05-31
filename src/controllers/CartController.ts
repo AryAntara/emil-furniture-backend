@@ -11,6 +11,25 @@ export class CartController extends BaseController {
     super();
   }
 
+  // get detail of the cart
+  async getDetail(c: Context) {
+    const userId = parseInt(await c.get("userId")),
+      cartEntry = await this.cartService.findByUserId(userId, [
+        "id",
+        "date",
+        "priceTotal",
+        "qtyTotal",
+        "status",
+      ]);
+
+    if (!cartEntry)
+      return c.json(this.respond(null, false, "Belum ada cart sama sekali."));
+
+    return c.json(
+      this.respond({ cartEntry }, true, "Berhasil mendapatkan data keranjang")
+    );
+  }
+
   // list items from cart
   async list(c: Context) {
     const userId = parseInt(await c.get("userId")),
@@ -55,9 +74,7 @@ export class CartController extends BaseController {
       return c.json(this.respond(null, false, "Belum ada cart sama sekali."));
 
     const { data } = validation;
-    if (
-      !(await this.cartService.insertOrUpdateCartDetail(cartId, "add", data))
-    )
+    if (!(await this.cartService.insertOrUpdateCartDetail(cartId, "add", data)))
       return c.json(
         this.respond(null, false, "Gagal menambahkan produk ke cart."),
         500
@@ -198,7 +215,10 @@ export class CartController extends BaseController {
     );
 
     if (cartId !== cartDetailEntry?.getDataValue("cartId"))
-      return c.json(this.respond(null, false, "Ini bukan keranjang kamu."), 403);
+      return c.json(
+        this.respond(null, false, "Ini bukan keranjang kamu."),
+        403
+      );
 
     if (
       !(await this.cartService.updateCartDetailIsUsed(

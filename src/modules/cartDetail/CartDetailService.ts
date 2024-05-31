@@ -1,11 +1,19 @@
-import { Op, Order } from "sequelize";
+import { Attributes, Op, Order } from "sequelize";
 import { CartDetailRepository } from "./CartDetailRepository";
 import { CartDetailServiceInterface } from "./interfaces/CartDetailServiceInterface";
 import { CartDetail } from "../../models/CartDetail";
 import moment = require("moment");
+import { Hooks } from "sequelize/types/hooks";
 
 export class CartDetailService implements CartDetailServiceInterface {
   constructor(private cartDetailRepository: CartDetailRepository) {}
+
+  async findByCartId(  
+    cartId: number,
+    selectAttributes?: Attributes<CartDetail | Hooks>
+  ): Promise<CartDetail[] | null> {
+    return await this.cartDetailRepository.find({ cartId }, selectAttributes);
+  }
 
   async findWithPage(
     page: number,

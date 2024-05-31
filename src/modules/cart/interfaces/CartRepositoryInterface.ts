@@ -1,5 +1,5 @@
-import { Order } from "../../../models/Cart";
+import { Cart } from "../../../models/Cart";
 
-export interface OrderRepositoryInterface {
-    insert(data: any): Promise<Order|null>
+export interface CartRepositoryInterface {
+    insert(data: any): Promise<Cart|null>
 }

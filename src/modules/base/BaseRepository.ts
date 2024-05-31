@@ -15,7 +15,11 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   model?: ModelStatic<AllowedModels>;
   constructor() {}
 
-  async sum(field: string, whereOptions?: WhereOptions): Promise<number> {
+  async sum(
+    field: string,
+    whereOptions?: WhereOptions,
+    selectAttributes?: Attributes<AllowedModels | Hooks>
+  ): Promise<number> {
     try {
       return (
         this.model?.sum(field, {
@@ -55,9 +59,9 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     offset: number,
     limit: number,
     order: Order,
-    selectAttributes?: Attributes<AllowedModels|Hooks>,
+    selectAttributes?: Attributes<AllowedModels | Hooks>,
     whereOptions?: WhereOptions,
-    relations?: IncludeOptions|IncludeOptions[]
+    relations?: IncludeOptions | IncludeOptions[]
   ): Promise<Array<AllowedModels>> {
     try {
       return (
@@ -80,7 +84,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // count data by given condition
   async countBy(
     whereOptions?: WhereOptions | null,
-    relations?: IncludeOptions[]|IncludeOptions
+    relations?: IncludeOptions[] | IncludeOptions
   ): Promise<number> {
     try {
       if (!whereOptions) whereOptions = undefined;
@@ -143,7 +147,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     whereOptions: WhereOptions,
     selectAttributes?: Array<string> | null,
     order?: Order | null,
-    relations?: IncludeOptions[]|IncludeOptions
+    relations?: IncludeOptions[] | IncludeOptions
   ) {
     try {
       if (!selectAttributes) selectAttributes = undefined;
