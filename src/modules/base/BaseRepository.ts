@@ -1,4 +1,5 @@
 import {
+  Attributes,
   IncludeOptions,
   ModelStatic,
   Order,
@@ -8,6 +9,7 @@ import {
 import { BaseRepositoryInterface } from "./interfaces/BaseRepositoryInterface";
 import { logger } from "../../log";
 import { AllowedModels } from "./types/AllowedModels";
+import { Hooks } from "sequelize/types/hooks";
 
 export abstract class BaseRepository implements BaseRepositoryInterface {
   model?: ModelStatic<AllowedModels>;
@@ -53,9 +55,9 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     offset: number,
     limit: number,
     order: Order,
-    selectAttributes?: Array<string>,
+    selectAttributes?: Attributes<AllowedModels|Hooks>,
     whereOptions?: WhereOptions,
-    relations?: IncludeOptions
+    relations?: IncludeOptions|IncludeOptions[]
   ): Promise<Array<AllowedModels>> {
     try {
       return (
@@ -78,7 +80,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // count data by given condition
   async countBy(
     whereOptions?: WhereOptions | null,
-    relations?: IncludeOptions
+    relations?: IncludeOptions[]|IncludeOptions
   ): Promise<number> {
     try {
       if (!whereOptions) whereOptions = undefined;
@@ -141,7 +143,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     whereOptions: WhereOptions,
     selectAttributes?: Array<string> | null,
     order?: Order | null,
-    relations?: IncludeOptions
+    relations?: IncludeOptions[]|IncludeOptions
   ) {
     try {
       if (!selectAttributes) selectAttributes = undefined;

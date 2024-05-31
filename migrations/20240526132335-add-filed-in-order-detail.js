@@ -21,6 +21,9 @@ module.exports = {
     );
   },
 
+  
+
+
   async down(queryInterface, Sequelize) {
     /**
      * Add reverting commands here.

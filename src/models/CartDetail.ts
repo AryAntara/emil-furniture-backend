@@ -1,15 +1,15 @@
-import { Model, DataType, DataTypes } from "sequelize";
+import { Model, DataTypes } from "sequelize";
 import { sequelize } from "../database";
 
-export class OrderDetail extends Model {}
-OrderDetail.init(
+export class CartDetail extends Model {}
+CartDetail.init(
   {
     id: {
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
     },
-    orderId: DataTypes.INTEGER,
+    cartId: DataTypes.INTEGER,
     productId: DataTypes.INTEGER,
     productName: DataTypes.STRING,
     productImage: DataTypes.STRING,
@@ -23,6 +23,6 @@ OrderDetail.init(
     deletedAt: DataTypes.DATE,
   },
   { sequelize, paranoid: true, tableName: 
-    'order_details'
+    'cart_details'
   }
 );

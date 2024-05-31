@@ -7,7 +7,7 @@ import {
   categoryController,
   productController,
   stockController,
-  orderController,
+  cartController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
@@ -22,7 +22,7 @@ const auth = new Hono(),
   category = new Hono(),
   product = new Hono(),
   stock = new Hono(),
-  order = new Hono();
+  cart = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -51,7 +51,11 @@ auth.use(
 );
 
 // json validator
-mapMiddleware(order, [validateJsonContent], ["/add"]);
+mapMiddleware(
+  cart,
+  [validateJsonContent],
+  ["/add", "/subtract", "/toggle-active/:cartDetailId"]
+);
 
 mapMiddleware(
   stock,
@@ -84,7 +88,17 @@ mapMiddleware(
 );
 
 // Login token
-mapMiddleware(order, [authMiddleware.validateAccessToken], ["/list", "/add"]);
+mapMiddleware(
+  cart,
+  [authMiddleware.validateAccessToken],
+  [
+    "/list",
+    "/add",
+    "/subtract",
+    "/reaqcuire/:cartDetailId",
+    "/toggle-active/:cartDetailId",
+  ]
+);
 
 mapMiddleware(
   product,
@@ -210,9 +224,18 @@ stock.put("/commit/:stockId", async (c) => await stockController.commit(c));
 stock.put("/update/:stockId", async (c) => await stockController.update(c));
 stock.delete("/delete/:stockId", async (c) => await stockController.delete(c));
 
-// order routing
-order.get("/list", async (c) => await orderController.list(c));
-order.post("/add", async (c) => await orderController.addItem(c));
+// cart routing
+cart.get("/list", async (c) => await cartController.list(c));
+cart.post("/add", async (c) => await cartController.addItem(c));
+cart.post("/subtract", async (c) => await cartController.removeItem(c));
+cart.put(
+  "/reaqcuire/:cartDetailId",
+  async (c) => await cartController.reaqcuire(c)
+);
+cart.put(
+  "/toggle-active/:cartDetailId",
+  async (c) => await cartController.toggleActiveItemStatus(c)
+);
 
 // transaction routing
 
@@ -238,4 +261,4 @@ app.route("/address", address);
 app.route("/category", category);
 app.route("/product", product);
 app.route("/stock", stock);
-app.route("/order", order);
+app.route("/cart", cart);

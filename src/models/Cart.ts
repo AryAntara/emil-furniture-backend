@@ -1,9 +1,9 @@
 import { DataTypes, Model } from "sequelize";
 import { sequelize } from "../database";
 
-export class Order extends Model {}
+export class Cart extends Model {}
 
-Order.init(
+Cart.init(
   {
     id: {
       type: DataTypes.INTEGER,

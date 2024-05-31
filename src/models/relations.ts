@@ -4,8 +4,8 @@ import { Product } from "./Product";
 import { Category } from "./Category";
 import { ProductCategory } from "./ProductCategory";
 import { Stock } from "./Stock";
-import { Order } from "./Order";
-import { OrderDetail } from "./OrderDetail";
+import { Cart } from "./Cart";
+import { CartDetail } from "./CartDetail";
 
 // User M<->1 Address
 User.hasMany(Address);
@@ -28,14 +28,14 @@ Product.belongsToMany(Category, {
 Product.hasMany(Stock);
 Stock.belongsTo(Product);
 
-// Order M<->1 User
-User.hasMany(Order);
-Order.belongsTo(User);
+// Cart M<->1 User
+User.hasMany(Cart);
+Cart.belongsTo(User);
 
-// Order 1<->1 Order Detail
-Order.hasOne(OrderDetail);
-OrderDetail.belongsTo(Order);
+// Cart 1<->1 Cart Detail
+Cart.hasOne(CartDetail);
+CartDetail.belongsTo(Cart);
 
-// Order Detail 1<->1 Product
-// OrderDetail.hasOne(Product);
-// Product.belongsTo(OrderDetail);
+// Cart Detail 1<->1 Product
+// CartDetail.hasOne(Product);
+Product.hasMany(CartDetail);
