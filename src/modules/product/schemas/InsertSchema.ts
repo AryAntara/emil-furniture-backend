@@ -51,8 +51,7 @@ insertSchemaValidator.setARefineHandler({
  * Category must be in db
  */
 async function validateCategoryInDB(item: { "category_id[]": string[] }) {
-  const categories = item["category_id[]"];
-  console.log(categories);
+  const categories = item["category_id[]"];  
   if (categories instanceof Array) {
     for (const category of categories) {
       if (!(await productService.isCategoryExistsById(parseInt(category))))

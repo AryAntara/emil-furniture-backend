@@ -1,4 +1,5 @@
 import {
+  Attributes,
   IncludeOptions,
   ModelStatic,
   Order,
@@ -8,10 +9,29 @@ import {
 import { BaseRepositoryInterface } from "./interfaces/BaseRepositoryInterface";
 import { logger } from "../../log";
 import { AllowedModels } from "./types/AllowedModels";
+import { Hooks } from "sequelize/types/hooks";
 
 export abstract class BaseRepository implements BaseRepositoryInterface {
   model?: ModelStatic<AllowedModels>;
   constructor() {}
+
+  async sum(
+    field: string,
+    whereOptions?: WhereOptions,
+    selectAttributes?: Attributes<AllowedModels | Hooks>
+  ): Promise<number> {
+    try {
+      return (
+        this.model?.sum(field, {
+          where: whereOptions,
+        }) ?? 0
+      );
+    } catch (e) {
+      console.log(e);
+      logger.error(e);
+      return 0;
+    }
+  }
 
   // update data by a condition
   async update(whereOptions: WhereOptions, data: any): Promise<boolean> {
@@ -39,9 +59,9 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     offset: number,
     limit: number,
     order: Order,
-    selectAttributes?: Array<string>,
+    selectAttributes?: Attributes<AllowedModels | Hooks>,
     whereOptions?: WhereOptions,
-    relations?: IncludeOptions
+    relations?: IncludeOptions | IncludeOptions[]
   ): Promise<Array<AllowedModels>> {
     try {
       return (
@@ -64,16 +84,18 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // count data by given condition
   async countBy(
     whereOptions?: WhereOptions | null,
-    relations?: IncludeOptions
+    relations?: IncludeOptions[] | IncludeOptions
   ): Promise<number> {
     try {
       if (!whereOptions) whereOptions = undefined;
       return (
-        (await this.model?.findAndCountAll({
-          where: whereOptions,
-          include: relations,
-          distinct: true
-        }))?.count ?? 0
+        (
+          await this.model?.findAndCountAll({
+            where: whereOptions,
+            include: relations,
+            distinct: true,
+          })
+        )?.count ?? 0
       );
     } catch (e) {
       logger.error(e);
@@ -125,7 +147,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     whereOptions: WhereOptions,
     selectAttributes?: Array<string> | null,
     order?: Order | null,
-    relations?: IncludeOptions
+    relations?: IncludeOptions[] | IncludeOptions
   ) {
     try {
       if (!selectAttributes) selectAttributes = undefined;

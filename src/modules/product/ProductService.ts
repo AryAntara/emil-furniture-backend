@@ -1,4 +1,4 @@
-import { IncludeOptions, Order } from "sequelize";
+import { IncludeOptions, Order, Sequelize } from "sequelize";
 import { Product } from "../../models/Product";
 import { Storage } from "../../utils/storage";
 import { ProductRepository } from "./ProductRepository";
@@ -7,6 +7,8 @@ import { Op } from "sequelize";
 import { CategoryService } from "../category/CategoryService";
 import { Category } from "../../models/Category";
 import { ProductCategory } from "../../models/ProductCategory";
+import { CartDetail } from "../../models/CartDetail";
+import moment = require("moment");
 
 export class ProductService implements ProductServiceInterface {
   constructor(
@@ -41,22 +43,35 @@ export class ProductService implements ProductServiceInterface {
       ],
     };
 
-    const relations: IncludeOptions = {
-      model: Category,
-      where: filter.categoryId ? { id: filter.categoryId } : undefined,
-      attributes: ["name", "id"],
-      required: true,
-      through: {
-        attributes: ["id"],
+    const relations: IncludeOptions[] = [
+      {
+        model: Category,
+        where: filter.categoryId ? { id: filter.categoryId } : undefined,
+        attributes: ["name", "id"],
+        required: true,
+        through: {
+          attributes: ["id"],
+        },
       },
-    };
+      {
+        model: CartDetail,
+        required: false,
+        where: {
+          status: { [Op.ne]: "process" },
+          lockedIn: {
+            [Op.gte]: moment().format("YYYY-MM-DD"),
+          },
+        },
+        attributes: ["id", "qty", "lockedIn"],
+      },
+    ];
     const offset = (page - 1) * limit,
       order = [[orderColumn, orderType]] as Order,
       productEntries = await this.productRepository.findWithOffsetAndLimit(
         offset,
         limit,
         order,
-        ["id", "image", "name", "price", "weight"],
+        ["id", "image", "name", "price", "weight", "stock"],
         whereOptions,
         relations
       ),
@@ -116,13 +131,25 @@ export class ProductService implements ProductServiceInterface {
       },
       null,
       null,
-      {
-        model: Category,
-        attributes: ["name"],
-        through: {
-          attributes: ["id"],
+      [
+        {
+          model: CartDetail,
+          required: false,
+          where: {
+            lockedIn: {
+              [Op.gte]: moment().format("YYYY-MM-DD"),
+            },
+          },
+          attributes: ["id", "qty", "lockedIn"],
         },
-      }
+        {
+          model: Category,
+          attributes: ["name"],
+          through: {
+            attributes: ["id"],
+          },
+        },
+      ]
     );
   }
 }

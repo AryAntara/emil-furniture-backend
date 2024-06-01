@@ -7,6 +7,7 @@ import {
   categoryController,
   productController,
   stockController,
+  cartController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
@@ -20,7 +21,8 @@ const auth = new Hono(),
   address = new Hono(),
   category = new Hono(),
   product = new Hono(),
-  stock = new Hono();
+  stock = new Hono(),
+  cart = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -49,6 +51,12 @@ auth.use(
 );
 
 // json validator
+mapMiddleware(
+  cart,
+  [validateJsonContent],
+  ["/add", "/subtract", "/toggle-active/:cartDetailId"]
+);
+
 mapMiddleware(
   stock,
   [validateJsonContent],
@@ -80,6 +88,19 @@ mapMiddleware(
 );
 
 // Login token
+mapMiddleware(
+  cart,
+  [authMiddleware.validateAccessToken],
+  [
+    "/",
+    "/list",
+    "/add",
+    "/subtract",
+    "/reaqcuire/:cartDetailId",
+    "/toggle-active/:cartDetailId",    
+  ]
+);
+
 mapMiddleware(
   product,
   [authMiddleware.validateAccessToken],
@@ -187,7 +208,10 @@ product.put(
   async (c) => await productController.update(c)
 );
 product.get("/list", async (c) => await productController.list(c));
-product.get("/detail/:productId", async (c) => await productController.getDetail(c));
+product.get(
+  "/detail/:productId",
+  async (c) => await productController.getDetail(c)
+);
 product.delete(
   "/delete/:productId",
   async (c) => await productController.delete(c)
@@ -202,6 +226,18 @@ stock.put("/update/:stockId", async (c) => await stockController.update(c));
 stock.delete("/delete/:stockId", async (c) => await stockController.delete(c));
 
 // cart routing
+cart.get("/", async (c) => await cartController.getDetail(c));
+cart.get("/list", async (c) => await cartController.list(c));
+cart.post("/add", async (c) => await cartController.addItem(c));
+cart.post("/subtract", async (c) => await cartController.removeItem(c));
+cart.put(
+  "/reaqcuire/:cartDetailId",
+  async (c) => await cartController.reaqcuire(c)
+);
+cart.put(
+  "/toggle-active/:cartDetailId",
+  async (c) => await cartController.toggleActiveItemStatus(c)
+);
 
 // transaction routing
 
@@ -227,3 +263,4 @@ app.route("/address", address);
 app.route("/category", category);
 app.route("/product", product);
 app.route("/stock", stock);
+app.route("/cart", cart);
