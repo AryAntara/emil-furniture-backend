@@ -118,7 +118,7 @@ export class CartController extends BaseController {
   async reaqcuire(c: Context) {
     const cartDetailId = parseInt(c.req.param().cartDetailId),
       userId = parseInt(c.get("userId")),
-      cartEntry = await this.cartService.findByUserId(userId, ["id"]);
+      cartEntry = await this.cartService.findByUserId(userId, ["id", "status"]);
 
     let cartId = cartEntry?.getDataValue("id");
 

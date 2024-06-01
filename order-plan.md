@@ -38,7 +38,7 @@ Description :
 
 /order/list; untuk melihat order yang dilakukan user; 
 # event : 
- - Check order sudah masuk ke transaction sesuai dengan order.lockedIn (24 Jam);
+ - Check order sudah masuk ke transaction sesuai dengan order.canceledIn (24 Jam);
  - ketika udah expired, Transaction cancel by sistem;
  - Kemudian dibuatkan stock pembalik;
 
@@ -50,7 +50,7 @@ Description :
 1. Ngambil order id; 
 2. Ngambil alamat; Nga ada alamat dia akan ngambil alamat yang active;  
 3. buat transaction; 
-4. Perbarui lockedIn untuk transaction (12 jam); 
+4. Perbarui canceledIn untuk transaction (12 jam); 
 5. buat transaction kalkulasi biaya; 
 # event : 
  - Check order sudah masuk ke transaction sesuai dengan transaction.lockedIn (12 Jam);

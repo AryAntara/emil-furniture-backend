@@ -57,6 +57,7 @@ export class ProductService implements ProductServiceInterface {
         model: CartDetail,
         required: false,
         where: {
+          status: { [Op.ne]: "process" },
           lockedIn: {
             [Op.gte]: moment().format("YYYY-MM-DD"),
           },
