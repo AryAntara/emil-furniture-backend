@@ -21,6 +21,11 @@ import { CartDetailRepository } from "./modules/cartDetail/CartDetailRepository"
 import { CartDetailService } from "./modules/cartDetail/CartDetailService";
 import { CartService } from "./modules/cart/CartService";
 import { CartController } from "./controllers/CartController";
+import { OrderRepository } from "./modules/order/OrderRepository";
+import { OrderService } from "./modules/order/OrderService";
+import { OrderController } from "./controllers/OrderController";
+import { OrderDetailRepository } from "./modules/orderDetail/OrderDetailRepository";
+import { OrderDetailService } from "./modules/orderDetail/OrderDetailService";
 
 const userRepository = new UserRepository(),
   userService = new UserService(userRepository),
@@ -57,6 +62,13 @@ const cartDetailRepository = new CartDetailRepository(),
   ),
   cartController = new CartController(cartService);
 
+const orderDetailRepository = new OrderDetailRepository(),
+  orderDetailService = new OrderDetailService(orderDetailRepository);
+
+const orderRepository = new OrderRepository(),
+  orderService = new OrderService(orderRepository, cartService, stockService, orderDetailService),
+  orderController = new OrderController(orderService);
+
 export {
   userController,
   userService,
@@ -71,6 +83,9 @@ export {
   productService,
   stockController,
   stockService,
+  cartService,
   cartController,
   cartDetailService,
+  orderController,
+  orderService
 };

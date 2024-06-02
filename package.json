@@ -1,7 +1,10 @@
 {
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "start": "bun run src/index.ts"
+    "start": "bun run src/index.ts",
+    "migrate:prod": "sequelize-cli db:migrate --env production",
+    "migrate:dev": "sequelize-cli db:migrate --env development",
+    "new:migration": "sequelize-cli migration:generate --name"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",

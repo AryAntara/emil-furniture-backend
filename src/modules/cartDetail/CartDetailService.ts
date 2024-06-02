@@ -1,4 +1,11 @@
-import { Attributes, Op, Order } from "sequelize";
+import {
+  Attributes,
+  IncludeOptions,
+  Op,
+  Order,
+  Transaction,
+  WhereOptions,
+} from "sequelize";
 import { CartDetailRepository } from "./CartDetailRepository";
 import { CartDetailServiceInterface } from "./interfaces/CartDetailServiceInterface";
 import { CartDetail } from "../../models/CartDetail";
@@ -8,11 +15,27 @@ import { Hooks } from "sequelize/types/hooks";
 export class CartDetailService implements CartDetailServiceInterface {
   constructor(private cartDetailRepository: CartDetailRepository) {}
 
-  async findByCartId(  
+  setTransaction(transaction: Transaction) {
+    this.cartDetailRepository.setTransaction(transaction);
+  }
+
+  unsetTransaction() {
+    this.cartDetailRepository.unsetTransaction();
+  }
+
+  async findByCartId(
     cartId: number,
-    selectAttributes?: Attributes<CartDetail | Hooks>
-  ): Promise<CartDetail[] | null> {
-    return await this.cartDetailRepository.find({ cartId }, selectAttributes);
+    selectAttributes?: Attributes<CartDetail | Hooks>,
+    relations?: IncludeOptions,
+    whereOptions?: WhereOptions
+  ): Promise<CartDetail[]> {
+    return await this.cartDetailRepository.find(
+      { cartId, ...whereOptions },
+      selectAttributes,
+      undefined,
+      undefined,
+      relations
+    );
   }
 
   async findWithPage(
@@ -28,10 +51,13 @@ export class CartDetailService implements CartDetailServiceInterface {
         offset,
         limit,
         cart,
-        ["id", "productImage", "productName", "price", "qty"],
-        { cartId }
+        ["id", "productImage", "productName", "price", "qty", "status"],
+        { cartId, status: { [Op.ne]: "process" } }
       ),
-      cartCount = await this.cartDetailRepository.countBy({ cartId });
+      cartCount = await this.cartDetailRepository.countBy({
+        cartId,
+        status: { [Op.ne]: "process" },
+      });
 
     return {
       cartEntries,
@@ -42,6 +68,7 @@ export class CartDetailService implements CartDetailServiceInterface {
   async getLockedStock(productId: number): Promise<number> {
     return await this.cartDetailRepository.sum("qty", {
       productId,
+      status: { [Op.ne]: "process" },
       lockedIn: {
         [Op.gte]: moment().format("YYYY-MM-DD"),
       },
@@ -58,11 +85,18 @@ export class CartDetailService implements CartDetailServiceInterface {
     data: any
   ): Promise<boolean> {
     // delete it if the stock was 0 or minus
-    console.log(data);
-    if (data.qty && (data.qty as number) < 1)
-      return await this.cartDetailRepository.delete({ cartId, productId });
 
-    return await this.cartDetailRepository.update({ cartId, productId }, data);
+    if ((data.qty as number) < 1)
+      return await this.cartDetailRepository.delete({
+        cartId,
+        productId,
+        status: { [Op.ne]: "process" },
+      });
+
+    return await this.cartDetailRepository.update(
+      { cartId, productId, status: { [Op.ne]: "process" } },
+      data
+    );
   }
 
   async updateStatusAndLockedInById(
@@ -95,6 +129,7 @@ export class CartDetailService implements CartDetailServiceInterface {
     cartId: number
   ): Promise<CartDetail | null> {
     return await this.cartDetailRepository.findOne({
+      status: { [Op.ne]: "process" },
       productId,
       cartId,
     });

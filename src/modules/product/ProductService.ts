@@ -1,4 +1,4 @@
-import { IncludeOptions, Order, Sequelize } from "sequelize";
+import { IncludeOptions, Order, Sequelize, WhereOptions } from "sequelize";
 import { Product } from "../../models/Product";
 import { Storage } from "../../utils/storage";
 import { ProductRepository } from "./ProductRepository";

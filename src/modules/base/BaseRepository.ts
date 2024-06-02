@@ -3,6 +3,7 @@ import {
   IncludeOptions,
   ModelStatic,
   Order,
+  Transaction,
   WhereOptions,
   where,
 } from "sequelize";
@@ -13,7 +14,16 @@ import { Hooks } from "sequelize/types/hooks";
 
 export abstract class BaseRepository implements BaseRepositoryInterface {
   model?: ModelStatic<AllowedModels>;
+  transaction?: Transaction;
   constructor() {}
+
+  setTransaction(transaction: Transaction): void {
+    this.transaction = transaction;
+  }
+  
+  unsetTransaction() {
+    this.transaction = undefined;
+  }
 
   async sum(
     field: string,
@@ -24,6 +34,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
       return (
         this.model?.sum(field, {
           where: whereOptions,
+          transaction: this.transaction,
         }) ?? 0
       );
     } catch (e) {
@@ -36,7 +47,10 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
   // update data by a condition
   async update(whereOptions: WhereOptions, data: any): Promise<boolean> {
     try {
-      await this.model?.update(data, { where: whereOptions });
+      await this.model?.update(data, {
+        where: whereOptions,
+        transaction: this.transaction,
+      });
       return true;
     } catch (e) {
       logger.error(e);
@@ -72,6 +86,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
           order,
           where: whereOptions,
           include: relations,
+          transaction: this.transaction,
         })) ?? []
       );
     } catch (e) {
@@ -94,10 +109,12 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
             where: whereOptions,
             include: relations,
             distinct: true,
+            transaction: this.transaction,
           })
         )?.count ?? 0
       );
     } catch (e) {
+      console.log(e);
       logger.error(e);
       return 0;
     }
@@ -113,6 +130,7 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     try {
       await this.model?.destroy({
         where: whereOptions,
+        transaction: this.transaction,
       });
       return true;
     } catch (e) {
@@ -126,7 +144,8 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
     whereOptions: WhereOptions,
     selectAttributes?: string[] | undefined,
     order?: Order,
-    limit?: number
+    limit?: number,
+    relations?: IncludeOptions
   ): Promise<AllowedModels[]> {
     try {
       return (
@@ -134,9 +153,12 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
           where: whereOptions,
           attributes: selectAttributes,
           order,
+          include: relations,
+          transaction: this.transaction,
         })) ?? []
       );
     } catch (e) {
+      console.log(e);
       logger.error(e);
       return [];
     }
@@ -159,9 +181,10 @@ export abstract class BaseRepository implements BaseRepositoryInterface {
           attributes: selectAttributes,
           order,
           include: relations,
+          transaction: this.transaction,
         })) ?? null
       );
-    } catch (e) {
+    } catch (e) {      
       logger.error(e);
       return null;
     }

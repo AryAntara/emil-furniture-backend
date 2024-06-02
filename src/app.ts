@@ -8,6 +8,7 @@ import {
   productController,
   stockController,
   cartController,
+  orderController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
@@ -22,7 +23,8 @@ const auth = new Hono(),
   category = new Hono(),
   product = new Hono(),
   stock = new Hono(),
-  cart = new Hono();
+  cart = new Hono(),
+  order = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -34,10 +36,11 @@ app.use(
       "Content-Type",
       "Set-Cookie",
       "X-PINGOTHER",
+      "Authorization",
     ],
     credentials: true,
-    origin: ["http://localhost:5174"],
-    allowMethods: ["get", "post", "delete"],
+    origin: ["http://localhost:5174", "http://localhost:5173"],
+    allowMethods: ["get", "post", "delete", "put"],
   })
 );
 
@@ -87,6 +90,8 @@ mapMiddleware(
   ["/insert", "/update/:addressId", "/set-active/:addressId"]
 );
 
+mapMiddleware(order, [validateJsonContent], ["/new"]);
+
 // Login token
 mapMiddleware(
   cart,
@@ -97,14 +102,8 @@ mapMiddleware(
     "/add",
     "/subtract",
     "/reaqcuire/:cartDetailId",
-    "/toggle-active/:cartDetailId",    
+    "/toggle-active/:cartDetailId",
   ]
-);
-
-mapMiddleware(
-  product,
-  [authMiddleware.validateAccessToken],
-  ["/list", "/detail/:productId"]
 );
 
 mapMiddleware(
@@ -124,8 +123,14 @@ mapMiddleware(
   ]
 );
 mapMiddleware(category, [authMiddleware.validateAccessToken], ["/list"]);
+mapMiddleware(
+  order,
+  [authMiddleware.validateAccessToken],
+  ["/new", "/list", "/cancel/:orderId"]
+);
 
 // Login token and admin access
+
 mapMiddleware(
   stock,
   [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
@@ -239,6 +244,11 @@ cart.put(
   async (c) => await cartController.toggleActiveItemStatus(c)
 );
 
+// order routing
+order.post("/new", async (c) => await orderController.new(c));
+order.get("/list", async (c) => await orderController.list(c));
+order.put("/cancel/:orderId", async (c) => await orderController.cancel(c));
+
 // transaction routing
 
 // address routing
@@ -264,3 +274,4 @@ app.route("/category", category);
 app.route("/product", product);
 app.route("/stock", stock);
 app.route("/cart", cart);
+app.route("/order", order);

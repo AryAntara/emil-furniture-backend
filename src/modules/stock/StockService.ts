@@ -1,4 +1,4 @@
-import { IncludeOptions, Op, Order } from "sequelize";
+import { IncludeOptions, Op, Order, Transaction } from "sequelize";
 import { Stock } from "../../models/Stock";
 import { ProductService } from "../product/ProductService";
 import { StockRepository } from "./StockRepository";
@@ -12,6 +12,14 @@ export class StockService implements StockServiceInterface {
     private productService: ProductService
   ) {}
 
+  setTransaction(transaction: Transaction) {
+    this.stockRepository.setTransaction(transaction);
+  }
+
+  unsetTransaction() {
+    this.stockRepository.unsetTransaction();
+  }
+
   async isProductExistsById(productId: number): Promise<boolean> {
     return await this.productService.isExistsById(productId);
   }
@@ -20,13 +28,46 @@ export class StockService implements StockServiceInterface {
   async getLastStock(productId: number) {
     const stockEntry = await this.stockRepository.findOne(
       {
+        commitedAt: { [Op.ne]: null },
         productId,
       },
       ["qtyFinal"],
-      [["commitedAt", "desc"]]
+      [["id", "desc"]]
     );
 
     return stockEntry?.getDataValue("qtyFinal") ?? 0;
+  }
+
+  async insertAndCommit(
+    data: { qty: number; type: "in" | "out"; productId: number },
+    commitedAt: string
+  ): Promise<Stock | null> {
+    const stockData = {
+      qtyIn: 0,
+      qtyOut: 0,
+      qtyInitial: 0,
+      qtyFinal: 0,
+      productId: data.productId,
+      commitedAt,
+    };
+    stockData.qtyInitial = await this.getLastStock(data.productId);
+
+    if (data.type == "in") {
+      stockData.qtyIn = data.qty;
+      stockData.qtyFinal = stockData.qtyInitial + stockData.qtyIn;
+    } else {
+      stockData.qtyOut = data.qty;
+      stockData.qtyFinal = stockData.qtyInitial - stockData.qtyOut;
+    }
+
+    if (
+      !(await this.productService.updateById(data.productId, {
+        stock: stockData.qtyFinal,
+      }))
+    )
+      return null;
+
+    return await this.stockRepository.insert(stockData);
   }
 
   async insert(data: any): Promise<Stock | null> {
@@ -73,7 +114,7 @@ export class StockService implements StockServiceInterface {
     });
   }
 
-  async commit(stockId: number): Promise<boolean> {
+  async commit(stockId: number, transaction?: Transaction): Promise<boolean> {
     const stockEntry = await this.stockRepository.findOne(
       {
         id: stockId,
@@ -142,7 +183,7 @@ export class StockService implements StockServiceInterface {
     const relation: IncludeOptions = {
       model: Product,
       required: true,
-      attributes: ["name", "price", "id"]
+      attributes: ["name", "price", "id"],
     };
     const offset = (page - 1) * limit,
       order = [[orderColumn, orderType]] as Order,
@@ -150,14 +191,7 @@ export class StockService implements StockServiceInterface {
         offset,
         limit,
         order,
-        [
-          "id",
-          "qtyIn",
-          "qtyOut",
-          "qtyFinal",
-          "qtyInitial",
-          "commitedAt",          
-        ],
+        ["id", "qtyIn", "qtyOut", "qtyFinal", "qtyInitial", "commitedAt"],
         whereOptions,
         relation
       ),
@@ -185,5 +219,9 @@ export class StockService implements StockServiceInterface {
       },
       selectAttributes
     );
+  }
+
+  async bulkInsert(data: any[]): Promise<boolean> {
+    return await this.stockRepository.bulkInsert(data);
   }
 }

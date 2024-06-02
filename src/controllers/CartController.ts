@@ -19,7 +19,6 @@ export class CartController extends BaseController {
         "date",
         "priceTotal",
         "qtyTotal",
-        "status",
       ]);
 
     if (!cartEntry)

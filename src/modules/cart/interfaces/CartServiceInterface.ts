@@ -1,3 +1,4 @@
+import { Transaction, WhereOptions } from "sequelize";
 import { Cart } from "../../../models/Cart";
 import { CartDetail } from "../../../models/CartDetail";
 
@@ -40,4 +41,17 @@ export interface CartServiceInterface {
     cartDetailId: number,
     isUsed: "yes" | "no"
   ): Promise<boolean>;
+  isExistsById(cartId: number): Promise<boolean>;
+  findById(
+    cartId: number,
+    selectAttributes?: Array<string>
+  ): Promise<Cart | null>;
+  findCartDetailByCartId(
+    cartId: number,
+    selectAttributes?: Array<string>,
+    whereOptions?: WhereOptions
+  ): Promise<CartDetail[]>;
+
+  setTransaction(transaction: Transaction): void;
+  unsetTransaction(): void;
 }
