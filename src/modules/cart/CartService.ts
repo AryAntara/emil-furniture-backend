@@ -6,7 +6,15 @@ import { CartRepository } from "./CartRepository";
 import { CartServiceInterface } from "./interfaces/CartServiceInterface";
 import { ProductService } from "../product/ProductService";
 import { StockService } from "../stock/StockService";
-import { Sequelize } from "sequelize";
+import {
+  IncludeOptions,
+  Op,
+  Sequelize,
+  Transaction,
+  WhereOptions,
+} from "sequelize";
+import { Product } from "../../models/Product";
+import { Stock } from "../../models/Stock";
 
 export class CartService implements CartServiceInterface {
   constructor(
@@ -15,6 +23,16 @@ export class CartService implements CartServiceInterface {
     private productService: ProductService,
     private stockService: StockService
   ) {}
+
+  setTransaction(transaction: Transaction) {
+    this.cartRepository.setTransaction(transaction);
+    this.cartDetailService.setTransaction(transaction);
+  }
+
+  unsetTransaction() {
+    this.cartRepository.unsetTransaction();
+    this.cartDetailService.unsetTransaction();
+  }
 
   async create(userId: number): Promise<Cart | null> {
     const data: any = {};
@@ -33,7 +51,6 @@ export class CartService implements CartServiceInterface {
     return await this.cartRepository.findOne(
       {
         userId,
-        status: "pending",
       },
       selectAttributes
     );
@@ -61,7 +78,9 @@ export class CartService implements CartServiceInterface {
   async updateQtyAndPriceTotal(cartId: number): Promise<boolean> {
     const cartDetailEntries = await this.cartDetailService.findByCartId(
       cartId,
-      ["qty", "price"]
+      ["qty", "price"],
+      undefined,
+      { status: { [Op.ne]: "process" } }
     );
 
     let priceTotal = 0,
@@ -186,4 +205,32 @@ export class CartService implements CartServiceInterface {
 
     return await this.cartDetailService.updateIsUsed(cartDetailId, isUsed);
   }
+
+  async isExistsById(cartId: number): Promise<boolean> {
+    return this.cartRepository.isExists({ id: cartId });
+  }
+
+  async findById(
+    cartId: number,
+    selectAttributes?: Array<string>
+  ): Promise<Cart | null> {
+    return this.cartRepository.findOne({ id: cartId }, selectAttributes);
+  }
+
+  async findCartDetailByCartId(
+    cartId: number,
+    selectAttributes?: Array<string>,
+    whereOptions?: WhereOptions
+  ): Promise<CartDetail[]> {
+    return (
+      this.cartDetailService.findByCartId(
+        cartId,
+        selectAttributes,
+        undefined,
+        whereOptions
+      ) ?? []
+    );
+  }
+
+
 }

@@ -1,7 +1,8 @@
-import { IncludeOptions, Order, WhereOptions } from "sequelize";
+import { IncludeOptions, Order, Transaction, WhereOptions } from "sequelize";
 import { AllowedModels } from "../types/AllowedModels";
 
 export interface BaseRepositoryInterface {
+  setTransaction(transaction: Transaction): void;
   sum(field: string, whereOptions?: WhereOptions): Promise<number>;
   countAll(): Promise<number>;
   findWithOffsetAndLimit(
@@ -23,10 +24,14 @@ export interface BaseRepositoryInterface {
     whereOptions: WhereOptions,
     selectAttributes?: Array<string>,
     order?: Order,
-    limit?: number
+    limit?: number,
+    relations?: IncludeOptions
   ): Promise<Array<AllowedModels>>;
   findOne(
     whereOptions: WhereOptions,
-    selectAttributes: Array<string>
+    selectAttributes: Array<string>,
+    order?: Order | null,
+    relations?: IncludeOptions[] | IncludeOptions,
+    transaction?: Transaction
   ): Promise<AllowedModels | null>;
 }

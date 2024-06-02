@@ -27,7 +27,7 @@ export class AuthMiddleware {
   // validate cookie based refresh token
   async validateRefreshToken(c: Context, next: Next) {
     const refreshToken = getCookie(c, "refresh_token");
-    console.log(refreshToken);
+    
     const { userId, email, roleUser } = await JWT.verify(
       refreshToken as string
     );

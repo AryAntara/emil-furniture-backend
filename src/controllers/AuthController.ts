@@ -8,6 +8,7 @@ import { getBaseUrl } from "../utils/url";
 import { deleteCookie, setCookie } from "hono/cookie";
 import { ForgotPasswordSchemaValidator } from "../modules/auth/schemas/ForgotPasswordSchema";
 import { resetPasswordSchemaValidator } from "../modules/auth/schemas/ResetPasswordSchema";
+import { Cookie } from "hono/utils/cookie";
 
 const DAYS_IN_SECOND = 24 * 60 * 60;
 
@@ -83,7 +84,7 @@ export class AuthController extends BaseController {
       );
 
     setCookie(c, "refresh_token", refreshToken, {
-      httpOnly: true,
+      httpOnly: false,
       maxAge: DAYS_IN_SECOND,
       sameSite: "None",
       secure: true,
@@ -102,7 +103,7 @@ export class AuthController extends BaseController {
   // logout from system
   async logout(c: Context) {
     deleteCookie(c, "refresh_token");
-    return c.json(this.respond({}, true, "Berhasil logout."));
+    return c.json(this.respond(false, true, "Berhasil logout."));
   }
 
   // generate new token
@@ -177,4 +178,5 @@ export class AuthController extends BaseController {
 
     return c.json(this.respond(null, true, "Berhasil memperbarui kata sandi."));
   }
+
 }

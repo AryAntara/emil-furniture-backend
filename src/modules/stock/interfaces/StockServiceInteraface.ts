@@ -1,7 +1,15 @@
+import { Transaction } from "sequelize";
 import { Stock } from "../../../models/Stock";
 
 export interface StockServiceInterface {
+  setTransaction(transaction: Transaction): void;
+  unsetTransaction(): void;
   isProductExistsById(productId: number): Promise<boolean>;
+  bulkInsert(data: Array<any>): Promise<boolean>;
+  insertAndCommit(
+    data: { qty: number; type: "in" | "out"; productId: number },
+    commitedAt: string
+  ): Promise<Stock | null>;
   insert(data: any): Promise<Stock | null>;
   getLastStock(productId: number): Promise<number>;
   areStockUncommited(productId: number): Promise<boolean>;
@@ -19,5 +27,8 @@ export interface StockServiceInterface {
     }
   ): Promise<{ stockEntries: Array<Stock>; stockCount: number }>;
   deleteById(stockId: number): Promise<boolean>;
-  findOneByid(stockId: number, selectAttributes?: Array<string>): Promise<Stock | null>;
+  findOneByid(
+    stockId: number,
+    selectAttributes?: Array<string>
+  ): Promise<Stock | null>;
 }
