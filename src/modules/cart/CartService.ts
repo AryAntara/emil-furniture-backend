@@ -231,6 +231,4 @@ export class CartService implements CartServiceInterface {
       ) ?? []
     );
   }
-
-
 }
