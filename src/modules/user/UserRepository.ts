@@ -20,6 +20,7 @@ export class UserRepository
     user.setDataValue("fullname", data.fullname);
     user.setDataValue("password", data.password);
     user.setDataValue("roleUser", data.roleUser);
+    user.setDataValue("phoneNumber", data.phoneNumber);
     user.setDataValue("verifiedAt", data.verifiedAt);
     user.setDataValue("createdAt", data.createdAt);
     user.setDataValue("updatedAt", data.updatedAt);

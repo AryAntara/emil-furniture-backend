@@ -56,6 +56,7 @@ export class UserService implements UserServiceInterface {
         refreshToken: null,
         roleUser: "normal",
         verifiedAt: null,
+        phoneNumber: data.phone_number,
         createdAt: moment().format("YYYY-MM-DD"),
         updatedAt: null,
         deletedAt: null,
