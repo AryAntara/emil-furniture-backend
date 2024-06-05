@@ -93,7 +93,11 @@ mapMiddleware(
 );
 
 mapMiddleware(order, [validateJsonContent], ["/new"]);
-mapMiddleware(transaction, [validateJsonContent], ["/new", "/update/:transactionId"]);
+mapMiddleware(
+  transaction,
+  [validateJsonContent],
+  ["/new", "/update/:transactionId"]
+);
 
 // Login token
 mapMiddleware(
@@ -263,9 +267,18 @@ order.put("/cancel/:orderId", async (c) => await orderController.cancel(c));
 // transaction routing
 transaction.post("/new", async (c) => await transactionController.new(c));
 transaction.get("/list", async (c) => await transactionController.list(c));
-transaction.put("/update/:transactionId", async (c) => await transactionController.update(c));
-transaction.post("/pay/:transactionId", async (c) => await transactionController.pay(c));
-transaction.post("/capture-notification", async (c) => await transactionController.captureNotification(c));
+transaction.put(
+  "/update/:transactionId",
+  async (c) => await transactionController.update(c)
+);
+transaction.post(
+  "/pay/:transactionId",
+  async (c) => await transactionController.pay(c)
+);
+transaction.post(
+  "/capture-notification",
+  async (c) => await transactionController.captureNotification(c)
+);
 
 // address routing
 address.post("/insert", async (c) => await addressController.insert(c));
