@@ -9,6 +9,7 @@ import {
   stockController,
   cartController,
   orderController,
+  transactionController,
 } from "./providers";
 import { serveStatic } from "hono/bun";
 import { cors } from "hono/cors";
@@ -24,7 +25,8 @@ const auth = new Hono(),
   product = new Hono(),
   stock = new Hono(),
   cart = new Hono(),
-  order = new Hono();
+  order = new Hono(),
+  transaction = new Hono();
 
 // Middleware
 app.use("/static/*", serveStatic({ root: "./" }));
@@ -91,6 +93,7 @@ mapMiddleware(
 );
 
 mapMiddleware(order, [validateJsonContent], ["/new"]);
+mapMiddleware(transaction, [validateJsonContent], ["/new", "/update/:transactionId"]);
 
 // Login token
 mapMiddleware(
@@ -128,9 +131,17 @@ mapMiddleware(
   [authMiddleware.validateAccessToken],
   ["/new", "/list", "/cancel/:orderId"]
 );
-
+mapMiddleware(
+  transaction,
+  [authMiddleware.validateAccessToken],
+  ["/new", "/pay/:transactionId"]
+);
 // Login token and admin access
-
+mapMiddleware(
+  transaction,
+  [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
+  ["/list", "/update/:transactionId"]
+);
 mapMiddleware(
   stock,
   [authMiddleware.validateAccessToken, authMiddleware.validateAdminAccess],
@@ -250,6 +261,11 @@ order.get("/list", async (c) => await orderController.list(c));
 order.put("/cancel/:orderId", async (c) => await orderController.cancel(c));
 
 // transaction routing
+transaction.post("/new", async (c) => await transactionController.new(c));
+transaction.get("/list", async (c) => await transactionController.list(c));
+transaction.put("/update/:transactionId", async (c) => await transactionController.update(c));
+transaction.post("/pay/:transactionId", async (c) => await transactionController.pay(c));
+transaction.post("/capture-notification", async (c) => await transactionController.captureNotification(c));
 
 // address routing
 address.post("/insert", async (c) => await addressController.insert(c));
@@ -275,3 +291,4 @@ app.route("/product", product);
 app.route("/stock", stock);
 app.route("/cart", cart);
 app.route("/order", order);
+app.route("/transaction", transaction);

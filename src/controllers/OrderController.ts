@@ -32,7 +32,7 @@ export class OrderController extends BaseController {
         500
       );
 
-    return c.json(this.respond(null, true, "Berhasil membuat pesanan baru."));
+    return c.json(this.respond({orderId: createdStatus.orderId}, true, "Berhasil membuat pesanan baru."));
   }
   async list(c: Context) {
     const userId = c.get("userId") as number,

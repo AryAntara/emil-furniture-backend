@@ -79,4 +79,13 @@ export class AddressService implements AddressServiceInterface {
       }
     );
   }
+
+  async findOneById(addressId: number): Promise<Address | null> {
+    return this.addressRepository.findOne({ id: addressId });
+  }
+
+  // find one active addresss by given userId
+  async findOneByUserId(userId: number): Promise<Address | null> {
+    return this.addressRepository.findOne({ userId, isActived: "yes" });
+  }
 }

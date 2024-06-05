@@ -8,11 +8,11 @@ import { Cart } from "./Cart";
 import { CartDetail } from "./CartDetail";
 import { OrderDetail } from "./OrderDetail";
 import { Order } from "./Order";
+import { Transaction } from "./Transaction";
 
 // User M<->1 Address
 User.hasMany(Address);
 Address.belongsTo(User);
-
 
 // Product M<->M Category
 Category.belongsToMany(Product, {
@@ -45,3 +45,7 @@ CartDetail.belongsTo(Product);
 // Order 1<->M Order Detail
 Order.hasMany(OrderDetail)
 OrderDetail.belongsTo(Order)
+
+// Order 1<->1 Transaction
+Order.hasOne(Transaction);
+Transaction.belongsTo(Order);

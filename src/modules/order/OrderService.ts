@@ -10,7 +10,7 @@ import { Product } from "../../models/Product";
 import { StockService } from "../stock/StockService";
 import { sequelize } from "../../database";
 import { OrderDetailService } from "../orderDetail/OrderDetailService";
-import { Op, Order, Sequelize, Transaction } from "sequelize";
+import { IncludeOptions, Op, Order, Sequelize, Transaction } from "sequelize";
 import { OrderDetail } from "../../models/OrderDetail";
 import { Order as OrderModel } from "../../models/Order";
 
@@ -22,11 +22,23 @@ export class OrderService implements OrderServiceInterface {
     private orderDetailService: OrderDetailService
   ) {}
 
+  async updateStatusById(
+    orderId: number,
+    status: "pending" | "canceled" | "in_transaction"
+  ) {
+    return await this.orderRepository.update(
+      {
+        id: orderId,
+      },
+      { status }
+    );
+  }
+
   async isExistsById(orderId: number): Promise<boolean> {
     return this.orderRepository.isExists({ id: orderId });
   }
 
-  // find user with pagging
+  // find order with pagging
   async findWithPage(
     page: number,
     limit: number,
@@ -62,7 +74,7 @@ export class OrderService implements OrderServiceInterface {
     return this.cartService.findById(cartId, selectAttribute);
   }
 
-  async create(cartId: number, userId: number): Promise<true | Error> {
+  async create(cartId: number, userId: number): Promise<{orderId: number} | Error> {
     const data = {
       userId,
       status: "pending",
@@ -189,7 +201,7 @@ export class OrderService implements OrderServiceInterface {
     }
     await transaction.commit();
     this.unsetTransaction();
-    return true;
+    return {orderId: orderEntry.getDataValue("id")};
   }
 
   setTransaction(transaction: Transaction) {
@@ -211,11 +223,14 @@ export class OrderService implements OrderServiceInterface {
 
   async findOneById(
     orderId: number,
-    selectAttributes?: Array<string>
+    selectAttributes?: Array<string>,
+    relations?: IncludeOptions
   ): Promise<OrderModel | null> {
     return await this.orderRepository.findOne(
       { id: orderId },
-      selectAttributes
+      selectAttributes,
+      undefined,
+      relations
     );
   }
 

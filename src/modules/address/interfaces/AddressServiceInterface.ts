@@ -8,4 +8,6 @@ export interface AddressServiceInterface {
   updateById(addressId: number, data: any): Promise<boolean>;
   deleteById(addressId: number): Promise<boolean>;
   activeAddress(addressId: number): Promise<boolean>;
+  findOneById(addressId: number): Promise<Address | null>;
+  findOneByUserId(userId: number): Promise<Address | null>;
 }

@@ -26,6 +26,10 @@ import { OrderService } from "./modules/order/OrderService";
 import { OrderController } from "./controllers/OrderController";
 import { OrderDetailRepository } from "./modules/orderDetail/OrderDetailRepository";
 import { OrderDetailService } from "./modules/orderDetail/OrderDetailService";
+import { TransactionRepository } from "./modules/transaction/TransactionRepository";
+import { TransactionService } from "./modules/transaction/TransactionService";
+import { TransactionController } from "./controllers/TransactionController";
+import { Transaction } from "./models/Transaction";
 
 const userRepository = new UserRepository(),
   userService = new UserService(userRepository),
@@ -66,8 +70,22 @@ const orderDetailRepository = new OrderDetailRepository(),
   orderDetailService = new OrderDetailService(orderDetailRepository);
 
 const orderRepository = new OrderRepository(),
-  orderService = new OrderService(orderRepository, cartService, stockService, orderDetailService),
+  orderService = new OrderService(
+    orderRepository,
+    cartService,
+    stockService,
+    orderDetailService
+  ),
   orderController = new OrderController(orderService);
+
+const transactionRepository = new TransactionRepository(),
+  transactionService = new TransactionService(
+    transactionRepository,
+    orderService,
+    addressService,
+    userService
+  ),
+  transactionController = new TransactionController(transactionService);
 
 export {
   userController,
@@ -87,5 +105,7 @@ export {
   cartController,
   cartDetailService,
   orderController,
-  orderService
+  orderService,
+  transactionController,
+  transactionService
 };
