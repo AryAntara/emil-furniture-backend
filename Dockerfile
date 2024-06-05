@@ -34,6 +34,9 @@ USER root
 RUN mkdir ./logs
 RUN chmod 777 -R ./logs
 
+RUN mkdir ./dist 
+RUN chmod 777 -R ./dist
+
 # run the app
 USER bun
 EXPOSE 3000/tcp
