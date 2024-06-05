@@ -192,22 +192,25 @@ auth.get(
   "/reset-password/:token",
   async (c) => await authController.showResetPasswordPage(c)
 );
-auth.put(
+auth.post(
   "/reset-password/:token",
   async (c) => await authController.resetPassword(c)
 );
 
 // user routing
 user.get("/list", async (c) => await userController.list(c));
-user.put("/promote", async (c) => await userController.promote(c));
-user.put("/demote", async (c) => await userController.demote(c));
+user.post("/promote", async (c) => await userController.promote(c));
+user.post("/demote", async (c) => await userController.demote(c));
 user.delete("/delete/:userId", async (c) => await userController.delete(c));
 user.get(
   "/profile",
   async (c) => await userController.getDetailProfileUserByUser(c)
 );
-user.put("/update", async (c) => await userController.updateByUser(c));
-user.put("/update/:userId", async (c) => await userController.updateByAdmin(c));
+user.post("/update", async (c) => await userController.updateByUser(c));
+user.post(
+  "/update/:userId",
+  async (c) => await userController.updateByAdmin(c)
+);
 
 //category routing
 category.post("/insert", async (c) => await categoryController.insert(c));
@@ -223,7 +226,7 @@ category.delete(
 
 // product routing
 product.post("/insert", async (c) => await productController.insert(c));
-product.put(
+product.post(
   "/update/:productId",
   async (c) => await productController.update(c)
 );
@@ -241,8 +244,8 @@ product.delete(
 stock.post("/in", async (c) => await stockController.insertIn(c));
 stock.post("/out", async (c) => await stockController.insertOut(c));
 stock.get("/list", async (c) => await stockController.list(c));
-stock.put("/commit/:stockId", async (c) => await stockController.commit(c));
-stock.put("/update/:stockId", async (c) => await stockController.update(c));
+stock.post("/commit/:stockId", async (c) => await stockController.commit(c));
+stock.post("/update/:stockId", async (c) => await stockController.update(c));
 stock.delete("/delete/:stockId", async (c) => await stockController.delete(c));
 
 // cart routing
@@ -250,11 +253,11 @@ cart.get("/", async (c) => await cartController.getDetail(c));
 cart.get("/list", async (c) => await cartController.list(c));
 cart.post("/add", async (c) => await cartController.addItem(c));
 cart.post("/subtract", async (c) => await cartController.removeItem(c));
-cart.put(
+cart.post(
   "/reaqcuire/:cartDetailId",
   async (c) => await cartController.reaqcuire(c)
 );
-cart.put(
+cart.post(
   "/toggle-active/:cartDetailId",
   async (c) => await cartController.toggleActiveItemStatus(c)
 );
@@ -262,12 +265,12 @@ cart.put(
 // order routing
 order.post("/new", async (c) => await orderController.new(c));
 order.get("/list", async (c) => await orderController.list(c));
-order.put("/cancel/:orderId", async (c) => await orderController.cancel(c));
+order.post("/cancel/:orderId", async (c) => await orderController.cancel(c));
 
 // transaction routing
 transaction.post("/new", async (c) => await transactionController.new(c));
 transaction.get("/list", async (c) => await transactionController.list(c));
-transaction.put(
+transaction.post(
   "/update/:transactionId",
   async (c) => await transactionController.update(c)
 );
@@ -283,7 +286,7 @@ transaction.post(
 // address routing
 address.post("/insert", async (c) => await addressController.insert(c));
 address.get("/list", async (c) => await addressController.list(c));
-address.put(
+address.post(
   "/update/:addressId",
   async (c) => await addressController.update(c)
 );
@@ -291,7 +294,7 @@ address.delete(
   "/delete/:addressId",
   async (c) => await addressController.delete(c)
 );
-address.put(
+address.post(
   "/set-active/:addressId",
   async (c) => await addressController.setActive(c)
 );
