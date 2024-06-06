@@ -84,10 +84,10 @@ export class AuthController extends BaseController {
       );
 
     setCookie(c, "refresh_token", refreshToken, {
-      httpOnly: false,
+      httpOnly: true,
       maxAge: DAYS_IN_SECOND,
       sameSite: "None",
-      secure: true,
+      secure: false,
     });
 
     const response = {
