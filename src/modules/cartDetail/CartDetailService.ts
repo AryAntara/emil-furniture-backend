@@ -51,7 +51,7 @@ export class CartDetailService implements CartDetailServiceInterface {
         offset,
         limit,
         cart,
-        ["id", "productImage", "productName", "price", "qty", "status"],
+        ["id", "productImage", "productName", "price", "qty", "status", "productId"],
         { cartId, status: { [Op.ne]: "process" } }
       ),
       cartCount = await this.cartDetailRepository.countBy({
